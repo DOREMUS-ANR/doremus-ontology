@@ -479,6 +479,7 @@
 
     <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U30i_track_was_created_by">
         <rdfs:label xml:lang="en">U30i track was created by</rdfs:label>
+        <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U30_created_track"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R17i_was_created_by"/>
     </owl:ObjectProperty>
     
