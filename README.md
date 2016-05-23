@@ -1,10 +1,10 @@
 # Doremus Ontology
 
-Owl version of [DOREMUS](http://www.doremus.org), realised on [Protégé](http://protege.stanford.edu/).
+The [DOREMUS](http://www.doremus.org) ontology represented in OWL, realised on [Protégé](http://protege.stanford.edu/).
 
-It relies on the latest FRBRoo (2.4).
+It relies on the latest FRBRoo (v2.4) ontology.
 
-> Please note that this version of FRBRoo is not published yet but Erlangen are presently working on it.
+> Please note that this version of FRBRoo is not yet published but [Erlangen](http://erlangen-crm.org/) is presently working on it
 
 ## Future work
 
