@@ -16,7 +16,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://data.doremus.org/ontology">
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/DOREMUS-ANR/doremus-ontology/master/DoremusOntology/FRBRoo_V2-4_Biblissima_2016-04-17.xml"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/DOREMUS-ANR/doremus-ontology/master/FRBRoo-v2.4-Biblissima-2016-04-17.owl"/>
     </owl:Ontology>
     
 
