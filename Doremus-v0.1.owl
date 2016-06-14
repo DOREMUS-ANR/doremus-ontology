@@ -593,9 +593,22 @@
     <!-- http://data.doremus.org/ontology#U38_incorporates_track -->
 
     <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U38_incorporates_track">
+        <rdfs:comment xml:lang="en">U38 incorporates track</rdfs:comment>
         <rdfs:range rdf:resource="http://data.doremus.org/ontology#M24_Track"/>
+        <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U38i_track_is_incorporated_in"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P165_incorporates"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F24_Publication_Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.doremus.org/ontology#U38i_track_is_incorporated_in -->
+
+    <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U38i_track_is_incorporated_in">
+        <rdfs:comment xml:lang="en">U38i track is incorporated in</rdfs:comment>
+        <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M24_Track"/>
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P165i_is_incorporated_in"/>
+        <rdfs:range rdf:resource="http://erlangen-crm.org/efrbroo/F24_Publication_Expression"/>
     </owl:ObjectProperty>
     
 
@@ -603,9 +616,22 @@
     <!-- http://data.doremus.org/ontology#U39_created_a_realisation_of -->
 
     <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U39_created_a_realisation_of">
+        <rdfs:comment xml:lang="en">U39 created a realisation of</rdfs:comment>
         <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M29_Editing"/>
         <rdfs:range rdf:resource="http://data.doremus.org/ontology#M39_Editing_Work"/>
+        <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U39i_was_realised_through"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R19_created_a_realisation_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.doremus.org/ontology#U39i_was_realised_through -->
+
+    <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U39i_was_realised_through">
+        <rdfs:comment xml:lang="en">U39 was realised through</rdfs:comment>
+        <rdfs:range rdf:resource="http://data.doremus.org/ontology#M29_Editing"/>
+        <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M39_Editing_Work"/>
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R19i_was_realised_through"/>
     </owl:ObjectProperty>
     
 
@@ -634,9 +660,22 @@
     <!-- http://data.doremus.org/ontology#U40_has_catalogue_name -->
 
     <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U40_has_catalogue_name">
+        <rdfs:comment xml:lang="en">U40 has catalogue name</rdfs:comment>
         <rdfs:range rdf:resource="http://data.doremus.org/ontology#M10_Catalogue_Name"/>
         <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M1_Catalogue_Statement"/>
+        <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U40i_is_catalogue_name_of"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106_is_composed_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.doremus.org/ontology#U40i_is_catalogue_name_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U40i_is_catalogue_name_of">
+        <rdfs:comment xml:lang="en">U40i is catalogue name of</rdfs:comment>
+        <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M10_Catalogue_Name"/>
+        <rdfs:range rdf:resource="http://data.doremus.org/ontology#M1_Catalogue_Statement"/>
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106i_forms_part_of"/>
     </owl:ObjectProperty>
     
 
@@ -644,6 +683,7 @@
     <!-- http://data.doremus.org/ontology#U41_has_catalogue_number -->
 
     <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U41_has_catalogue_number">
+        <rdfs:comment xml:lang="en">U41 has catalogue number</rdfs:comment>
         <rdfs:range rdf:resource="http://data.doremus.org/ontology#M11_Catalogue_Number"/>
         <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M1_Catalogue_Statement"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106_is_composed_of"/>
@@ -651,12 +691,37 @@
     
 
 
+    <!-- http://data.doremus.org/ontology#U41i_is_catalogue_number_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U41i_is_catalogue_number_of">
+        <rdfs:comment xml:lang="en">U41 is catalogue number of</rdfs:comment>
+        <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M11_Catalogue_Number"/>
+        <rdfs:range rdf:resource="http://data.doremus.org/ontology#M1_Catalogue_Statement"/>
+        <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U41_has_catalogue_number"/>
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106i_forms_part_of"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://data.doremus.org/ontology#U42_has_opus_number -->
 
     <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U42_has_opus_number">
+        <rdfs:comment xml:lang="en">U42 has opus number</rdfs:comment>
         <rdfs:range rdf:resource="http://data.doremus.org/ontology#M12_Opus_Number"/>
         <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M2_Opus_Statement"/>
+        <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U42i_is_opus_number_of"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106_is_composed_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.doremus.org/ontology#U42i_is_opus_number_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U42i_is_opus_number_of">
+        <rdfs:comment xml:lang="en">U42i is opus number of</rdfs:comment>
+        <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M12_Opus_Number"/>
+        <rdfs:range rdf:resource="http://data.doremus.org/ontology#M2_Opus_Statement"/>
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106i_forms_part_of"/>
     </owl:ObjectProperty>
     
 
@@ -671,9 +736,22 @@
     
 
 
+    <!-- http://data.doremus.org/ontology#U43i_is_opus_subnumber_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U43i_is_opus_subnumber_of">
+        <rdfs:comment xml:lang="en">U43i is opus subnumber of</rdfs:comment>
+        <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M13_Opus_Subnumber"/>
+        <rdfs:range rdf:resource="http://data.doremus.org/ontology#M2_Opus_Statement"/>
+        <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U43_has_opus_subnumber"/>
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106i_forms_part_of"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://data.doremus.org/ontology#U44_has_dedication_statement -->
 
     <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U44_has_dedication_statement">
+        <rdfs:comment xml:lang="en">U44 has dedication statement</rdfs:comment>
         <rdfs:range rdf:resource="http://data.doremus.org/ontology#M15_Dedication"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
@@ -681,9 +759,22 @@
     
 
 
+    <!-- http://data.doremus.org/ontology#U44i_is_dedication_statement_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U44i_is_dedication_statement_of">
+        <rdfs:comment xml:lang="en">U44i is dedication statement of</rdfs:comment>
+        <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M15_Dedication"/>
+        <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U44_has_dedication_statement"/>
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
+        <rdfs:range rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://data.doremus.org/ontology#U45_is_dedicated_to -->
 
     <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U45_is_dedicated_to">
+        <rdfs:comment xml:lang="en">U45 is dedicated to</rdfs:comment>
         <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M15_Dedication"/>
         <rdfs:range rdf:resource="http://erlangen-crm.org/current/E1_CRM_Entity"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
@@ -691,12 +782,37 @@
     
 
 
+    <!-- http://data.doremus.org/ontology#U45i_has_dedication -->
+
+    <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U45i_has_dedication">
+        <rdfs:comment xml:lang="en">U45i has dedication</rdfs:comment>
+        <rdfs:range rdf:resource="http://data.doremus.org/ontology#M15_Dedication"/>
+        <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U45_is_dedicated_to"/>
+        <rdfs:domain rdf:resource="http://erlangen-crm.org/current/E1_CRM_Entity"/>
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://data.doremus.org/ontology#U46_occurred_in_context -->
 
     <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U46_occurred_in_context">
+        <rdfs:comment xml:lang="en">U46 occurred in context</rdfs:comment>
         <rdfs:range rdf:resource="http://data.doremus.org/ontology#M40_Context"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/current/E7_Activity"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P15_was_influenced_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.doremus.org/ontology#U46i_was_context_for -->
+
+    <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U46i_was_context_for">
+        <rdfs:comment xml:lang="en">U46i was context for</rdfs:comment>
+        <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M40_Context"/>
+        <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U46_occurred_in_context"/>
+        <rdfs:range rdf:resource="http://erlangen-crm.org/current/E7_Activity"/>
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P15i_influenced"/>
     </owl:ObjectProperty>
     
 
@@ -725,9 +841,22 @@
     <!-- http://data.doremus.org/ontology#U51_has_rhythmic_pattern -->
 
     <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U51_has_rhythmic_pattern">
+        <rdfs:comment xml:lang="en">U51 has rhythmic pattern</rdfs:comment>
         <rdfs:range rdf:resource="http://data.doremus.org/ontology#M38_Rhythmic_Pattern"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2_has_type"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.doremus.org/ontology#U51i_is_rhythmic_pattern_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U51i_is_rhythmic_pattern_of">
+        <rdfs:comment xml:lang="en">U51i is rhythmic pattern of</rdfs:comment>
+        <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M38_Rhythmic_Pattern"/>
+        <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U51_has_rhythmic_pattern"/>
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2i_is_type_of"/>
+        <rdfs:range rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
     
 
