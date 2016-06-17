@@ -35,7 +35,6 @@
          xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0"><!--
 
 	- - FRVRoo V2.4 Draft November 2015   - converted from http://www.cidoc-crm.org/docs/frbr_oo/frbr_docs/FRBRoo_V2.4.docx
-
         	-->
    <owl:Ontology rdf:about="">
       <rdfs:label xml:lang="en"/>
@@ -49,7 +48,7 @@
    <!-- http://www.w3.org/2004/02/skos/core#notation -->
    <owl:AnnotationProperty rdf:about="skos:notation"/>
    <!--
-         	 
+
 	- - Classes
 
         	-->
