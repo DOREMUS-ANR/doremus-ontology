@@ -18,10 +18,10 @@
     <owl:Ontology rdf:about="http://data.doremus.org/ontology">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/DOREMUS-ANR/doremus-ontology/master/FRBRoo-v2.4-Biblissima-2016-04-17.owl"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -29,7 +29,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U10_has_order_number -->
@@ -40,7 +40,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P1_is_identified_by"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U10i_is_order_number_of -->
@@ -50,7 +50,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U10_has_order_number"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P1i_identifies"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U11_has_key -->
@@ -61,7 +61,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2_has_type"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U11i_is_key_of -->
@@ -71,7 +71,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U11_has_key"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2i_is_type_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U12_has_genre -->
@@ -82,7 +82,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2_has_type"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U12_is_genre_of -->
@@ -92,7 +92,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U12_has_genre"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2i_is_type_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U13_has_intended_casting -->
@@ -103,7 +103,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U13i_is_intended_casting_of -->
@@ -113,7 +113,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U13_has_intended_casting"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U14_has_intended_tempo -->
@@ -124,7 +124,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U14i_is_intended_tempo_of -->
@@ -134,7 +134,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U14_has_intended_tempo"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U15_has_medium_of_performance -->
@@ -145,7 +145,7 @@
         <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M35_Cast_Medium_Of_Performance"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P91_has_unit"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U15i_is_medium_of_performance_of -->
@@ -155,7 +155,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U15_has_medium_of_performance"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P91i_is_unit_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U16_has_catalogue_statement -->
@@ -166,7 +166,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P1_is_identified_by"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U16_is_catalogue_statement_of -->
@@ -176,7 +176,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U16_has_catalogue_statement"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P1i_identifies"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U17_has_opus_statement -->
@@ -187,7 +187,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P1_is_identified_by"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U17i_is_opus_statement_of -->
@@ -197,7 +197,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U17_has_opus_statement"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P1i_identifies"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U18_used_medium_of_performance_of_type -->
@@ -208,7 +208,7 @@
         <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M28_Individual_Performance"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P125_used_object_of_type"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U18i_medium_of_performance_was_used_in -->
@@ -218,7 +218,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U18_used_medium_of_performance_of_type"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P125i_was_type_of_object_used_in"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U19_has_style -->
@@ -229,7 +229,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2_has_type"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U19i_is_style_of -->
@@ -239,7 +239,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U19_has_style"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2i_is_type_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U1_has_intended_medium_of_performance -->
@@ -250,7 +250,7 @@
         <rdfs:range rdf:resource="http://data.doremus.org/ontology#M35_Cast_Medium_Of_Performance"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P43_has_dimension"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U1i_is_intended_medium_of_performance_of -->
@@ -260,7 +260,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U1_has_intended_medium_of_performance"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P43i_is_dimension_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U20_has_music_group_formation -->
@@ -271,7 +271,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2_has_type"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U20i_is_music_group_formation_of -->
@@ -281,7 +281,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U20_has_music_group_formation"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2i_is_type_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U21_has_tag -->
@@ -292,7 +292,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2_has_type"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U21i_is_tag_of -->
@@ -302,7 +302,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U21_has_tag"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2i_is_type_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U22_has_mode -->
@@ -313,7 +313,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2_has_type"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U22i_is_mode_of -->
@@ -323,7 +323,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U22_has_mode"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2i_is_type_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U23_has_casting_detail -->
@@ -334,7 +334,7 @@
         <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M6_Intended_Casting"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P69_has_association_with"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U23i_is_casting_detail_of -->
@@ -344,7 +344,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U23_has_casting_detail"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P69i_is_associated_with"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U25_alternate_casting -->
@@ -356,7 +356,7 @@
         <rdfs:range rdf:resource="http://data.doremus.org/ontology#M6_Intended_Casting"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P69_has_association_with"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U26_has_maintained -->
@@ -367,7 +367,7 @@
         <rdfs:range rdf:resource="http://erlangen-crm.org/current/E24_Physical_Man-Made_Thing"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P31_has_modified"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U26i_was_maintained_by -->
@@ -377,7 +377,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U26_has_maintained"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P31i_was_modified_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U27_performed_character_of -->
@@ -388,7 +388,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P16_used_specific_object"/>
         <rdfs:range rdf:resource="http://erlangen-crm.org/efrbroo/F38_Character"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U27i_character_was_performed_by -->
@@ -398,7 +398,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U27_performed_character_of"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P16i_was_used_for"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U28_has_intended_tessitura -->
@@ -409,7 +409,7 @@
         <rdfs:range rdf:resource="http://data.doremus.org/ontology#M30_Tessitura"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U28i_is_intended_tessitura_of -->
@@ -419,7 +419,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U28_has_intended_tessitura"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U29_edited -->
@@ -430,7 +430,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P16_used_specific_object"/>
         <rdfs:range rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U29i_was_edited_by -->
@@ -440,7 +440,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U29_edited"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P16i_was_used_for"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U2_foresees_use_of_medium_of_performance_of_type -->
@@ -451,7 +451,7 @@
         <rdfs:range rdf:resource="http://erlangen-crm.org/current/E55_Type"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U2i_is_foreseen_type_of_medium_of_performance -->
@@ -461,7 +461,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U2_foresees_use_of_medium_of_performance_of_type"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U30_created_track -->
@@ -472,7 +472,7 @@
         <rdfs:comment>Examples :</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R17_created"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U30i_track_was_created_by -->
@@ -482,18 +482,18 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U30_created_track"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R17i_was_created_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U31_had_function_of_type -->
 
     <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U31_had_function_of_type">
         <rdfs:label xml:lang="en">U31 had function of type</rdfs:label>
-        <rdfs:range rdf:resource="http://data.doremus.org/ontology#M31_Actor&apos;s_Function"/>
+        <rdfs:range rdf:resource="http://data.doremus.org/ontology#M31_Actor_Function"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/current/E7_Activity"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2_has_type"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U31i_is_function_of -->
@@ -503,18 +503,18 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U31_had_function_of_type"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2i_is_type_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U32_had_responsibility_of_type -->
 
     <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U32_had_responsibility_of_type">
         <rdfs:label xml:lang="en">U32 had responsibility of type</rdfs:label>
-        <rdfs:range rdf:resource="http://data.doremus.org/ontology#M32_Actor&apos;s_Responsibility"/>
+        <rdfs:range rdf:resource="http://data.doremus.org/ontology#M32_Actor_Responsibility"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/current/E7_Activity"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2_has_type"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U32i_is_responsibility_of -->
@@ -524,7 +524,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U32_had_responsibility_of_type"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2i_is_type_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U35_foresees_function_of_type -->
@@ -532,10 +532,10 @@
     <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U35_foresees_function_of_type">
         <rdfs:label xml:lang="en">U35 foresees function of type</rdfs:label>
         <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M25_Foreseen_Activity"/>
-        <rdfs:range rdf:resource="http://data.doremus.org/ontology#M31_Actor&apos;s_Function"/>
+        <rdfs:range rdf:resource="http://data.doremus.org/ontology#M31_Actor_Function"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U35i_is_foreseen_function_type_of -->
@@ -545,7 +545,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U35_foresees_function_of_type"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U36_foresees_responsibility_of_type -->
@@ -553,10 +553,10 @@
     <owl:ObjectProperty rdf:about="http://data.doremus.org/ontology#U36_foresees_responsibility_of_type">
         <rdfs:label xml:lang="en">U36 foresees responsibility of type</rdfs:label>
         <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M25_Foreseen_Activity"/>
-        <rdfs:range rdf:resource="http://data.doremus.org/ontology#M32_Actor&apos;s_Responsibility"/>
+        <rdfs:range rdf:resource="http://data.doremus.org/ontology#M32_Actor_Responsibility"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U36i_is_foreseen_responsibility_type_of -->
@@ -566,7 +566,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U36_foresees_responsibility_of_type"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U37_foresees_performing_character -->
@@ -577,7 +577,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
         <rdfs:range rdf:resource="http://erlangen-crm.org/efrbroo/F38_Character"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U37i_is_foreseen_character_in -->
@@ -587,7 +587,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U37_foresees_performing_character"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U38_incorporates_track -->
@@ -599,7 +599,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P165_incorporates"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F24_Publication_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U38i_track_is_incorporated_in -->
@@ -610,7 +610,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P165i_is_incorporated_in"/>
         <rdfs:range rdf:resource="http://erlangen-crm.org/efrbroo/F24_Publication_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U39_created_a_realisation_of -->
@@ -622,7 +622,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U39i_was_realised_through"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R19_created_a_realisation_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U39i_was_realised_through -->
@@ -633,7 +633,7 @@
         <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M39_Editing_Work"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R19i_was_realised_through"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U3_forees_specific_medium_of_performance -->
@@ -644,7 +644,7 @@
         <rdfs:range rdf:resource="http://erlangen-crm.org/current/E22_Man-Made_Object"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U3i_is_foreseen_specific_medium_of_performance -->
@@ -654,7 +654,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U3_forees_specific_medium_of_performance"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U40_has_catalogue_name -->
@@ -666,7 +666,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U40i_is_catalogue_name_of"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106_is_composed_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U40i_is_catalogue_name_of -->
@@ -677,7 +677,7 @@
         <rdfs:range rdf:resource="http://data.doremus.org/ontology#M1_Catalogue_Statement"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106i_forms_part_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U41_has_catalogue_number -->
@@ -688,7 +688,7 @@
         <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M1_Catalogue_Statement"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106_is_composed_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U41i_is_catalogue_number_of -->
@@ -700,7 +700,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U41_has_catalogue_number"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106i_forms_part_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U42_has_opus_number -->
@@ -712,7 +712,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U42i_is_opus_number_of"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106_is_composed_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U42i_is_opus_number_of -->
@@ -723,7 +723,7 @@
         <rdfs:range rdf:resource="http://data.doremus.org/ontology#M2_Opus_Statement"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106i_forms_part_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U43_has_opus_subnumber -->
@@ -733,7 +733,7 @@
         <rdfs:domain rdf:resource="http://data.doremus.org/ontology#M2_Opus_Statement"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106_is_composed_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U43i_is_opus_subnumber_of -->
@@ -745,7 +745,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U43_has_opus_subnumber"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106i_forms_part_of"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U44_has_dedication_statement -->
@@ -756,7 +756,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U44i_is_dedication_statement_of -->
@@ -768,7 +768,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
         <rdfs:range rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U45_is_dedicated_to -->
@@ -779,7 +779,7 @@
         <rdfs:range rdf:resource="http://erlangen-crm.org/current/E1_CRM_Entity"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U45i_has_dedication -->
@@ -791,7 +791,7 @@
         <rdfs:domain rdf:resource="http://erlangen-crm.org/current/E1_CRM_Entity"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U46_occurred_in_context -->
@@ -802,7 +802,7 @@
         <rdfs:domain rdf:resource="http://erlangen-crm.org/current/E7_Activity"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P15_was_influenced_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U46i_was_context_for -->
@@ -814,7 +814,7 @@
         <rdfs:range rdf:resource="http://erlangen-crm.org/current/E7_Activity"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P15i_influenced"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U4_had_princeps_publication -->
@@ -825,7 +825,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
         <rdfs:range rdf:resource="http://erlangen-crm.org/efrbroo/F30_Publication_Event"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U4i_was_princeps_publication_of -->
@@ -835,7 +835,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U4_had_princeps_publication"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U51_has_rhythmic_pattern -->
@@ -846,7 +846,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2_has_type"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U51i_is_rhythmic_pattern_of -->
@@ -858,7 +858,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2i_is_type_of"/>
         <rdfs:range rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U5_had_premiere -->
@@ -869,7 +869,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
         <rdfs:range rdf:resource="http://erlangen-crm.org/efrbroo/F31_Performance"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U5i_was_premiere_of -->
@@ -879,7 +879,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U5_had_premiere"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U6_foresees_actor -->
@@ -890,7 +890,7 @@
         <rdfs:range rdf:resource="http://erlangen-crm.org/current/E39_Actor"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U6i_is_foreseen_actor_of -->
@@ -900,7 +900,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U6_foresees_actor"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U7_foresees_place_at -->
@@ -911,7 +911,7 @@
         <rdfs:range rdf:resource="http://erlangen-crm.org/current/E53_Place"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U7i_is_foreseen_place_of -->
@@ -921,7 +921,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U7_foresees_place_at"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U8_foresees_time-span -->
@@ -932,7 +932,7 @@
         <rdfs:range rdf:resource="http://erlangen-crm.org/current/E52_Time-Span"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U8i_is_foreseen_time-span_of -->
@@ -942,7 +942,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U8_foresees_time-span"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U9_specifies_character -->
@@ -953,7 +953,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67_refers_to"/>
         <rdfs:range rdf:resource="http://erlangen-crm.org/efrbroo/F38_Character"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#U9i_is_character_specified_by -->
@@ -963,7 +963,7 @@
         <owl:inverseOf rdf:resource="http://data.doremus.org/ontology#U9_specifies_character"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P100i_died_in -->
@@ -972,7 +972,7 @@
         <rdfs:label xml:lang="en">P100i died in</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P93i_was_taken_out_of_existence_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P102i_is_title_of -->
@@ -981,7 +981,7 @@
         <rdfs:label xml:lang="en">P102i is title of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P1i_identifies"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P108i_was_produced_by -->
@@ -991,7 +991,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P31i_was_modified_by"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P92i_was_brought_into_existence_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P11_had_participant -->
@@ -999,7 +999,7 @@
     <rdf:Description rdf:about="http://erlangen-crm.org/current/P11_had_participant">
         <rdfs:label xml:lang="en">P11 had participant</rdfs:label>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P11i_participated_in -->
@@ -1010,7 +1010,7 @@
         <rdfs:range rdf:resource="http://erlangen-crm.org/current/E5_Event"/>
         <owl:inverseOf rdf:resource="http://erlangen-crm.org/current/P11_had_participant"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P128i_is_carried_by -->
@@ -1019,7 +1019,7 @@
         <rdfs:label xml:lang="en">P128i is carried by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P130i_features_are_also_found_on"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P129i_is_subject_of -->
@@ -1028,7 +1028,7 @@
         <rdfs:label xml:lang="en">P129i is subject of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P131i_identifies -->
@@ -1037,7 +1037,7 @@
         <rdfs:label xml:lang="en">P131i identifies</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P1i_identifies"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P138i_has_representation -->
@@ -1046,7 +1046,7 @@
         <rdfs:label xml:lang="en">P138i has representation</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P142i_was_used_in -->
@@ -1055,7 +1055,7 @@
         <rdfs:label xml:lang="en">P142i was used in</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P16i_was_used_for"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P14i_performed -->
@@ -1064,7 +1064,7 @@
         <rdfs:label xml:lang="en">P14i performed</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P11i_participated_in"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P151i_participated_in -->
@@ -1073,7 +1073,7 @@
         <rdfs:label xml:lang="en">P151i participated in</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P11i_participated_in"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P165i_is_incorporated_in -->
@@ -1082,7 +1082,7 @@
         <rdfs:label xml:lang="en">P165i is incorporated in</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106i_forms_part_of"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P16i_was_used_for -->
@@ -1092,7 +1092,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P12i_was_present_at"/>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P15i_influenced"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P31i_was_modified_by -->
@@ -1101,7 +1101,7 @@
         <rdfs:label xml:lang="en">P31i was modified by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P12i_was_present_at"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P33i_was_used_by -->
@@ -1110,7 +1110,7 @@
         <rdfs:label xml:lang="en">P33i was used by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P16i_was_used_for"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P37_assigned -->
@@ -1119,7 +1119,7 @@
         <rdfs:label xml:lang="en">P37 assigned</rdfs:label>
         <owl:equivalentProperty rdf:resource="http://erlangen-crm.org/efrbroo/R46_assigned"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P37i_was_assigned_by -->
@@ -1129,7 +1129,7 @@
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P141i_was_assigned_by"/>
         <owl:equivalentProperty rdf:resource="http://erlangen-crm.org/efrbroo/R46i_was_assigned_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P50i_is_current_keeper_of -->
@@ -1138,7 +1138,7 @@
         <rdfs:label xml:lang="en">P50i is current keeper of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P49i_is_former_or_current_keeper_of"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P65i_is_shown_by -->
@@ -1147,7 +1147,7 @@
         <rdfs:label xml:lang="en">P65i is shown by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P128i_is_carried_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P71i_is_listed_in -->
@@ -1156,7 +1156,7 @@
         <rdfs:label xml:lang="en">P71i is listed in</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P78i_identifies -->
@@ -1165,7 +1165,7 @@
         <rdfs:label xml:lang="en">P78i identifies</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P1i_identifies"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P87i_identifies -->
@@ -1174,7 +1174,7 @@
         <rdfs:label xml:lang="en">P87i identifies</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P1i_identifies"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P92_brought_into_existence -->
@@ -1183,7 +1183,7 @@
         <rdfs:label xml:lang="en">P92 brought into existence</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P12_occurred_in_the_presence_of"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P92i_was_brought_into_existence_by -->
@@ -1192,7 +1192,7 @@
         <rdfs:label xml:lang="en">P92i was brought into existence by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P12i_was_present_at"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P93i_was_taken_out_of_existence_by -->
@@ -1201,7 +1201,7 @@
         <rdfs:label xml:lang="en">P93i was taken out of existence by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P12i_was_present_at"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P94i_was_created_by -->
@@ -1210,7 +1210,7 @@
         <rdfs:label xml:lang="en">P94i was created by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P92i_was_brought_into_existence_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P95i_was_formed_by -->
@@ -1219,7 +1219,7 @@
         <rdfs:label xml:lang="en">P95i was formed by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P92i_was_brought_into_existence_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/P98i_was_born -->
@@ -1228,7 +1228,7 @@
         <rdfs:label xml:lang="en">P98i was born</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P92i_was_brought_into_existence_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R10i_is_member_of -->
@@ -1237,7 +1237,7 @@
         <rdfs:label xml:lang="en">R10i is member of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P148i_is_component_of"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R12i_realises -->
@@ -1246,7 +1246,7 @@
         <rdfs:label xml:lang="en">R12i realises</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R3i_realises"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R13i_realises -->
@@ -1255,7 +1255,7 @@
         <rdfs:label xml:lang="en">R13i realises</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R3i_realises"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R15i_is_fragment_of -->
@@ -1264,7 +1264,7 @@
         <rdfs:label xml:lang="en">R15i is fragment of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106i_forms_part_of"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R16i_was_initiated_by -->
@@ -1273,7 +1273,7 @@
         <rdfs:label xml:lang="en">R16i was initiated by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P94i_was_created_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R17i_was_created_by -->
@@ -1282,7 +1282,7 @@
         <rdfs:label xml:lang="en">R17i was created by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P94i_was_created_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R18i_was_created_by -->
@@ -1291,7 +1291,7 @@
         <rdfs:label xml:lang="en">R18i was created by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P108i_was_produced_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R19i_was_realised_through -->
@@ -1300,7 +1300,7 @@
         <rdfs:label xml:lang="en">R19i was realised through</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P16i_was_used_for"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R1i_has_successor -->
@@ -1309,7 +1309,7 @@
         <rdfs:label xml:lang="en">R1i has successor</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P130i_features_are_also_found_on"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R20i_was_recorded_through -->
@@ -1318,7 +1318,7 @@
         <rdfs:label xml:lang="en">R20i was recorded through</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P15i_influenced"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R21i_was_created_through -->
@@ -1327,7 +1327,7 @@
         <rdfs:label xml:lang="en">R21i was created through</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R17i_was_created_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R22i_was_realised_through -->
@@ -1336,7 +1336,7 @@
         <rdfs:label xml:lang="en">R22i was realised through</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R19i_was_realised_through"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R23i_was_realised_through -->
@@ -1345,7 +1345,7 @@
         <rdfs:label xml:lang="en">R23i was realised through</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R19i_was_realised_through"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R24i_was_created_through -->
@@ -1354,7 +1354,7 @@
         <rdfs:label xml:lang="en">R24i was created through</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R17i_was_created_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R25i_was_performed_in -->
@@ -1363,7 +1363,7 @@
         <rdfs:label xml:lang="en">R25i was performed in</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P33i_was_used_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R26i_was_produced_by -->
@@ -1372,7 +1372,7 @@
         <rdfs:label xml:lang="en">R26i was produced by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P108i_was_produced_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R27i_was_used_by -->
@@ -1381,7 +1381,7 @@
         <rdfs:label xml:lang="en">R27i was used by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P16i_was_used_for"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R28i_was_produced_by -->
@@ -1390,7 +1390,7 @@
         <rdfs:label xml:lang="en">R28i was produced by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P108i_was_produced_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R29i_was_reproduced_by -->
@@ -1399,7 +1399,7 @@
         <rdfs:label xml:lang="en">R29i was reproduced by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P16i_was_used_for"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R2i_has_derivative -->
@@ -1408,7 +1408,7 @@
         <rdfs:label xml:lang="en">R2i has derivative</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P130i_features_are_also_found_on"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R30i_was_produced_by -->
@@ -1417,7 +1417,7 @@
         <rdfs:label xml:lang="en">R30i was produced by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P108i_was_produced_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R31i_has_reproduction -->
@@ -1426,7 +1426,7 @@
         <rdfs:label xml:lang="en">R31i has reproduction</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P130i_features_are_also_found_on"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R32i_warrants -->
@@ -1435,7 +1435,7 @@
         <rdfs:label xml:lang="en">R32i warrants</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R35i_specifies -->
@@ -1444,7 +1444,7 @@
         <rdfs:label xml:lang="en">R35i specifies</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P148i_is_component_of"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R37i_is_stated_as_nomen_in -->
@@ -1453,7 +1453,7 @@
         <rdfs:label xml:lang="en">R37i is stated as nomen in</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R39i_is_target_audience_in -->
@@ -1462,7 +1462,7 @@
         <rdfs:label xml:lang="en">R39i is target audience in</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R3i_realises -->
@@ -1471,7 +1471,7 @@
         <rdfs:label xml:lang="en">R3i realises</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P130i_features_are_also_found_on"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R40i_is_representative_expression_for -->
@@ -1480,7 +1480,7 @@
         <rdfs:label xml:lang="en">R40i is representative expression for</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R3i_realises"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R41i_is_representative_manifestation_product_type_for -->
@@ -1489,7 +1489,7 @@
         <rdfs:label xml:lang="en">R41i is representative manifestation product type for</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R4i_comprises_carriers_of"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R42i_has_representative_manifestation_singleton -->
@@ -1498,7 +1498,7 @@
         <rdfs:label xml:lang="en">R42i has representative manifestation singleton</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P128i_is_carried_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R43i_performed -->
@@ -1507,7 +1507,7 @@
         <rdfs:label xml:lang="en">R43i performed</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P14i_performed"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R44i_performed -->
@@ -1516,7 +1516,7 @@
         <rdfs:label xml:lang="en">R44i performed</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P14i_performed"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R45i_was_assigned_by -->
@@ -1525,7 +1525,7 @@
         <rdfs:label xml:lang="en">R45i was assigned by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P140i_was_attributed_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R46_assigned -->
@@ -1533,7 +1533,7 @@
     <rdf:Description rdf:about="http://erlangen-crm.org/efrbroo/R46_assigned">
         <rdfs:label xml:lang="en">R46 assigned</rdfs:label>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R46i_was_assigned_by -->
@@ -1541,7 +1541,7 @@
     <rdf:Description rdf:about="http://erlangen-crm.org/efrbroo/R46i_was_assigned_by">
         <rdfs:label xml:lang="en">R46i was assigned by</rdfs:label>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R48i_was_assigned_by -->
@@ -1550,7 +1550,7 @@
         <rdfs:label xml:lang="en">R48i was assigned by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P140i_was_attributed_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R49i_was_assigned_by -->
@@ -1559,7 +1559,7 @@
         <rdfs:label xml:lang="en">R49i was assigned by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P141i_was_assigned_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R4i_comprises_carriers_of -->
@@ -1568,7 +1568,7 @@
         <rdfs:label xml:lang="en">R4i comprises carriers of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P128_carries"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R50i_was_assigned_by -->
@@ -1577,7 +1577,7 @@
         <rdfs:label xml:lang="en">R50i was assigned by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P140i_was_attributed_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R51i_was_assigned_by -->
@@ -1586,7 +1586,7 @@
         <rdfs:label xml:lang="en">R51i was assigned by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P141i_was_assigned_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R52i_was_the_rule_used_in -->
@@ -1595,7 +1595,7 @@
         <rdfs:label xml:lang="en">R52i was the rule used in</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P33i_was_used_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R53i_was_assigned_by -->
@@ -1604,7 +1604,7 @@
         <rdfs:label xml:lang="en">R53i was assigned by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P141i_was_assigned_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R54i_is_language_of_nomen_in -->
@@ -1613,7 +1613,7 @@
         <rdfs:label xml:lang="en">R54i is language of nomen in</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R55i_is_nomen_form_in -->
@@ -1622,7 +1622,7 @@
         <rdfs:label xml:lang="en">R55i is nomen form in</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P67i_is_referred_to_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R56i_is_related_use_for -->
@@ -1631,7 +1631,7 @@
         <rdfs:label xml:lang="en">R56i is related use for</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P69i_is_associated_with"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R59i_was_typical_subject_of -->
@@ -1640,7 +1640,7 @@
         <rdfs:label xml:lang="en">R59i was typical subject of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P94i_was_created_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R5i_is_component_of -->
@@ -1649,7 +1649,7 @@
         <rdfs:label xml:lang="en">R5i is component of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P148i_is_component_of"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R63i_was_named_by -->
@@ -1658,7 +1658,7 @@
         <rdfs:label xml:lang="en">R63i was named by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P140i_was_attributed_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R64i_was_name_used_by -->
@@ -1667,7 +1667,7 @@
         <rdfs:label xml:lang="en">R64i was name used by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P16i_was_used_for"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R66i_had_a_performed_version_through -->
@@ -1676,7 +1676,7 @@
         <rdfs:label xml:lang="en">R66i had a performed version through</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P16i_was_used_for"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R6i_is_carried_by -->
@@ -1685,7 +1685,7 @@
         <rdfs:label xml:lang="en">R6i is carried by</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P128i_is_carried_by"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R7i_has_example -->
@@ -1694,7 +1694,7 @@
         <rdfs:label xml:lang="en">R7i has example</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P2i_is_type_of"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R8i_forms_part_of -->
@@ -1703,7 +1703,7 @@
         <rdfs:label xml:lang="en">R8i forms part of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/current/P106i_forms_part_of"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/R9i_realises -->
@@ -1712,10 +1712,10 @@
         <rdfs:label xml:lang="en">R9i realises</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/efrbroo/R3i_realises"/>
     </rdf:Description>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -1723,7 +1723,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M10_Catalogue_Name -->
@@ -1732,7 +1732,7 @@
         <rdfs:label xml:lang="en">M10 Catalogue Name</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E90_Symbolic_Object"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M11_Catalogue_Number -->
@@ -1741,7 +1741,7 @@
         <rdfs:label xml:lang="en">M11 Catalogue Number</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E90_Symbolic_Object"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M12_Opus_Number -->
@@ -1750,7 +1750,7 @@
         <rdfs:label xml:lang="en">M12 Opus Number</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E90_Symbolic_Object"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M13_Opus_Subnumber -->
@@ -1759,7 +1759,7 @@
         <rdfs:label xml:lang="en">M13 Opus Subnumber</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E90_Symbolic_Object"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M14_Medium_Of_Performance -->
@@ -1769,7 +1769,7 @@
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E55_Type"/>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E58_Measurement_Unit"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M15_Dedication -->
@@ -1778,7 +1778,7 @@
         <rdfs:label xml:lang="en">M15 Dedication</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E33_Linguistic_Object"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M16_Maintenance -->
@@ -1787,7 +1787,7 @@
         <rdfs:label xml:lang="en">M16 Maintenance</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E11_Modification"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M17_Controlled_Access_Point_Creator -->
@@ -1800,7 +1800,7 @@
         <rdfs:comment xml:lang="fr">Scope note:
 Sous-classe de F50 Controlled Access Point, cette classe en reprend les caractéristiques, limitées au « créateur » de l’œuvre.</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M18_Controlled_Access_Point_Denomination -->
@@ -1813,7 +1813,7 @@ Sous-classe de F50 Controlled Access Point, cette classe en reprend les caracté
         <rdfs:comment xml:lang="fr">Scope note:
 Sous-classe de F50 Controlled Access Point, cette classe en reprend les caractéristiques, limitées à la « dénomination » de l’œuvre. La dénomination peut être un titre significatif (« Le Sacre du Printemps »), ou un titre composé (« Sonates. Piano. Opus 27 no 2. Do dièse mineur.”)</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M19_Style -->
@@ -1822,7 +1822,7 @@ Sous-classe de F50 Controlled Access Point, cette classe en reprend les caracté
         <rdfs:label xml:lang="en">M19 Style</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E55_Type"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M1_Catalogue_Statement -->
@@ -1840,7 +1840,7 @@ La Sonate pour Clavier en Ut majeur de Wilhelm Friedemann Bach identifiée BR A1
 Cette classe permet de décrire, lorsqu’elles existent, les références de catalogue de l’œuvre musicale. Par catalogue, on comprend tous les catalogues thématiques à proprement parler (donc à l’exclusion des numéros d’opus) ainsi que les classifications spécifiques telles que WoO ou Anh.
 Selon le niveau de granularité initial, elle est décrite par une simple chaîne de caractères, ou par les objets symboliques M10 Catalogue Name et M11 Catalogue Number qui la composent. La classe M10 Catalogue Name peut-être documentée via la propriété p70i is documented in.</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M20_Music_Group_Formation -->
@@ -1849,7 +1849,7 @@ Selon le niveau de granularité initial, elle est décrite par une simple chaîn
         <rdfs:label xml:lang="en">M20 Music Group Formation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E55_Type"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M21_Description_Tag -->
@@ -1858,7 +1858,7 @@ Selon le niveau de granularité initial, elle est décrite par une simple chaîn
         <rdfs:label xml:lang="en">M21 Description Tag</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E55_Type"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M22_Mode -->
@@ -1867,7 +1867,7 @@ Selon le niveau de granularité initial, elle est décrite par une simple chaîn
         <rdfs:label xml:lang="en">M22 Mode</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E55_Type"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M23_Casting_Detail -->
@@ -1880,7 +1880,7 @@ La Sonate pour piano opus 27, no 2 de Beethoven (F22) U13 has intended casting M
         <rdfs:comment xml:lang="fr">Scope note:
 Cette classe décrit un détail de la distribution prévue par le compositeur, par exemple une sonate pour violon et piano est décrite par deux « composantes » M23 qui sont le violon et le piano. Elle est donc obligatoirement associée à la classe M6 Intended Casting dont elle détaille les composantes. Ces composantes comprennent notamment le ou les medium of performance prévus par le compositeur, l’éventuel rôle soliste du medium of performance, le personnage interprété (par exemple dans un opéra), la tessiture précise.</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M24_Track -->
@@ -1889,7 +1889,7 @@ Cette classe décrit un détail de la distribution prévue par le compositeur, p
         <rdfs:label xml:lang="en">M24 Track</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M25_Foreseen_Activity -->
@@ -1898,7 +1898,7 @@ Cette classe décrit un détail de la distribution prévue par le compositeur, p
         <rdfs:label xml:lang="en">M25 Foreseen Activity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E29_Design_or_Procedure"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M26_Foreseen_Performance -->
@@ -1907,7 +1907,7 @@ Cette classe décrit un détail de la distribution prévue par le compositeur, p
         <rdfs:label xml:lang="en">M26 Foreseen Performance</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E29_Design_or_Procedure"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M27_Foreseen_Individual_Performance -->
@@ -1916,7 +1916,7 @@ Cette classe décrit un détail de la distribution prévue par le compositeur, p
         <rdfs:label xml:lang="en">M27 Foreseen Individual Performance</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://data.doremus.org/ontology#M26_Foreseen_Performance"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M28_Individual_Performance -->
@@ -1925,7 +1925,7 @@ Cette classe décrit un détail de la distribution prévue par le compositeur, p
         <rdfs:label xml:lang="en">M28 Individual Performance</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/efrbroo/F31_Performance"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M29_Editing -->
@@ -1934,7 +1934,7 @@ Cette classe décrit un détail de la distribution prévue par le compositeur, p
         <rdfs:label xml:lang="en">M29 Editing</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/efrbroo/F28_Expression_Creation"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M2_Opus_Statement -->
@@ -1943,7 +1943,7 @@ Cette classe décrit un détail de la distribution prévue par le compositeur, p
         <rdfs:label xml:lang="en">M2 Opus Statement</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E41_Appellation"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M30_Tessitura -->
@@ -1952,7 +1952,7 @@ Cette classe décrit un détail de la distribution prévue par le compositeur, p
         <rdfs:label xml:lang="en">M30 Tessitura</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E55_Type"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M35_Cast_Medium_Of_Performance -->
@@ -1961,7 +1961,7 @@ Cette classe décrit un détail de la distribution prévue par le compositeur, p
         <rdfs:label xml:lang="en">M35 Cast Medium Of Performance</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E54_Dimension"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M37_Scale -->
@@ -1971,7 +1971,7 @@ Cette classe décrit un détail de la distribution prévue par le compositeur, p
         <rdfs:label xml:lang="fr">M37 Gamme</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E55_Type"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M38_Rhythmic_Pattern -->
@@ -1981,7 +1981,7 @@ Cette classe décrit un détail de la distribution prévue par le compositeur, p
         <rdfs:label xml:lang="fr">M38 Figure Rythmique</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E55_Type"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M39_Editing_Work -->
@@ -1990,7 +1990,7 @@ Cette classe décrit un détail de la distribution prévue par le compositeur, p
         <rdfs:label xml:lang="en">M39 Editing Work</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/efrbroo/F1_Work"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M3_Order_Number -->
@@ -1999,7 +1999,7 @@ Cette classe décrit un détail de la distribution prévue par le compositeur, p
         <rdfs:label xml:lang="en">M3 Order Number</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E41_Appellation"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M40_Context -->
@@ -2009,7 +2009,7 @@ Cette classe décrit un détail de la distribution prévue par le compositeur, p
         <rdfs:label xml:lang="fr">M40 Contexte</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E33_Linguistic_Object"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M4_Key -->
@@ -2023,7 +2023,7 @@ Le Concerto pour piano et orchestre en si bémol majeur No 2, Op. 19 de Beethove
 Cette classe décrit la tonalité de l’œuvre.
 Les tonalités sont souvent listées sous forme de référentiels multilingues, c’est pourquoi la classe M4 Key est liée à la classe M7 Linguistic Appellation.</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M5_Genre -->
@@ -2032,7 +2032,7 @@ Les tonalités sont souvent listées sous forme de référentiels multilingues, 
         <rdfs:label xml:lang="en">M5 Genre</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E55_Type"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M6_Intended_Casting -->
@@ -2046,7 +2046,7 @@ La Sonate pour piano opus 27, no 2 de Beethoven (F22) U13 has intended casting M
 Cette classe permet de décrire les « medium of performance » d’une œuvre, c’est-à-dire les instruments, machines, exécutants autres que musiciens (danseurs, acteurs, récitants,…) pour lesquels l’œuvre a été composée. Elle décrit donc l’intention du compositeur. M6 Casting est une « classe chapeau » qui représente la globalité de la distribution instrumentale et/ou vocale. Le détail de cette distribution est décrit via la classe M23 Casting Detail.
 Dans le cas de versions alternatives, on donnera deux M6 Casting différents pour la même expression, et l’alternative sera spécifiée par une propriété U25 alternate casting.</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M7_Linguistic_Appellation -->
@@ -2057,7 +2057,7 @@ Dans le cas de versions alternatives, on donnera deux M6 Casting différents pou
         <rdfs:comment xml:lang="fr">Scope note:
 Cette classe permet de décrire une appellation et ses composantes linguistiques. Elle comprend donc les appellations originales et les traductions de ces appellations.</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M8_Intended_Tempo -->
@@ -2066,7 +2066,7 @@ Cette classe permet de décrire une appellation et ses composantes linguistiques
         <rdfs:label xml:lang="en">M8 Intended Tempo</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E29_Design_or_Procedure"/>
     </owl:Class>
-    
+
 
 
     <!-- http://data.doremus.org/ontology#M9_Derivation_Type -->
@@ -2077,25 +2077,25 @@ Cette classe permet de décrire une appellation et ses composantes linguistiques
         <rdfs:comment xml:lang="en">Examples :</rdfs:comment>
         <rdfs:comment xml:lang="en">Scope note :</rdfs:comment>
     </owl:Class>
-    
 
 
-    <!-- http://data.doremus.org/ontology#M31_Actor&apos;s_Function -->
 
-    <owl:Class rdf:about="http://data.doremus.org/ontology#M31_Actor&apos;s_Function">
+    <!-- http://data.doremus.org/ontology#M31_Actor_Function -->
+
+    <owl:Class rdf:about="http://data.doremus.org/ontology#M31_Actor_Function">
         <rdfs:label xml:lang="en">M31 Actor&apos;s Function</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E55_Type"/>
     </owl:Class>
-    
 
 
-    <!-- http://data.doremus.org/ontology#M32_Actor&apos;s_Responsibility -->
 
-    <owl:Class rdf:about="http://data.doremus.org/ontology#M32_Actor&apos;s_Responsibility">
+    <!-- http://data.doremus.org/ontology#M32_Actor_Responsibility -->
+
+    <owl:Class rdf:about="http://data.doremus.org/ontology#M32_Actor_Responsibility">
         <rdfs:label xml:lang="en">M32 Actor&apos;s Responsibility</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E55_Type"/>
     </owl:Class>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/E20_Biological_Object -->
@@ -2104,7 +2104,7 @@ Cette classe permet de décrire une appellation et ses composantes linguistiques
         <rdfs:label xml:lang="en">E20 Biological Object</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E19_Physical_Object"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/current/E58_Measurement_Unit -->
@@ -2113,7 +2113,7 @@ Cette classe permet de décrire une appellation et ses composantes linguistiques
         <rdfs:label xml:lang="en">E58 Measurement Unit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E55_Type"/>
     </owl:Class>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/F10_Person -->
@@ -2122,7 +2122,7 @@ Cette classe permet de décrire une appellation et ses composantes linguistiques
         <rdfs:label xml:lang="en">F10 Person</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E39_Actor"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://erlangen-crm.org/efrbroo/F40_Identifier_Assignment -->
@@ -2131,10 +2131,10 @@ Cette classe permet de décrire une appellation et ses composantes linguistiques
         <rdfs:label xml:lang="en">F40 Identifier Assignment</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E13_Attribute_Assignment"/>
     </rdf:Description>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotations
@@ -2150,4 +2150,3 @@ Cette classe permet de décrire une appellation et ses composantes linguistiques
 
 
 <!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
-
