@@ -283,213 +283,6 @@ mus:U9i_is_character_specified_by a owl:ObjectProperty ;
     rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
     owl:inverseOf mus:U9_specifies_character .
 
-ecrm:E20_Biological_Object rdfs:label "E20 Biological Object"@en ;
-    rdfs:subClassOf ecrm:E19_Physical_Object .
-
-ecrm:E77_Persistent_Item rdfs:label "E77 Persistent Item"@en .
-
-ecrm:P100i_died_in rdfs:label "P100i died in"@en ;
-    rdfs:subPropertyOf ecrm:P93i_was_taken_out_of_existence_by .
-
-ecrm:P102i_is_title_of rdfs:label "P102i is title of"@en ;
-    rdfs:subPropertyOf ecrm:P1i_identifies .
-
-ecrm:P129i_is_subject_of rdfs:label "P129i is subject of"@en ;
-    rdfs:subPropertyOf ecrm:P67i_is_referred_to_by .
-
-ecrm:P131i_identifies rdfs:label "P131i identifies"@en ;
-    rdfs:subPropertyOf ecrm:P1i_identifies .
-
-ecrm:P138i_has_representation rdfs:label "P138i has representation"@en ;
-    rdfs:subPropertyOf ecrm:P67i_is_referred_to_by .
-
-ecrm:P142i_was_used_in rdfs:label "P142i was used in"@en ;
-    rdfs:subPropertyOf ecrm:P16i_was_used_for .
-
-ecrm:P151i_participated_in rdfs:label "P151i participated in"@en ;
-    rdfs:subPropertyOf ecrm:P11i_participated_in .
-
-ecrm:P37_assigned rdfs:label "P37 assigned"@en ;
-    owl:equivalentProperty efrbroo:R46_assigned .
-
-ecrm:P37i_was_assigned_by rdfs:label "P37i was assigned by"@en ;
-    rdfs:subPropertyOf ecrm:P141i_was_assigned_by ;
-    owl:equivalentProperty efrbroo:R46i_was_assigned_by .
-
-ecrm:P50i_is_current_keeper_of rdfs:label "P50i is current keeper of"@en ;
-    rdfs:subPropertyOf ecrm:P49i_is_former_or_current_keeper_of .
-
-ecrm:P65i_is_shown_by rdfs:label "P65i is shown by"@en ;
-    rdfs:subPropertyOf ecrm:P128i_is_carried_by .
-
-ecrm:P71i_is_listed_in rdfs:label "P71i is listed in"@en ;
-    rdfs:subPropertyOf ecrm:P67i_is_referred_to_by .
-
-ecrm:P78i_identifies rdfs:label "P78i identifies"@en ;
-    rdfs:subPropertyOf ecrm:P1i_identifies .
-
-ecrm:P87i_identifies rdfs:label "P87i identifies"@en ;
-    rdfs:subPropertyOf ecrm:P1i_identifies .
-
-ecrm:P92_brought_into_existence rdfs:label "P92 brought into existence"@en ;
-    rdfs:subPropertyOf ecrm:P12_occurred_in_the_presence_of .
-
-ecrm:P95i_was_formed_by rdfs:label "P95i was formed by"@en ;
-    rdfs:subPropertyOf ecrm:P92i_was_brought_into_existence_by .
-
-ecrm:P98i_was_born rdfs:label "P98i was born"@en ;
-    rdfs:subPropertyOf ecrm:P92i_was_brought_into_existence_by .
-
-efrbroo:F10_Person rdfs:label "F10 Person"@en ;
-    rdfs:subClassOf ecrm:E39_Actor .
-
-efrbroo:F40_Identifier_Assignment rdfs:label "F40 Identifier Assignment"@en ;
-    rdfs:subClassOf ecrm:E13_Attribute_Assignment .
-
-efrbroo:R10i_is_member_of rdfs:label "R10i is member of"@en ;
-    rdfs:subPropertyOf ecrm:P148i_is_component_of .
-
-efrbroo:R12i_realises rdfs:label "R12i realises"@en ;
-    rdfs:subPropertyOf efrbroo:R3i_realises .
-
-efrbroo:R13i_realises rdfs:label "R13i realises"@en ;
-    rdfs:subPropertyOf efrbroo:R3i_realises .
-
-efrbroo:R15i_is_fragment_of rdfs:label "R15i is fragment of"@en ;
-    rdfs:subPropertyOf ecrm:P106i_forms_part_of .
-
-efrbroo:R16i_was_initiated_by rdfs:label "R16i was initiated by"@en ;
-    rdfs:subPropertyOf ecrm:P94i_was_created_by .
-
-efrbroo:R18i_was_created_by rdfs:label "R18i was created by"@en ;
-    rdfs:subPropertyOf ecrm:P108i_was_produced_by .
-
-efrbroo:R1i_has_successor rdfs:label "R1i has successor"@en ;
-    rdfs:subPropertyOf ecrm:P130i_features_are_also_found_on .
-
-efrbroo:R20i_was_recorded_through rdfs:label "R20i was recorded through"@en ;
-    rdfs:subPropertyOf ecrm:P15i_influenced .
-
-efrbroo:R21i_was_created_through rdfs:label "R21i was created through"@en ;
-    rdfs:subPropertyOf efrbroo:R17i_was_created_by .
-
-efrbroo:R22i_was_realised_through rdfs:label "R22i was realised through"@en ;
-    rdfs:subPropertyOf efrbroo:R19i_was_realised_through .
-
-efrbroo:R23i_was_realised_through rdfs:label "R23i was realised through"@en ;
-    rdfs:subPropertyOf efrbroo:R19i_was_realised_through .
-
-efrbroo:R24i_was_created_through rdfs:label "R24i was created through"@en ;
-    rdfs:subPropertyOf efrbroo:R17i_was_created_by .
-
-efrbroo:R25i_was_performed_in rdfs:label "R25i was performed in"@en ;
-    rdfs:subPropertyOf ecrm:P33i_was_used_by .
-
-efrbroo:R26i_was_produced_by rdfs:label "R26i was produced by"@en ;
-    rdfs:subPropertyOf ecrm:P108i_was_produced_by .
-
-efrbroo:R27i_was_used_by rdfs:label "R27i was used by"@en ;
-    rdfs:subPropertyOf ecrm:P16i_was_used_for .
-
-efrbroo:R28i_was_produced_by rdfs:label "R28i was produced by"@en ;
-    rdfs:subPropertyOf ecrm:P108i_was_produced_by .
-
-efrbroo:R29i_was_reproduced_by rdfs:label "R29i was reproduced by"@en ;
-    rdfs:subPropertyOf ecrm:P16i_was_used_for .
-
-efrbroo:R2i_has_derivative rdfs:label "R2i has derivative"@en ;
-    rdfs:subPropertyOf ecrm:P130i_features_are_also_found_on .
-
-efrbroo:R30i_was_produced_by rdfs:label "R30i was produced by"@en ;
-    rdfs:subPropertyOf ecrm:P108i_was_produced_by .
-
-efrbroo:R31i_has_reproduction rdfs:label "R31i has reproduction"@en ;
-    rdfs:subPropertyOf ecrm:P130i_features_are_also_found_on .
-
-efrbroo:R32i_warrants rdfs:label "R32i warrants"@en ;
-    rdfs:subPropertyOf ecrm:P67i_is_referred_to_by .
-
-efrbroo:R35i_specifies rdfs:label "R35i specifies"@en ;
-    rdfs:subPropertyOf ecrm:P148i_is_component_of .
-
-efrbroo:R37i_is_stated_as_nomen_in rdfs:label "R37i is stated as nomen in"@en ;
-    rdfs:subPropertyOf ecrm:P67i_is_referred_to_by .
-
-efrbroo:R39i_is_target_audience_in rdfs:label "R39i is target audience in"@en ;
-    rdfs:subPropertyOf ecrm:P67i_is_referred_to_by .
-
-efrbroo:R40i_is_representative_expression_for rdfs:label "R40i is representative expression for"@en ;
-    rdfs:subPropertyOf efrbroo:R3i_realises .
-
-efrbroo:R41i_is_representative_manifestation_product_type_for rdfs:label "R41i is representative manifestation product type for"@en ;
-    rdfs:subPropertyOf efrbroo:R4i_comprises_carriers_of .
-
-efrbroo:R42i_has_representative_manifestation_singleton rdfs:label "R42i has representative manifestation singleton"@en ;
-    rdfs:subPropertyOf ecrm:P128i_is_carried_by .
-
-efrbroo:R43i_performed rdfs:label "R43i performed"@en ;
-    rdfs:subPropertyOf ecrm:P14i_performed .
-
-efrbroo:R44i_performed rdfs:label "R44i performed"@en ;
-    rdfs:subPropertyOf ecrm:P14i_performed .
-
-efrbroo:R45i_was_assigned_by rdfs:label "R45i was assigned by"@en ;
-    rdfs:subPropertyOf ecrm:P140i_was_attributed_by .
-
-efrbroo:R48i_was_assigned_by rdfs:label "R48i was assigned by"@en ;
-    rdfs:subPropertyOf ecrm:P140i_was_attributed_by .
-
-efrbroo:R49i_was_assigned_by rdfs:label "R49i was assigned by"@en ;
-    rdfs:subPropertyOf ecrm:P141i_was_assigned_by .
-
-efrbroo:R50i_was_assigned_by rdfs:label "R50i was assigned by"@en ;
-    rdfs:subPropertyOf ecrm:P140i_was_attributed_by .
-
-efrbroo:R51i_was_assigned_by rdfs:label "R51i was assigned by"@en ;
-    rdfs:subPropertyOf ecrm:P141i_was_assigned_by .
-
-efrbroo:R52i_was_the_rule_used_in rdfs:label "R52i was the rule used in"@en ;
-    rdfs:subPropertyOf ecrm:P33i_was_used_by .
-
-efrbroo:R53i_was_assigned_by rdfs:label "R53i was assigned by"@en ;
-    rdfs:subPropertyOf ecrm:P141i_was_assigned_by .
-
-efrbroo:R54i_is_language_of_nomen_in rdfs:label "R54i is language of nomen in"@en ;
-    rdfs:subPropertyOf ecrm:P67i_is_referred_to_by .
-
-efrbroo:R55i_is_nomen_form_in rdfs:label "R55i is nomen form in"@en ;
-    rdfs:subPropertyOf ecrm:P67i_is_referred_to_by .
-
-efrbroo:R56i_is_related_use_for rdfs:label "R56i is related use for"@en ;
-    rdfs:subPropertyOf ecrm:P69i_is_associated_with .
-
-efrbroo:R59i_was_typical_subject_of rdfs:label "R59i was typical subject of"@en ;
-    rdfs:subPropertyOf ecrm:P94i_was_created_by .
-
-efrbroo:R5i_is_component_of rdfs:label "R5i is component of"@en ;
-    rdfs:subPropertyOf ecrm:P148i_is_component_of .
-
-efrbroo:R63i_was_named_by rdfs:label "R63i was named by"@en ;
-    rdfs:subPropertyOf ecrm:P140i_was_attributed_by .
-
-efrbroo:R64i_was_name_used_by rdfs:label "R64i was name used by"@en ;
-    rdfs:subPropertyOf ecrm:P16i_was_used_for .
-
-efrbroo:R66i_had_a_performed_version_through rdfs:label "R66i had a performed version through"@en ;
-    rdfs:subPropertyOf ecrm:P16i_was_used_for .
-
-efrbroo:R6i_is_carried_by rdfs:label "R6i is carried by"@en ;
-    rdfs:subPropertyOf ecrm:P128i_is_carried_by .
-
-efrbroo:R7i_has_example rdfs:label "R7i has example"@en ;
-    rdfs:subPropertyOf ecrm:P2i_is_type_of .
-
-efrbroo:R8i_forms_part_of rdfs:label "R8i forms part of"@en ;
-    rdfs:subPropertyOf ecrm:P106i_forms_part_of .
-
-efrbroo:R9i_realises rdfs:label "R9i realises"@en ;
-    rdfs:subPropertyOf efrbroo:R3i_realises .
-
 mus:M16_Maintenance a owl:Class ;
     rdfs:label "M16 Maintenance"@en ;
     rdfs:subClassOf ecrm:E11_Modification .
@@ -795,25 +588,6 @@ mus:U9_specifies_character a owl:ObjectProperty ;
     rdfs:range efrbroo:F38_Character ;
     rdfs:subPropertyOf ecrm:P67_refers_to .
 
-ecrm:E58_Measurement_Unit a owl:Class ;
-    rdfs:label "E58 Measurement Unit"@en ;
-    rdfs:subClassOf ecrm:E55_Type .
-
-ecrm:P11_had_participant rdfs:label "P11 had participant"@en .
-
-ecrm:P165i_is_incorporated_in rdfs:label "P165i is incorporated in"@en ;
-    rdfs:subPropertyOf ecrm:P106i_forms_part_of .
-
-ecrm:P93i_was_taken_out_of_existence_by rdfs:label "P93i was taken out of existence by"@en ;
-    rdfs:subPropertyOf ecrm:P12i_was_present_at .
-
-efrbroo:R46_assigned rdfs:label "R46 assigned"@en .
-
-efrbroo:R46i_was_assigned_by rdfs:label "R46i was assigned by"@en .
-
-efrbroo:R4i_comprises_carriers_of rdfs:label "R4i comprises carriers of"@en ;
-    rdfs:subPropertyOf ecrm:P128_carries .
-
 mus:M10_Catalogue_Name a owl:Class ;
     rdfs:label "M10 Catalogue Name"@en ;
     rdfs:subClassOf ecrm:E90_Symbolic_Object .
@@ -873,21 +647,6 @@ mus:M40_Context a owl:Class ;
         "M40 Contexte"@fr ;
     rdfs:subClassOf ecrm:E33_Linguistic_Object .
 
-ecrm:P11i_participated_in a owl:ObjectProperty ;
-    rdfs:label "P11i participated in"@en ;
-    rdfs:domain ecrm:E39_Actor ;
-    rdfs:range ecrm:E5_Event ;
-    owl:inverseOf ecrm:P11_had_participant .
-
-ecrm:P14i_performed rdfs:label "P14i performed"@en ;
-    rdfs:subPropertyOf ecrm:P11i_participated_in .
-
-ecrm:P31i_was_modified_by rdfs:label "P31i was modified by"@en ;
-    rdfs:subPropertyOf ecrm:P12i_was_present_at .
-
-ecrm:P33i_was_used_by rdfs:label "P33i was used by"@en ;
-    rdfs:subPropertyOf ecrm:P16i_was_used_for .
-
 mus:M27_Foreseen_Individual_Performance a owl:Class ;
     rdfs:label "M27 Foreseen Individual Performance"@en ;
     rdfs:subClassOf mus:M26_Foreseen_Performance .
@@ -895,18 +654,6 @@ mus:M27_Foreseen_Individual_Performance a owl:Class ;
 mus:M29_Editing a owl:Class ;
     rdfs:label "M29 Editing"@en ;
     rdfs:subClassOf efrbroo:F28_Expression_Creation .
-
-ecrm:P128i_is_carried_by rdfs:label "P128i is carried by"@en ;
-    rdfs:subPropertyOf ecrm:P130i_features_are_also_found_on .
-
-ecrm:P94i_was_created_by rdfs:label "P94i was created by"@en ;
-    rdfs:subPropertyOf ecrm:P92i_was_brought_into_existence_by .
-
-efrbroo:R17i_was_created_by rdfs:label "R17i was created by"@en ;
-    rdfs:subPropertyOf ecrm:P94i_was_created_by .
-
-efrbroo:R19i_was_realised_through rdfs:label "R19i was realised through"@en ;
-    rdfs:subPropertyOf ecrm:P16i_was_used_for .
 
 mus:M15_Dedication a owl:Class ;
     rdfs:label "M15 Dedication"@en ;
@@ -927,17 +674,6 @@ Cette classe permet de décrire les « medium of performance » d’une œuvre, 
 Dans le cas de versions alternatives, on donnera deux M6 Casting différents pour la même expression, et l’alternative sera spécifiée par une propriété U25 alternate casting."""@fr ;
     rdfs:subClassOf ecrm:E29_Design_or_Procedure .
 
-ecrm:P108i_was_produced_by rdfs:label "P108i was produced by"@en ;
-    rdfs:subPropertyOf ecrm:P31i_was_modified_by,
-        ecrm:P92i_was_brought_into_existence_by .
-
-ecrm:P92i_was_brought_into_existence_by a owl:ObjectProperty ;
-    rdfs:label "P92i was brought into existence by"@en ;
-    rdfs:subPropertyOf ecrm:P12i_was_present_at .
-
-efrbroo:R3i_realises rdfs:label "R3i realises"@en ;
-    rdfs:subPropertyOf ecrm:P130i_features_are_also_found_on .
-
 mus:M1_Catalogue_Statement a owl:Class ;
     rdfs:label "M1 Catalogue Statement"@en ;
     rdfs:comment """Exemples :
@@ -953,7 +689,3 @@ Selon le niveau de granularité initial, elle est décrite par une simple chaîn
 mus:M2_Opus_Statement a owl:Class ;
     rdfs:label "M2 Opus Statement"@en ;
     rdfs:subClassOf ecrm:E41_Appellation .
-
-ecrm:P16i_was_used_for rdfs:label "P16i was used for"@en ;
-    rdfs:subPropertyOf ecrm:P12i_was_present_at,
-        ecrm:P15i_influenced .
