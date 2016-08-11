@@ -11,7 +11,7 @@
 
 <http://data.doremus.org/ontology> a owl:Ontology ;
     owl:imports <http://erlangen-crm.org/efrbroo/> ;
-    dc:description "Doremus is an extension of the FRBRoo model for describing the music." ;
+    dc:description "DOREMUS is an extension of the FRBRoo model for describing the music." ;
     vann:preferredNamespacePrefix "mus" ;
     vann:preferredNamespaceUri "http://data.doremus.com/ontology#" ;
     owl:versionInfo "v0.1" .
