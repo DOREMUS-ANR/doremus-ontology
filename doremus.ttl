@@ -59,7 +59,7 @@ mus:M6_Intended_Casting a owl:Class ;
     rdfs:comment """Examples:
 La Sonate pour piano opus 27, no 2 de Beethoven (F22) U13 has intended casting M6 Intended Casting U23 has casting detail M23 Casting Detail U1 has intended medium of performance M35 Cast Medium of Performance U39 has medium of performance M14 Medium of Performance { piano } and P90 has value { 1 }."""@fr,"""Scope note:
 Cette classe permet de décrire les « medium of performance » d’une œuvre, c’est-à-dire les instruments, machines, exécutants autres que musiciens (danseurs, acteurs, récitants,…) pour lesquels l’œuvre a été composée. Elle décrit donc l’intention du compositeur. M6 Casting est une « classe chapeau » qui représente la globalité de la distribution instrumentale et/ou vocale. Le détail de cette distribution est décrit via la classe M23 Casting Detail.
-Dans le cas de versions alternatives, on donnera deux M6 Casting différents pour la même expression, et l’alternative sera spécifiée par une propriété U25 alternate casting."""@fr ;
+Dans le cas de versions alternatives, on donnera deux M6 Casting différents pour la même expression."""@fr ;
     rdfs:subClassOf ecrm:E29_Design_or_Procedure .
 
 mus:M7_Linguistic_Appellation a owl:Class ;
@@ -673,13 +673,6 @@ mus:U23i_is_casting_detail_of a owl:ObjectProperty ;
     rdfs:label "U23i is casting detail of"@en ;
     rdfs:subPropertyOf ecrm:P69i_is_associated_with ;
     owl:inverseOf mus:U23_has_casting_detail .
-
-mus:U25_alternate_casting a owl:ObjectProperty,
-        owl:SymmetricProperty ;
-    rdfs:label "U25 alternate casting"@en ;
-    rdfs:domain mus:M6_Intended_Casting ;
-    rdfs:range mus:M6_Intended_Casting ;
-    rdfs:subPropertyOf ecrm:P69_has_association_with .
 
 mus:U26i_was_maintained_by a owl:ObjectProperty ;
     rdfs:isDefinedBy <http://data.doremus.com/ontology#>;
