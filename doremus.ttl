@@ -241,33 +241,25 @@ mus:U17i_is_opus_statement_of rdf:type owl:ObjectProperty ;
 
 
 
-###  http://data.doremus.org/ontology#U18_used_medium_of_performance_of_type
+###  http://data.doremus.org/ontology#U18_has_rythmic_pattern
 
-mus:U18_used_medium_of_performance_of_type rdf:type owl:ObjectProperty ;
-                                           
-                                           rdfs:label "U18 used medium of performance of type"@en ;
-                                           
-                                           rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
-                                           
-                                           rdfs:range mus:M14_Medium_Of_Performance ;
-                                           
-                                           rdfs:domain mus:M28_Individual_Performance ;
-                                           
-                                           rdfs:subPropertyOf ecrm:P125_used_object_of_type .
+mus:U18_has_rythmic_pattern rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:range mus:M38_Rhythmic_Pattern ;
+                            
+                            rdfs:subPropertyOf ecrm:P2_has_type ;
+                            
+                            rdfs:domain efrbroo:F22_Self-Contained_Expression .
 
 
 
-###  http://data.doremus.org/ontology#U18i_medium_of_performance_was_used_in
+###  http://data.doremus.org/ontology#U18i_is_rythmic_pattern_of
 
-mus:U18i_medium_of_performance_was_used_in rdf:type owl:ObjectProperty ;
-                                           
-                                           rdfs:label "U18i medium of performance was used in"@en ;
-                                           
-                                           rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
-                                           
-                                           owl:inverseOf mus:U18_used_medium_of_performance_of_type ;
-                                           
-                                           rdfs:subPropertyOf ecrm:P125i_was_type_of_object_used_in .
+mus:U18i_is_rythmic_pattern_of rdf:type owl:ObjectProperty ;
+                               
+                               owl:inverseOf mus:U18_has_rythmic_pattern ;
+                               
+                               rdfs:subPropertyOf ecrm:P2i_is_type_of .
 
 
 
@@ -298,6 +290,28 @@ mus:U19i_is_style_of rdf:type owl:ObjectProperty ;
                      owl:inverseOf mus:U19_has_style ;
                      
                      rdfs:subPropertyOf ecrm:P2i_is_type_of .
+
+
+
+###  http://data.doremus.org/ontology#U1_used_medium_of_performance
+
+mus:U1_used_medium_of_performance rdf:type owl:ObjectProperty ;
+                                  
+                                  rdfs:range mus:M14_Medium_Of_Performance ;
+                                  
+                                  rdfs:domain mus:M28_Individual_Performance ;
+                                  
+                                  rdfs:subPropertyOf ecrm:P125_used_object_of_type .
+
+
+
+###  http://data.doremus.org/ontology#U1i_medium_of_performance_was_used_in
+
+mus:U1i_medium_of_performance_was_used_in rdf:type owl:ObjectProperty ;
+                                          
+                                          owl:inverseOf mus:U1_used_medium_of_performance ;
+                                          
+                                          rdfs:subPropertyOf ecrm:P125i_was_type_of_object_used_in .
 
 
 
@@ -1111,22 +1125,6 @@ mus:U4i_was_princeps_publication_of rdf:type owl:ObjectProperty ;
 
 
 
-###  http://data.doremus.org/ontology#U51_has_rhythmic_pattern
-
-mus:U51_has_rhythmic_pattern rdf:type owl:ObjectProperty ;
-                             
-                             rdfs:comment "U51 has rhythmic pattern"@en ;
-                             
-                             rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
-                             
-                             rdfs:range mus:M38_Rhythmic_Pattern ;
-                             
-                             rdfs:subPropertyOf ecrm:P2_has_type ;
-                             
-                             rdfs:domain efrbroo:F22_Self-Contained_Expression .
-
-
-
 ###  http://data.doremus.org/ontology#U51i_is_rhythmic_pattern_of
 
 mus:U51i_is_rhythmic_pattern_of rdf:type owl:ObjectProperty ;
@@ -1136,8 +1134,6 @@ mus:U51i_is_rhythmic_pattern_of rdf:type owl:ObjectProperty ;
                                 rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
                                 
                                 rdfs:domain mus:M38_Rhythmic_Pattern ;
-                                
-                                owl:inverseOf mus:U51_has_rhythmic_pattern ;
                                 
                                 rdfs:subPropertyOf ecrm:P2i_is_type_of ;
                                 
@@ -1292,6 +1288,25 @@ mus:U9i_is_character_specified_by rdf:type owl:ObjectProperty ;
                                   owl:inverseOf mus:U9_specifies_character ;
                                   
                                   rdfs:subPropertyOf ecrm:P67i_is_referred_to_by .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://data.doremus.org/ontology#U15_has_history
+
+mus:U15_has_history rdf:type owl:DatatypeProperty ;
+                    
+                    rdfs:subPropertyOf ecrm:P3_has_note ;
+                    
+                    rdfs:domain efrbroo:F22_Self-Contained_Expression .
 
 
 
