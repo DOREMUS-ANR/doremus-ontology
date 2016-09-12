@@ -121,63 +121,63 @@ mus:U12i_is_genre_of rdf:type owl:ObjectProperty ;
 
 
 
-###  http://data.doremus.org/ontology#U13_has_intended_casting
+###  http://data.doremus.org/ontology#U13_has_casting
 
-mus:U13_has_intended_casting rdf:type owl:ObjectProperty ;
-                             
-                             rdfs:label "U13 has intended casting"@en ;
-                             
-                             rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
-                             
-                             rdfs:range mus:M6_Intended_Casting ;
-                             
-                             rdfs:subPropertyOf ecrm:P67_refers_to ;
-                             
-                             rdfs:domain efrbroo:F22_Self-Contained_Expression .
-
-
-
-###  http://data.doremus.org/ontology#U13i_is_intended_casting_of
-
-mus:U13i_is_intended_casting_of rdf:type owl:ObjectProperty ;
-                                
-                                rdfs:label "U13i is intended casting of"@en ;
-                                
-                                rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
-                                
-                                owl:inverseOf mus:U13_has_intended_casting ;
-                                
-                                rdfs:subPropertyOf ecrm:P67i_is_referred_to_by .
+mus:U13_has_casting rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "U13 has intended casting"@en ;
+                    
+                    rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+                    
+                    rdfs:range mus:M6_Intended_Casting ;
+                    
+                    rdfs:subPropertyOf ecrm:P67_refers_to ;
+                    
+                    rdfs:domain efrbroo:F22_Self-Contained_Expression .
 
 
 
-###  http://data.doremus.org/ontology#U14_has_intended_tempo
+###  http://data.doremus.org/ontology#U13i_is_casting_of
 
-mus:U14_has_intended_tempo rdf:type owl:ObjectProperty ;
-                           
-                           rdfs:label "U14 has intended tempo"@en ;
-                           
-                           rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
-                           
-                           rdfs:range mus:M8_Intended_Tempo ;
-                           
-                           rdfs:subPropertyOf ecrm:P67_refers_to ;
-                           
-                           rdfs:domain efrbroo:F22_Self-Contained_Expression .
+mus:U13i_is_casting_of rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:label "U13i is intended casting of"@en ;
+                       
+                       rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+                       
+                       owl:inverseOf mus:U13_has_casting ;
+                       
+                       rdfs:subPropertyOf ecrm:P67i_is_referred_to_by .
 
 
 
-###  http://data.doremus.org/ontology#U14i_is_intended_tempo_of
+###  http://data.doremus.org/ontology#U14_has_tempo
 
-mus:U14i_is_intended_tempo_of rdf:type owl:ObjectProperty ;
-                              
-                              rdfs:label "U14i is intended tempo of"@en ;
-                              
-                              rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
-                              
-                              owl:inverseOf mus:U14_has_intended_tempo ;
-                              
-                              rdfs:subPropertyOf ecrm:P67i_is_referred_to_by .
+mus:U14_has_tempo rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:label "U14 has intended tempo"@en ;
+                  
+                  rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+                  
+                  rdfs:range mus:M8_Intended_Tempo ;
+                  
+                  rdfs:subPropertyOf ecrm:P67_refers_to ;
+                  
+                  rdfs:domain efrbroo:F22_Self-Contained_Expression .
+
+
+
+###  http://data.doremus.org/ontology#U14i_is_tempo_of
+
+mus:U14i_is_tempo_of rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:label "U14i is intended tempo of"@en ;
+                     
+                     rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+                     
+                     owl:inverseOf mus:U14_has_tempo ;
+                     
+                     rdfs:subPropertyOf ecrm:P67i_is_referred_to_by .
 
 
 
