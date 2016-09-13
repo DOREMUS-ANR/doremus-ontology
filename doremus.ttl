@@ -255,6 +255,36 @@ mus:U23i_is_casting_detail_of a owl:ObjectProperty ;
 	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
 	rdfs:label "U23i is casting detail of"@en .
 # 
+# http://data.doremus.org/ontology#U24_has_successor_in_order
+
+mus:U24_has_successor_in_order a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P130_shows_features_of ;
+	owl:inverseOf mus:U24i_is_successor_in_order_of ;
+	rdfs:domain ecrm:E89_Propositional_Object ;
+	rdfs:range ecrm:E89_Propositional_Object ;
+	rdfs:comment "scope note : this property allows for describing the succession order of propositional objects, e.g. of Tracks in a CD.
+This property is not equivalent to FRBRoo's R1_is_logical_successor_of since logical order and numerical order can differ (cf. Star Wars)"@en ;
+	rdfs:label "U24 has successor in order"@en .
+# 
+# http://data.doremus.org/ontology#U24i_is_successor_in_order_of
+
+mus:U24i_is_successor_in_order_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P130i_features_are_also_found_on .
+# 
+# http://data.doremus.org/ontology#U25_has_successor_in_time
+
+mus:U25_has_successor_in_time a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P130_shows_features_of ;
+	owl:inverseOf mus:U25i_is_successor_in_time_of ;
+	rdfs:domain ecrm:E89_Propositional_Object ;
+	rdfs:range ecrm:E89_Propositional_Object ;
+	rdfs:label "U25 has successor in time"@en .
+# 
+# http://data.doremus.org/ontology#U25i_is_successor_in_time_of
+
+mus:U25i_is_successor_in_time_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P130i_features_are_also_found_on .
+# 
 # http://data.doremus.org/ontology#U26_has_maintained
 
 mus:U26_has_maintained a owl:ObjectProperty ;
@@ -289,22 +319,20 @@ mus:U27i_character_was_performed_by a owl:ObjectProperty ;
 	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
 	rdfs:label "U27i character was performed by"@en .
 # 
-# http://data.doremus.org/ontology#U28_has_intended_tessitura
+# http://data.doremus.org/ontology#U28_has_tessitura
 
-mus:U28_has_intended_tessitura a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P67_refers_to ;
-	owl:inverseOf mus:U28i_is_intended_tessitura_of ;
-	rdfs:domain mus:M23_Casting_Detail ;
+mus:U28_has_tessitura a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2_has_type ;
+	owl:inverseOf mus:U28i_is_tessitura_of ;
+	rdfs:domain efrbroo:F38_Character ;
 	rdfs:range mus:M30_Tessitura ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
-	rdfs:label "U28 has intended tessitura"@en .
+	rdfs:comment "scope note: this property allows for describing the tessitura of a character, as can be drawn from the score."@en ;
+	rdfs:label "U28 has tessitura"@en .
 # 
-# http://data.doremus.org/ontology#U28i_is_intended_tessitura_of
+# http://data.doremus.org/ontology#U28i_is_tessitura_of
 
-mus:U28i_is_intended_tessitura_of a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
-	rdfs:label "U28i is intended tessitura of"@en .
+mus:U28i_is_tessitura_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2i_is_type_of .
 # 
 # http://data.doremus.org/ontology#U29_edited
 
