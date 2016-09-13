@@ -262,8 +262,8 @@ mus:U24_has_successor_in_order a owl:ObjectProperty ;
 	owl:inverseOf mus:U24i_is_successor_in_order_of ;
 	rdfs:domain ecrm:E89_Propositional_Object ;
 	rdfs:range ecrm:E89_Propositional_Object ;
-	rdfs:comment "scope note : this property allows for describing the succession order of propositional objects, e.g. of Tracks in a CD.
-This property is not equivalent to FRBRoo's R1_is_logical_successor_of since logical order and numerical order can differ (cf. Star Wars)"@en ;
+	rdfs:comment """scope note : this property allows for describing the succession order of propositional objects, e.g. of Tracks in a CD.
+This property is not equivalent to FRBRoo's R1_is_logical_successor_of since logical order and numerical order can differ (cf. Star Wars)"""@en ;
 	rdfs:label "U24 has successor in order"@en .
 # 
 # http://data.doremus.org/ontology#U24i_is_successor_in_order_of
@@ -956,6 +956,30 @@ mus:M32_Actor_Responsibility a owl:Class ;
 	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
 	rdfs:label "M32 Actor's Responsibility"@en .
 # 
+# http://data.doremus.org/ontology#M33_Intended_Characters
+
+mus:M33_Intended_Characters a owl:Class ;
+	rdfs:subClassOf ecrm:E29_Design_or_Procedure ;
+	rdfs:label "M33 Intended Characters"@en .
+# 
+# http://data.doremus.org/ontology#M34_Award_Assignment
+
+mus:M34_Award_Assignment a owl:Class ;
+	rdfs:subClassOf ecrm:E13_Attribute_Assignment ;
+	rdfs:label "M34 Award Assignment"@en .
+# 
+# http://data.doremus.org/ontology#M35_Publication_Expression_Assignment
+
+mus:M35_Publication_Expression_Assignment a owl:Class ;
+	rdfs:subClassOf ecrm:E13_Attribute_Assignment ;
+	rdfs:label "M35 Publication Expression Assignment"@en .
+# 
+# http://data.doremus.org/ontology#M36_Award
+
+mus:M36_Award a owl:Class ;
+	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
+	rdfs:label "M36 Award"@en .
+# 
 # http://data.doremus.org/ontology#M37_Scale
 
 mus:M37_Scale a owl:Class ;
@@ -990,6 +1014,23 @@ mus:M40_Context a owl:Class ;
 	rdfs:subClassOf ecrm:E33_Linguistic_Object ;
 	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
 	rdfs:label "M40 Context"@en , "M40 Contexte"@fr .
+# 
+# http://data.doremus.org/ontology#M42_Performed_Expression_Creation
+
+mus:M42_Performed_Expression_Creation a owl:Class ;
+	rdfs:subClassOf efrbroo:F28_Expression_Creation , efrbroo:F31_Performance .
+# 
+# http://data.doremus.org/ontology#M43_Performed_Expression
+
+mus:M43_Performed_Expression a owl:Class ;
+	rdfs:subClassOf efrbroo:F22_Self-Contained_Expression ;
+	rdfs:label "M43 Performed Expression"@en .
+# 
+# http://data.doremus.org/ontology#M44_Performed_Work
+
+mus:M44_Performed_Work a owl:Class ;
+	rdfs:subClassOf efrbroo:F14_Individual_Work ;
+	rdfs:label "M44 Performed Work"@en .
 # 
 # http://data.doremus.org/ontology#M4_Key
 
