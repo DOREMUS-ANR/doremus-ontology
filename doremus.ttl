@@ -15,7 +15,7 @@
 	owl:versionInfo "v0.1" ;
 	dc:description "DOREMUS is an extension of the FRBRoo model for describing the music." ;
 	vann:preferredNamespacePrefix "mus" ;
-	vann:preferredNamespaceUri "http://data.doremus.com/ontology#" .
+	vann:preferredNamespaceUri "http://data.doremus.org/ontology#" .
 #
 #
 # #################################################################
@@ -32,14 +32,14 @@ mus:U10_has_order_number a owl:ObjectProperty ;
 	owl:inverseOf mus:U10i_is_order_number_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M3_Order_Number ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U10 has order number"@en .
 #
 # http://data.doremus.org/ontology#U10i_is_order_number_of
 
 mus:U10i_is_order_number_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P1i_identifies ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U10i is order number of"@en .
 #
 # http://data.doremus.org/ontology#U11_has_key
@@ -49,14 +49,14 @@ mus:U11_has_key a owl:ObjectProperty ;
 	owl:inverseOf mus:U11i_is_key_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M4_Key ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U11 has key"@en .
 #
 # http://data.doremus.org/ontology#U11i_is_key_of
 
 mus:U11i_is_key_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U11i is key of"@en .
 #
 # http://data.doremus.org/ontology#U12_has_genre
@@ -66,14 +66,14 @@ mus:U12_has_genre a owl:ObjectProperty ;
 	owl:inverseOf mus:U12i_is_genre_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M5_Genre ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U12 has genre"@en .
 #
 # http://data.doremus.org/ontology#U12i_is_genre_of
 
 mus:U12i_is_genre_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U12 is genre of"@en .
 #
 # http://data.doremus.org/ontology#U13_has_casting
@@ -83,14 +83,14 @@ mus:U13_has_casting a owl:ObjectProperty ;
 	owl:inverseOf mus:U13i_is_casting_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M6_Intended_Casting ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U13 has intended casting"@en .
 #
 # http://data.doremus.org/ontology#U13i_is_casting_of
 
 mus:U13i_is_casting_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U13i is intended casting of"@en .
 #
 # http://data.doremus.org/ontology#U14_has_tempo
@@ -100,14 +100,14 @@ mus:U14_has_tempo a owl:ObjectProperty ;
 	owl:inverseOf mus:U14i_is_tempo_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M8_Intended_Tempo ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U14 has intended tempo"@en .
 #
 # http://data.doremus.org/ontology#U14i_is_tempo_of
 
 mus:U14i_is_tempo_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U14i is intended tempo of"@en .
 #
 # http://data.doremus.org/ontology#U16_has_catalogue_statement
@@ -117,14 +117,14 @@ mus:U16_has_catalogue_statement a owl:ObjectProperty ;
 	owl:inverseOf mus:U16_is_catalogue_statement_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M1_Catalogue_Statement ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U16 has catalogue statement"@en .
 #
 # http://data.doremus.org/ontology#U16_is_catalogue_statement_of
 
 mus:U16_is_catalogue_statement_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P1i_identifies ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U16 is catalogue statement of"@en .
 #
 # http://data.doremus.org/ontology#U17_has_opus_statement
@@ -134,14 +134,14 @@ mus:U17_has_opus_statement a owl:ObjectProperty ;
 	owl:inverseOf mus:U17i_is_opus_statement_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M2_Opus_Statement ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U17 has opus statement"@en .
 #
 # http://data.doremus.org/ontology#U17i_is_opus_statement_of
 
 mus:U17i_is_opus_statement_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P1i_identifies ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U17i is opus statement of"@en .
 #
 # http://data.doremus.org/ontology#U18_has_rhythmic_pattern
@@ -164,14 +164,14 @@ mus:U19_has_style a owl:ObjectProperty ;
 	owl:inverseOf mus:U19i_is_style_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M19_Style ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U19 has style"@en .
 #
 # http://data.doremus.org/ontology#U19i_is_style_of
 
 mus:U19i_is_style_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U19i is style of"@en .
 #
 # http://data.doremus.org/ontology#U1_used_medium_of_performance
@@ -194,14 +194,14 @@ mus:U20_has_music_group_formation a owl:ObjectProperty ;
 	owl:inverseOf mus:U20i_is_music_group_formation_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M20_Music_Group_Formation ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U20 has music group formation"@en .
 #
 # http://data.doremus.org/ontology#U20i_is_music_group_formation_of
 
 mus:U20i_is_music_group_formation_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U20i is music group formation of"@en .
 #
 # http://data.doremus.org/ontology#U21_has_tag
@@ -211,14 +211,14 @@ mus:U21_has_tag a owl:ObjectProperty ;
 	owl:inverseOf mus:U21i_is_tag_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M21_Description_Tag ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U21 has tag"@en .
 #
 # http://data.doremus.org/ontology#U21i_is_tag_of
 
 mus:U21i_is_tag_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U21i is tag of"@en .
 #
 # http://data.doremus.org/ontology#U22_has_mode
@@ -228,14 +228,14 @@ mus:U22_has_mode a owl:ObjectProperty ;
 	owl:inverseOf mus:U22i_is_mode_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M22_Mode ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U22 has mode"@en .
 #
 # http://data.doremus.org/ontology#U22i_is_mode_of
 
 mus:U22i_is_mode_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U22i is mode of"@en .
 #
 # http://data.doremus.org/ontology#U23_has_casting_detail
@@ -245,14 +245,14 @@ mus:U23_has_casting_detail a owl:ObjectProperty ;
 	owl:inverseOf mus:U23i_is_casting_detail_of ;
 	rdfs:domain mus:M6_Intended_Casting ;
 	rdfs:range mus:M23_Casting_Detail ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U23 has casting detail"@en .
 #
 # http://data.doremus.org/ontology#U23i_is_casting_detail_of
 
 mus:U23i_is_casting_detail_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P69i_is_associated_with ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U23i is casting detail of"@en .
 #
 # http://data.doremus.org/ontology#U24_has_successor_in_order
@@ -292,14 +292,14 @@ mus:U26_has_maintained a owl:ObjectProperty ;
 	owl:inverseOf mus:U26i_was_maintained_by ;
 	rdfs:domain mus:M16_Maintenance ;
 	rdfs:range ecrm:E24_Physical_Man-Made_Thing ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U26 has maintained"@en .
 #
 # http://data.doremus.org/ontology#U26i_was_maintained_by
 
 mus:U26i_was_maintained_by a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P31i_was_modified_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U26i was maintained by"@en .
 #
 # http://data.doremus.org/ontology#U27_performed_character_of
@@ -309,14 +309,14 @@ mus:U27_performed_character_of a owl:ObjectProperty ;
 	owl:inverseOf mus:U27i_character_was_performed_by ;
 	rdfs:domain mus:M28_Individual_Performance ;
 	rdfs:range efrbroo:F38_Character ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U27 performed character of"@en .
 #
 # http://data.doremus.org/ontology#U27i_character_was_performed_by
 
 mus:U27i_character_was_performed_by a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P16i_was_used_for ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U27i character was performed by"@en .
 #
 # http://data.doremus.org/ontology#U28_has_tessitura
@@ -341,14 +341,14 @@ mus:U29_edited a owl:ObjectProperty ;
 	owl:inverseOf mus:U29i_was_edited_by ;
 	rdfs:domain mus:M29_Editing ;
 	rdfs:range efrbroo:F22_Self-Contained_Expression ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U29 edited"@en .
 #
 # http://data.doremus.org/ontology#U29i_was_edited_by
 
 mus:U29i_was_edited_by a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P16i_was_used_for ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U29i was edited by"@en .
 #
 # http://data.doremus.org/ontology#U2_foresees_use_of_medium_of_performance_of_type
@@ -358,14 +358,14 @@ mus:U2_foresees_use_of_medium_of_performance_of_type a owl:ObjectProperty ;
 	owl:inverseOf mus:U2i_is_foreseen_type_of_medium_of_performance ;
 	rdfs:domain ecrm:E29_Design_or_Procedure ;
 	rdfs:range ecrm:E55_Type ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U2 foresees use of medium of performance of type"@en .
 #
 # http://data.doremus.org/ontology#U2i_is_foreseen_type_of_medium_of_performance
 
 mus:U2i_is_foreseen_type_of_medium_of_performance a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U2i is foreseen type of medium of performance"@en .
 #
 # http://data.doremus.org/ontology#U30_created_track
@@ -373,14 +373,14 @@ mus:U2i_is_foreseen_type_of_medium_of_performance a owl:ObjectProperty ;
 mus:U30_created_track a owl:ObjectProperty ;
 	rdfs:subPropertyOf efrbroo:R17_created ;
 	owl:inverseOf mus:U30i_track_was_created_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U30 created track"@en .
 #
 # http://data.doremus.org/ontology#U30i_track_was_created_by
 
 mus:U30i_track_was_created_by a owl:ObjectProperty ;
 	rdfs:subPropertyOf efrbroo:R17i_was_created_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U30i track was created by"@en .
 #
 # http://data.doremus.org/ontology#U31_had_function_of_type
@@ -390,14 +390,14 @@ mus:U31_had_function_of_type a owl:ObjectProperty ;
 	owl:inverseOf mus:U31i_is_function_of ;
 	rdfs:domain ecrm:E7_Activity ;
 	rdfs:range mus:M31_Actor_Function ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U31 had function of type"@en .
 #
 # http://data.doremus.org/ontology#U31i_is_function_of
 
 mus:U31i_is_function_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U31i is function of"@en .
 #
 # http://data.doremus.org/ontology#U32_had_responsibility_of_type
@@ -407,14 +407,14 @@ mus:U32_had_responsibility_of_type a owl:ObjectProperty ;
 	owl:inverseOf mus:U32i_is_responsibility_of ;
 	rdfs:domain ecrm:E7_Activity ;
 	rdfs:range mus:M32_Actor_Responsibility ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U32 had responsibility of type"@en .
 #
 # http://data.doremus.org/ontology#U32i_is_responsibility_of
 
 mus:U32i_is_responsibility_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U32i is responsibility of"@en .
 #
 # http://data.doremus.org/ontology#U33_has_set_of_characters
@@ -452,14 +452,14 @@ mus:U35_foresees_function_of_type a owl:ObjectProperty ;
 	owl:inverseOf mus:U35i_is_foreseen_function_type_of ;
 	rdfs:domain ecrm:E29_Design_or_Procedure ;
 	rdfs:range mus:M31_Actor_Function ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U35 foresees function of type"@en .
 #
 # http://data.doremus.org/ontology#U35i_is_foreseen_function_type_of
 
 mus:U35i_is_foreseen_function_type_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U35i is foreseen function type of"@en .
 #
 # http://data.doremus.org/ontology#U36_foresees_responsibility_of_type
@@ -469,14 +469,14 @@ mus:U36_foresees_responsibility_of_type a owl:ObjectProperty ;
 	owl:inverseOf mus:U36i_is_foreseen_responsibility_type_of ;
 	rdfs:domain ecrm:E29_Design_or_Procedure ;
 	rdfs:range mus:M32_Actor_Responsibility ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U36 foresees responsibility of type"@en .
 #
 # http://data.doremus.org/ontology#U36i_is_foreseen_responsibility_type_of
 
 mus:U36i_is_foreseen_responsibility_type_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U36i is foreseen responsibility type of"@en .
 #
 # http://data.doremus.org/ontology#U37_foresees_performing_character
@@ -486,14 +486,14 @@ mus:U37_foresees_performing_character a owl:ObjectProperty ;
 	owl:inverseOf mus:U37i_is_foreseen_character_in ;
 	rdfs:domain ecrm:E29_Design_or_Procedure ;
 	rdfs:range efrbroo:F38_Character ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U37 foresees performing character"@en .
 #
 # http://data.doremus.org/ontology#U37i_is_foreseen_character_in
 
 mus:U37i_is_foreseen_character_in a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U37i is foreseen character in"@en .
 #
 # http://data.doremus.org/ontology#U38_incorporates_track
@@ -504,7 +504,7 @@ mus:U38_incorporates_track a owl:ObjectProperty ;
 	rdfs:domain efrbroo:F24_Publication_Expression ;
 	rdfs:range mus:M24_Track ;
 	rdfs:comment "U38 incorporates track"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U38i_track_is_incorporated_in
 
@@ -513,7 +513,7 @@ mus:U38i_track_is_incorporated_in a owl:ObjectProperty ;
 	rdfs:domain mus:M24_Track ;
 	rdfs:range efrbroo:F24_Publication_Expression ;
 	rdfs:comment "U38i track is incorporated in"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U39_has_tuned
 
@@ -536,14 +536,14 @@ mus:U3_foresees_specific_medium_of_performance a owl:ObjectProperty ;
 	owl:inverseOf mus:U3i_is_foreseen_specific_medium_of_performance ;
 	rdfs:domain ecrm:E29_Design_or_Procedure ;
 	rdfs:range ecrm:E22_Man-Made_Object ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U3 forees specific medium of performance"@en .
 #
 # http://data.doremus.org/ontology#U3i_is_foreseen_specific_medium_of_performance
 
 mus:U3i_is_foreseen_specific_medium_of_performance a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U3i is foreseen specific medium of performance"@en .
 #
 # http://data.doremus.org/ontology#U40_has_catalogue_name
@@ -554,7 +554,7 @@ mus:U40_has_catalogue_name a owl:ObjectProperty ;
 	rdfs:domain mus:M1_Catalogue_Statement ;
 	rdfs:range mus:M10_Catalogue_Name ;
 	rdfs:comment "U40 has catalogue name"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U40i_is_catalogue_name_of
 
@@ -563,7 +563,7 @@ mus:U40i_is_catalogue_name_of a owl:ObjectProperty ;
 	rdfs:domain mus:M10_Catalogue_Name ;
 	rdfs:range mus:M1_Catalogue_Statement ;
 	rdfs:comment "U40i is catalogue name of"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U41_has_catalogue_number
 
@@ -573,7 +573,7 @@ mus:U41_has_catalogue_number a owl:ObjectProperty ;
 	rdfs:domain mus:M1_Catalogue_Statement ;
 	rdfs:range mus:M11_Catalogue_Number ;
 	rdfs:comment "U41 has catalogue number"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U41i_is_catalogue_number_of
 
@@ -582,7 +582,7 @@ mus:U41i_is_catalogue_number_of a owl:ObjectProperty ;
 	rdfs:domain mus:M11_Catalogue_Number ;
 	rdfs:range mus:M1_Catalogue_Statement ;
 	rdfs:comment "U41 is catalogue number of"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U42_has_opus_number
 
@@ -592,7 +592,7 @@ mus:U42_has_opus_number a owl:ObjectProperty ;
 	rdfs:domain mus:M2_Opus_Statement ;
 	rdfs:range mus:M12_Opus_Number ;
 	rdfs:comment "U42 has opus number"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U42i_is_opus_number_of
 
@@ -601,7 +601,7 @@ mus:U42i_is_opus_number_of a owl:ObjectProperty ;
 	rdfs:domain mus:M12_Opus_Number ;
 	rdfs:range mus:M2_Opus_Statement ;
 	rdfs:comment "U42i is opus number of"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U43_has_opus_subnumber
 
@@ -610,7 +610,7 @@ mus:U43_has_opus_subnumber a owl:ObjectProperty ;
 	owl:inverseOf mus:U43i_is_opus_subnumber_of ;
 	rdfs:domain mus:M2_Opus_Statement ;
 	rdfs:range mus:M13_Opus_Subnumber ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U43i_is_opus_subnumber_of
 
@@ -619,7 +619,7 @@ mus:U43i_is_opus_subnumber_of a owl:ObjectProperty ;
 	rdfs:domain mus:M13_Opus_Subnumber ;
 	rdfs:range mus:M2_Opus_Statement ;
 	rdfs:comment "U43i is opus subnumber of"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U44_has_dedication_statement
 
@@ -629,7 +629,7 @@ mus:U44_has_dedication_statement a owl:ObjectProperty ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M15_Dedication ;
 	rdfs:comment "U44 has dedication statement"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U44i_is_dedication_statement_of
 
@@ -638,7 +638,7 @@ mus:U44i_is_dedication_statement_of a owl:ObjectProperty ;
 	rdfs:domain mus:M15_Dedication ;
 	rdfs:range efrbroo:F22_Self-Contained_Expression ;
 	rdfs:comment "U44i is dedication statement of"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U45_is_dedicated_to
 
@@ -648,7 +648,7 @@ mus:U45_is_dedicated_to a owl:ObjectProperty ;
 	rdfs:domain mus:M15_Dedication ;
 	rdfs:range ecrm:E1_CRM_Entity ;
 	rdfs:comment "U45 is dedicated to"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U45i_has_dedication
 
@@ -657,7 +657,7 @@ mus:U45i_has_dedication a owl:ObjectProperty ;
 	rdfs:domain ecrm:E1_CRM_Entity ;
 	rdfs:range mus:M15_Dedication ;
 	rdfs:comment "U45i has dedication"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U46_occurred_in_context
 
@@ -667,7 +667,7 @@ mus:U46_occurred_in_context a owl:ObjectProperty ;
 	rdfs:domain ecrm:E7_Activity ;
 	rdfs:range mus:M40_Context ;
 	rdfs:comment "U46 occurred in context"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U46i_was_context_for
 
@@ -676,7 +676,7 @@ mus:U46i_was_context_for a owl:ObjectProperty ;
 	rdfs:domain mus:M40_Context ;
 	rdfs:range ecrm:E7_Activity ;
 	rdfs:comment "U46i was context for"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 #
 # http://data.doremus.org/ontology#U4_had_princeps_publication
 
@@ -685,14 +685,14 @@ mus:U4_had_princeps_publication a owl:ObjectProperty ;
 	owl:inverseOf mus:U4i_was_princeps_publication_of ;
 	rdfs:domain ecrm:E89_Propositional_Object ;
 	rdfs:range efrbroo:F30_Publication_Event ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U4 had princeps publication"@en .
 #
 # http://data.doremus.org/ontology#U4i_was_princeps_publication_of
 
 mus:U4i_was_princeps_publication_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U4i was princeps publication of"@en .
 #
 # http://data.doremus.org/ontology#U51_is_partial_or_full_recording_of
@@ -797,14 +797,14 @@ mus:U5_had_premiere a owl:ObjectProperty ;
 	owl:inverseOf mus:U5i_was_premiere_of ;
 	rdfs:domain ecrm:E89_Propositional_Object ;
 	rdfs:range efrbroo:F31_Performance ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U5 had premiere"@en .
 #
 # http://data.doremus.org/ontology#U5i_was_premiere_of
 
 mus:U5i_was_premiere_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U5i was premiere of"@en .
 #
 # http://data.doremus.org/ontology#U6_foresees_actor
@@ -814,14 +814,14 @@ mus:U6_foresees_actor a owl:ObjectProperty ;
 	owl:inverseOf mus:U6i_is_foreseen_actor_of ;
 	rdfs:domain ecrm:E29_Design_or_Procedure ;
 	rdfs:range ecrm:E39_Actor ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U6 foresees actor"@en .
 #
 # http://data.doremus.org/ontology#U6i_is_foreseen_actor_of
 
 mus:U6i_is_foreseen_actor_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U6i is foreseen actor of"@en .
 #
 # http://data.doremus.org/ontology#U7_foresees_place_at
@@ -831,14 +831,14 @@ mus:U7_foresees_place_at a owl:ObjectProperty ;
 	owl:inverseOf mus:U7i_is_foreseen_place_of ;
 	rdfs:domain ecrm:E29_Design_or_Procedure ;
 	rdfs:range ecrm:E53_Place ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U7 foresees place at"@en .
 #
 # http://data.doremus.org/ontology#U7i_is_foreseen_place_of
 
 mus:U7i_is_foreseen_place_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U7i is foreseen place of"@en .
 #
 # http://data.doremus.org/ontology#U8_foresees_time-span
@@ -848,14 +848,14 @@ mus:U8_foresees_time-span a owl:ObjectProperty ;
 	owl:inverseOf mus:U8i_is_foreseen_time-span_of ;
 	rdfs:domain ecrm:E29_Design_or_Procedure ;
 	rdfs:range ecrm:E52_Time-Span ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U8 foresees time-span"@en .
 #
 # http://data.doremus.org/ontology#U8i_is_foreseen_time-span_of
 
 mus:U8i_is_foreseen_time-span_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U8i is foreseen time-span of"@en .
 #
 #
@@ -892,49 +892,49 @@ mus:U9_has_quantity a owl:DatatypeProperty ;
 
 mus:M10_Catalogue_Name a owl:Class ;
 	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M10 Catalogue Name"@en .
 #
 # http://data.doremus.org/ontology#M11_Catalogue_Number
 
 mus:M11_Catalogue_Number a owl:Class ;
 	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M11 Catalogue Number"@en .
 #
 # http://data.doremus.org/ontology#M12_Opus_Number
 
 mus:M12_Opus_Number a owl:Class ;
 	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M12 Opus Number"@en .
 #
 # http://data.doremus.org/ontology#M13_Opus_Subnumber
 
 mus:M13_Opus_Subnumber a owl:Class ;
 	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M13 Opus Subnumber"@en .
 #
 # http://data.doremus.org/ontology#M14_Medium_Of_Performance
 
 mus:M14_Medium_Of_Performance a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type , ecrm:E58_Measurement_Unit ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M14 Medium Of Performance"@en .
 #
 # http://data.doremus.org/ontology#M15_Dedication
 
 mus:M15_Dedication a owl:Class ;
 	rdfs:subClassOf ecrm:E33_Linguistic_Object ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M15 Dedication"@en .
 #
 # http://data.doremus.org/ontology#M16_Maintenance
 
 mus:M16_Maintenance a owl:Class ;
 	rdfs:subClassOf ecrm:E11_Modification ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M16 Maintenance"@en .
 #
 # http://data.doremus.org/ontology#M17_Controlled_Access_Point_Creator
@@ -944,7 +944,7 @@ mus:M17_Controlled_Access_Point_Creator a owl:Class ;
 	rdfs:comment """Examples:
 …explosante-fixe… (F22) P1 is identified by F50 Controlled Access Point R8 consists of M17 Controlled Access Point Creator { Boulez, Pierre (1925, …) } and R8 consists of M18 Controlled Access Point Denomination R8 consists of F12 Nomen { …explosante-fixe… }"""@fr , """Scope note:
 Sous-classe de F50 Controlled Access Point, cette classe en reprend les caractéristiques, limitées au « créateur » de l’œuvre."""@fr ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M17 Controlled Access Point Creator"@en .
 #
 # http://data.doremus.org/ontology#M18_Controlled_Access_Point_Denomination
@@ -954,14 +954,14 @@ mus:M18_Controlled_Access_Point_Denomination a owl:Class ;
 	rdfs:comment """Examples:
 …explosante-fixe… (F22) P1 is identified by F50 Controlled Access Point R8 consists of M17 Controlled Access Point Creator { Boulez, Pierre (1925, …) } and R8 consists of M18 Controlled Access Point Denomination R8 consists of F12 Nomen { …explosante-fixe… }"""@fr , """Scope note:
 Sous-classe de F50 Controlled Access Point, cette classe en reprend les caractéristiques, limitées à la « dénomination » de l’œuvre. La dénomination peut être un titre significatif (« Le Sacre du Printemps »), ou un titre composé (« Sonates. Piano. Opus 27 no 2. Do dièse mineur.”)"""@fr ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M18 Controlled Access Point Denomination"@en .
 #
 # http://data.doremus.org/ontology#M19_Style
 
 mus:M19_Style a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M19 Style"@en .
 #
 # http://data.doremus.org/ontology#M1_Catalogue_Statement
@@ -976,28 +976,28 @@ Duncan Gray [WoO 156, no 2] de Beethoven (F22) est identifiée par (M1 Catalogue
 La Sonate pour Clavier en Ut majeur de Wilhelm Friedemann Bach identifiée BR A1 par le catalogue Bach Repertorium  et identifiée F200 par le catalogue Fasch (F22) : est identifiée par (M1 Catalogue p106 is composed of M10 Catalogue Name) BR et (M1 Catalogue p106 is composed of Catalogue Number) A1, et est identifiée par (M1 Catalogue p106 is composed of M10 Catalogue Name) F et (M1 Catalogue p106 is composed of Catalogue Number) 200."""@fr , """Scope Note:
 Cette classe permet de décrire, lorsqu’elles existent, les références de catalogue de l’œuvre musicale. Par catalogue, on comprend tous les catalogues thématiques à proprement parler (donc à l’exclusion des numéros d’opus) ainsi que les classifications spécifiques telles que WoO ou Anh.
 Selon le niveau de granularité initial, elle est décrite par une simple chaîne de caractères, ou par les objets symboliques M10 Catalogue Name et M11 Catalogue Number qui la composent. La classe M10 Catalogue Name peut-être documentée via la propriété p70i is documented in."""@fr ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M1 Catalogue Statement"@en .
 #
 # http://data.doremus.org/ontology#M20_Music_Group_Formation
 
 mus:M20_Music_Group_Formation a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M20 Music Group Formation"@en .
 #
 # http://data.doremus.org/ontology#M21_Description_Tag
 
 mus:M21_Description_Tag a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M21 Description Tag"@en .
 #
 # http://data.doremus.org/ontology#M22_Mode
 
 mus:M22_Mode a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M22 Mode"@en .
 #
 # http://data.doremus.org/ontology#M23_Casting_Detail
@@ -1007,77 +1007,77 @@ mus:M23_Casting_Detail a owl:Class ;
 	rdfs:comment """Examples:
 La Sonate pour piano opus 27, no 2 de Beethoven (F22) U13 has intended casting M6 Intended Casting U23 has casting detail M23 Casting Detail U1 has intended medium of performance M35 Cast Medium of Performance U39 has medium of performance M14 Medium of Performance { piano } and P90 has value { 1 }."""@fr , """Scope note:
 Cette classe décrit un détail de la distribution prévue par le compositeur, par exemple une sonate pour violon et piano est décrite par deux « composantes » M23 qui sont le violon et le piano. Elle est donc obligatoirement associée à la classe M6 Intended Casting dont elle détaille les composantes. Ces composantes comprennent notamment le ou les medium of performance prévus par le compositeur, l’éventuel rôle soliste du medium of performance, le personnage interprété (par exemple dans un opéra), la tessiture précise."""@fr ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M23 Casting Detail"@en .
 #
 # http://data.doremus.org/ontology#M24_Track
 
 mus:M24_Track a owl:Class ;
 	rdfs:subClassOf efrbroo:F22_Self-Contained_Expression ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M24 Track"@en .
 #
 # http://data.doremus.org/ontology#M25_Foreseen_Activity
 
 mus:M25_Foreseen_Activity a owl:Class ;
 	rdfs:subClassOf ecrm:E29_Design_or_Procedure ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M25 Foreseen Activity"@en .
 #
 # http://data.doremus.org/ontology#M26_Foreseen_Performance
 
 mus:M26_Foreseen_Performance a owl:Class ;
 	rdfs:subClassOf ecrm:E29_Design_or_Procedure ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M26 Foreseen Performance"@en .
 #
 # http://data.doremus.org/ontology#M27_Foreseen_Individual_Performance
 
 mus:M27_Foreseen_Individual_Performance a owl:Class ;
 	rdfs:subClassOf mus:M26_Foreseen_Performance ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M27 Foreseen Individual Performance"@en .
 #
 # http://data.doremus.org/ontology#M28_Individual_Performance
 
 mus:M28_Individual_Performance a owl:Class ;
 	rdfs:subClassOf efrbroo:F31_Performance ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M28 Individual Performance"@en .
 #
 # http://data.doremus.org/ontology#M29_Editing
 
 mus:M29_Editing a owl:Class ;
 	rdfs:subClassOf efrbroo:F28_Expression_Creation ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M29 Editing"@en .
 #
 # http://data.doremus.org/ontology#M2_Opus_Statement
 
 mus:M2_Opus_Statement a owl:Class ;
 	rdfs:subClassOf ecrm:E41_Appellation ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M2 Opus Statement"@en .
 #
 # http://data.doremus.org/ontology#M30_Tessitura
 
 mus:M30_Tessitura a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M30 Tessitura"@en .
 #
 # http://data.doremus.org/ontology#M31_Actor_Function
 
 mus:M31_Actor_Function a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M31 Actor's Function"@en .
 #
 # http://data.doremus.org/ontology#M32_Actor_Responsibility
 
 mus:M32_Actor_Responsibility a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M32 Actor's Responsibility"@en .
 #
 # http://data.doremus.org/ontology#M33_Intended_Characters
@@ -1108,28 +1108,28 @@ mus:M36_Award a owl:Class ;
 
 mus:M37_Scale a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M37 Gamme"@fr , "M37 Scale"@en .
 #
 # http://data.doremus.org/ontology#M38_Rhythmic_Pattern
 
 mus:M38_Rhythmic_Pattern a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M38 Figure Rythmique"@fr , "M38 Rhythmic Pattern"@en .
 #
 # http://data.doremus.org/ontology#M3_Order_Number
 
 mus:M3_Order_Number a owl:Class ;
 	rdfs:subClassOf ecrm:E41_Appellation ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M3 Order Number"@en .
 #
 # http://data.doremus.org/ontology#M40_Context
 
 mus:M40_Context a owl:Class ;
 	rdfs:subClassOf ecrm:E33_Linguistic_Object ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M40 Context"@en , "M40 Contexte"@fr .
 #
 # http://data.doremus.org/ontology#M42_Performed_Expression_Creation
@@ -1157,14 +1157,14 @@ mus:M4_Key a owl:Class ;
 Le Concerto pour piano et orchestre en si bémol majeur No 2, Op. 19 de Beethoven (F22) a pour tonalité (M4 Key) « Si bémol majeur »."""@fr , """Scope note:
 Cette classe décrit la tonalité de l’œuvre.
 Les tonalités sont souvent listées sous forme de référentiels multilingues, c’est pourquoi la classe M4 Key est liée à la classe M7 Linguistic Appellation."""@fr ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M4 Key"@en .
 #
 # http://data.doremus.org/ontology#M5_Genre
 
 mus:M5_Genre a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M5 Genre"@en .
 #
 # http://data.doremus.org/ontology#M6_Intended_Casting
@@ -1175,7 +1175,7 @@ mus:M6_Intended_Casting a owl:Class ;
 La Sonate pour piano opus 27, no 2 de Beethoven (F22) U13 has intended casting M6 Intended Casting U23 has casting detail M23 Casting Detail U1 has intended medium of performance M35 Cast Medium of Performance U39 has medium of performance M14 Medium of Performance { piano } and P90 has value { 1 }."""@fr , """Scope note:
 Cette classe permet de décrire les « medium of performance » d’une œuvre, c’est-à-dire les instruments, machines, exécutants autres que musiciens (danseurs, acteurs, récitants,…) pour lesquels l’œuvre a été composée. Elle décrit donc l’intention du compositeur. M6 Casting est une « classe chapeau » qui représente la globalité de la distribution instrumentale et/ou vocale. Le détail de cette distribution est décrit via la classe M23 Casting Detail.
 Dans le cas de versions alternatives, on donnera deux M6 Casting différents pour la même expression."""@fr ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M6 Intended Casting"@en .
 #
 # http://data.doremus.org/ontology#M7_Linguistic_Appellation
@@ -1184,14 +1184,14 @@ mus:M7_Linguistic_Appellation a owl:Class ;
 	rdfs:subClassOf ecrm:E41_Appellation ;
 	rdfs:comment """Scope note:
 Cette classe permet de décrire une appellation et ses composantes linguistiques. Elle comprend donc les appellations originales et les traductions de ces appellations."""@fr ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M7 Linguistic Appellation"@en .
 #
 # http://data.doremus.org/ontology#M8_Intended_Tempo
 
 mus:M8_Intended_Tempo a owl:Class ;
 	rdfs:subClassOf ecrm:E29_Design_or_Procedure ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M8 Intended Tempo"@en .
 #
 # http://data.doremus.org/ontology#M9_Derivation_Type
@@ -1199,7 +1199,7 @@ mus:M8_Intended_Tempo a owl:Class ;
 mus:M9_Derivation_Type a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:comment "Examples :"@en , "Scope note :"@en ;
-	rdfs:isDefinedBy <http://data.doremus.com/ontology#> ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "Derivation Type"@en .
 #
 # http://erlangen-crm.org/efrbroo/F38_Character
