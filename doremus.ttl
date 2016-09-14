@@ -255,36 +255,6 @@ mus:U23i_is_casting_detail_of a owl:ObjectProperty ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U23i is casting detail of"@en .
 #
-# http://data.doremus.org/ontology#U24_has_successor_in_order
-
-mus:U24_has_successor_in_order a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P130_shows_features_of ;
-	owl:inverseOf mus:U24i_is_successor_in_order_of ;
-	rdfs:domain ecrm:E89_Propositional_Object ;
-	rdfs:range ecrm:E89_Propositional_Object ;
-	rdfs:comment """scope note : this property allows for describing the succession order of propositional objects, e.g. of Tracks in a CD.
-This property is not equivalent to FRBRoo's R1_is_logical_successor_of since logical order and numerical order can differ (cf. Star Wars)"""@en ;
-	rdfs:label "U24 has successor in order"@en .
-#
-# http://data.doremus.org/ontology#U24i_is_successor_in_order_of
-
-mus:U24i_is_successor_in_order_of a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P130i_features_are_also_found_on .
-#
-# http://data.doremus.org/ontology#U25_has_successor_in_time
-
-mus:U25_has_successor_in_time a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P130_shows_features_of ;
-	owl:inverseOf mus:U25i_is_successor_in_time_of ;
-	rdfs:domain ecrm:E89_Propositional_Object ;
-	rdfs:range ecrm:E89_Propositional_Object ;
-	rdfs:label "U25 has successor in time"@en .
-#
-# http://data.doremus.org/ontology#U25i_is_successor_in_time_of
-
-mus:U25i_is_successor_in_time_of a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P130i_features_are_also_found_on .
-#
 # http://data.doremus.org/ontology#U26_has_maintained
 
 mus:U26_has_maintained a owl:ObjectProperty ;
