@@ -10,7 +10,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
 
-<http://data.doremus.org/ontology> a owl:Ontology ;
+<http://data.doremus.org/ontology#> a owl:Ontology ;
 	owl:imports <http://erlangen-crm.org/efrbroo/> ;
 	vann:preferredNamespaceUri "http://data.doremus.org/ontology#" ;
 	owl:versionInfo "v0.1" ;
