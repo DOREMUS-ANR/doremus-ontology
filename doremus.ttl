@@ -259,6 +259,13 @@ mus:U23i_is_casting_detail_of a owl:ObjectProperty ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U23i is casting detail of"@en .
 # 
+# http://data.doremus.org/ontology#U24_has_award
+
+mus:U24_has_award a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2_has_type ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U24 has award"@en .
+# 
 # http://data.doremus.org/ontology#U26_has_maintained
 
 mus:U26_has_maintained a owl:ObjectProperty ;
@@ -1121,6 +1128,13 @@ mus:M38_Rhythmic_Pattern a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M38 Figure Rythmique"@fr , "M38 Rhythmic Pattern"@en .
+# 
+# http://data.doremus.org/ontology#M39_Derivation_Type_Assignment
+
+mus:M39_Derivation_Type_Assignment a owl:Class ;
+	rdfs:subClassOf ecrm:E13_Attribute_Assignment ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "M39 Derivation Type Assignment"@en .
 # 
 # http://data.doremus.org/ontology#M3_Order_Number
 
