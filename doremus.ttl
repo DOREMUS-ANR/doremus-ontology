@@ -1094,12 +1094,12 @@ mus:M34_Award_Assignment a owl:Class ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M34 Award Assignment"@en .
 # 
-# http://data.doremus.org/ontology#M35_Publication_Expression_Assignment
+# http://data.doremus.org/ontology#M35_Representative_Publication_Assignment
 
-mus:M35_Publication_Expression_Assignment a owl:Class ;
+mus:M35_Representative_Publication_Assignment a owl:Class ;
 	rdfs:subClassOf ecrm:E13_Attribute_Assignment ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M35 Publication Expression Assignment"@en .
+	rdfs:label "M35 Representative Publication Assignment"@en .
 # 
 # http://data.doremus.org/ontology#M36_Award
 
@@ -1156,6 +1156,27 @@ mus:M44_Performed_Work a owl:Class ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M44 Performed Work"@en .
 # 
+# http://data.doremus.org/ontology#M45_Notated_Expression_Creation
+
+mus:M45_Notated_Expression_Creation a owl:Class ;
+	rdfs:subClassOf efrbroo:F28_Expression_Creation ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "M45 Notated Expression Creation"@en .
+# 
+# http://data.doremus.org/ontology#M46_Notated_Expression
+
+mus:M46_Notated_Expression a owl:Class ;
+	rdfs:subClassOf efrbroo:F22_Self-Contained_Expression ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "M46 Notated Expression"@en .
+# 
+# http://data.doremus.org/ontology#M47_Notated_Work
+
+mus:M47_Notated_Work a owl:Class ;
+	rdfs:subClassOf efrbroo:F14_Individual_Work ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "M47 Notated Work"@en .
+# 
 # http://data.doremus.org/ontology#M4_Key
 
 mus:M4_Key a owl:Class ;
@@ -1204,7 +1225,9 @@ mus:M8_Tempo a owl:Class ;
 
 mus:M9_Derivation_Type a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
-	rdfs:comment "Examples :"@en , "Scope note :"@en ;
+	rdfs:comment """Scope note:
+
+Examples:"""@en ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "Derivation Type"@en .
 # 
