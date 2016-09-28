@@ -180,14 +180,14 @@ mus:U19i_is_style_of a owl:ObjectProperty ;
 
 mus:U1_used_medium_of_performance a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P125_used_object_of_type ;
-	owl:inverseOf mus:U1i_medium_of_performance_was_used_in ;
+	owl:inverseOf mus:U1i_was_medium_of_performance_used_in ;
 	rdfs:domain mus:M28_Individual_Performance ;
 	rdfs:range mus:M14_Medium_Of_Performance ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
-# http://data.doremus.org/ontology#U1i_medium_of_performance_was_used_in
+# http://data.doremus.org/ontology#U1i_was_medium_of_performance_used_in
 
-mus:U1i_medium_of_performance_was_used_in a owl:ObjectProperty ;
+mus:U1i_was_medium_of_performance_used_in a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P125i_was_type_of_object_used_in ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
@@ -263,8 +263,14 @@ mus:U23i_is_casting_detail_of a owl:ObjectProperty ;
 
 mus:U24_has_award a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2_has_type ;
+	owl:inverseOf mus:U24i_is_award_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U24 has award"@en .
+# 
+# http://data.doremus.org/ontology#U24i_is_award_of
+
+mus:U24i_is_award_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2i_is_type_of .
 # 
 # http://data.doremus.org/ontology#U26_has_maintained
 
@@ -372,15 +378,15 @@ mus:U30i_track_was_created_by a owl:ObjectProperty ;
 
 mus:U31_had_function_of_type a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2_has_type ;
-	owl:inverseOf mus:U31i_is_function_of ;
+	owl:inverseOf mus:U31i_was_function_of ;
 	rdfs:domain ecrm:E7_Activity ;
 	rdfs:range mus:M31_Actor_Function ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U31 had function of type"@en .
 # 
-# http://data.doremus.org/ontology#U31i_is_function_of
+# http://data.doremus.org/ontology#U31i_was_function_of
 
-mus:U31i_is_function_of a owl:ObjectProperty ;
+mus:U31i_was_function_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U31i is function of"@en .
@@ -389,15 +395,15 @@ mus:U31i_is_function_of a owl:ObjectProperty ;
 
 mus:U32_had_responsibility_of_type a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2_has_type ;
-	owl:inverseOf mus:U32i_is_responsibility_of ;
+	owl:inverseOf mus:U32i_was_responsibility_of ;
 	rdfs:domain ecrm:E7_Activity ;
 	rdfs:range mus:M32_Actor_Responsibility ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U32 had responsibility of type"@en .
 # 
-# http://data.doremus.org/ontology#U32i_is_responsibility_of
+# http://data.doremus.org/ontology#U32i_was_responsibility_of
 
-mus:U32i_is_responsibility_of a owl:ObjectProperty ;
+mus:U32i_was_responsibility_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U32i is responsibility of"@en .
