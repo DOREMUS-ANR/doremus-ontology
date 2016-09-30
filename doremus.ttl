@@ -1176,26 +1176,12 @@ mus:M44_Performed_Work a owl:Class ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M44 Performed Work"@en .
 # 
-# http://data.doremus.org/ontology#M45_Notated_Expression_Creation
+# http://data.doremus.org/ontology#M45_Notated_Expression
 
-mus:M45_Notated_Expression_Creation a owl:Class ;
-	rdfs:subClassOf efrbroo:F28_Expression_Creation ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M45 Notated Expression Creation"@en .
-# 
-# http://data.doremus.org/ontology#M46_Notated_Expression
-
-mus:M46_Notated_Expression a owl:Class ;
+mus:M45_Notated_Expression a owl:Class ;
 	rdfs:subClassOf efrbroo:F22_Self-Contained_Expression ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M46 Notated Expression"@en .
-# 
-# http://data.doremus.org/ontology#M47_Notated_Work
-
-mus:M47_Notated_Work a owl:Class ;
-	rdfs:subClassOf efrbroo:F14_Individual_Work ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M47 Notated Work"@en .
+	rdfs:label "M45 Notated Expression"@en .
 # 
 # http://data.doremus.org/ontology#M4_Key
 
