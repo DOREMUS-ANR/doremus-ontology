@@ -675,6 +675,21 @@ mus:U46i_was_context_for a owl:ObjectProperty ;
 	rdfs:comment "U46i was context for"@en ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
+# http://data.doremus.org/ontology#U47_is_derivation_type_of
+
+mus:U47_is_derivation_type_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
+	owl:inverseOf mus:U47i_has_derivation_type ;
+	rdfs:domain mus:M9_Derivation_Type ;
+	rdfs:range ecrm:E89_Propositional_Object ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U47 is derivation type of"@en .
+# 
+# http://data.doremus.org/ontology#U47i_has_derivation_type
+
+mus:U47i_has_derivation_type a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2_has_type .
+# 
 # http://data.doremus.org/ontology#U49_created_for
 
 mus:U49_created_for a owl:ObjectProperty ;
@@ -810,6 +825,36 @@ mus:U57_occurred_in_religious_context a owl:ObjectProperty ;
 mus:U57i_was_religious_context_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf mus:U46i_was_context_for ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+# 
+# http://data.doremus.org/ontology#U58_has_full_published_recording
+
+mus:U58_has_full_published_recording a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P130i_features_are_also_found_on ;
+	owl:inverseOf mus:U58i_is_full_published_recording_of ;
+	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+	rdfs:range efrbroo:F24_Publication_Expression ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U58 has full published recording"@en .
+# 
+# http://data.doremus.org/ontology#U58i_is_full_published_recording_of
+
+mus:U58i_is_full_published_recording_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P130_shows_features_of .
+# 
+# http://data.doremus.org/ontology#U59_has_partial_published_recording
+
+mus:U59_has_partial_published_recording a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P130i_features_are_also_found_on ;
+	owl:inverseOf mus:U59i_is_partial_published_recording_of ;
+	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+	rdfs:range efrbroo:F24_Publication_Expression ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U59 has partial published recording"@en .
+# 
+# http://data.doremus.org/ontology#U59i_is_partial_published_recording_of
+
+mus:U59i_is_partial_published_recording_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P130_shows_features_of .
 # 
 # http://data.doremus.org/ontology#U5_had_premiere
 
