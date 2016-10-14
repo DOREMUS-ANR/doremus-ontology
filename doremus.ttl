@@ -414,7 +414,7 @@ mus:U33_has_set_of_characters a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67_refers_to ;
 	owl:inverseOf mus:U33i_is_set_of_characters_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-	rdfs:range mus:M33_Intended_Characters ;
+	rdfs:range mus:M33_Set_of_Characters ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U33 has set of characters"@en .
 # 
@@ -429,7 +429,7 @@ mus:U33i_is_set_of_characters_of a owl:ObjectProperty ;
 mus:U34_foresees_character a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67_refers_to ;
 	owl:inverseOf mus:U34i_is_foreseen_character_of ;
-	rdfs:domain mus:M33_Intended_Characters ;
+	rdfs:domain mus:M33_Set_of_Characters ;
 	rdfs:range efrbroo:F38_Character ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U34 foresees character"@en .
@@ -961,28 +961,28 @@ mus:U9_has_quantity a owl:DatatypeProperty ;
 mus:M10_Catalogue_Name a owl:Class ;
 	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M10 Catalogue Name"@en .
+	rdfs:label "M10 Catalogue Name"@en , "M10 Nom de catalogue"@fr .
 # 
 # http://data.doremus.org/ontology#M11_Catalogue_Number
 
 mus:M11_Catalogue_Number a owl:Class ;
 	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M11 Catalogue Number"@en .
+	rdfs:label "M11 Catalogue Number"@en , "M11 Numéro de catalogue"@fr .
 # 
 # http://data.doremus.org/ontology#M12_Opus_Number
 
 mus:M12_Opus_Number a owl:Class ;
 	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M12 Opus Number"@en .
+	rdfs:label "M12 Numéro d'opus"@fr , "M12 Opus Number"@en .
 # 
 # http://data.doremus.org/ontology#M13_Opus_Subnumber
 
 mus:M13_Opus_Subnumber a owl:Class ;
 	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M13 Opus Subnumber"@en .
+	rdfs:label "M13 Opus Subnumber"@en , "M13 Sous-numéro d'opus"@fr .
 # 
 # http://data.doremus.org/ontology#M14_Medium_Of_Performance
 
@@ -996,7 +996,7 @@ mus:M14_Medium_Of_Performance a owl:Class ;
 mus:M15_Dedication_Statement a owl:Class ;
 	rdfs:subClassOf ecrm:E33_Linguistic_Object ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M15 Dedication Statement"@en .
+	rdfs:label "M15 Dedication Statement"@en , "M15 Mention de dédicace"@fr .
 # 
 # http://data.doremus.org/ontology#M16_Maintenance
 
@@ -1013,7 +1013,7 @@ mus:M17_Controlled_Access_Point_Creator a owl:Class ;
 …explosante-fixe… (F22) P1 is identified by F50 Controlled Access Point R8 consists of M17 Controlled Access Point Creator { Boulez, Pierre (1925, …) } and R8 consists of M18 Controlled Access Point Denomination R8 consists of F12 Nomen { …explosante-fixe… }"""@fr , """Scope note:
 Sous-classe de F50 Controlled Access Point, cette classe en reprend les caractéristiques, limitées au « créateur » de l’œuvre."""@fr ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M17 Controlled Access Point Creator"@en .
+	rdfs:label "M17 Controlled Access Point Creator"@en , "M17 Point d'accès contrôlé créateur"@fr .
 # 
 # http://data.doremus.org/ontology#M18_Controlled_Access_Point_Denomination
 
@@ -1023,14 +1023,14 @@ mus:M18_Controlled_Access_Point_Denomination a owl:Class ;
 …explosante-fixe… (F22) P1 is identified by F50 Controlled Access Point R8 consists of M17 Controlled Access Point Creator { Boulez, Pierre (1925, …) } and R8 consists of M18 Controlled Access Point Denomination R8 consists of F12 Nomen { …explosante-fixe… }"""@fr , """Scope note:
 Sous-classe de F50 Controlled Access Point, cette classe en reprend les caractéristiques, limitées à la « dénomination » de l’œuvre. La dénomination peut être un titre significatif (« Le Sacre du Printemps »), ou un titre composé (« Sonates. Piano. Opus 27 no 2. Do dièse mineur.”)"""@fr ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M18 Controlled Access Point Denomination"@en .
+	rdfs:label "M18 Controlled Access Point Denomination"@en , "M18 Point d'accès contrôlé dénomination"@fr .
 # 
 # http://data.doremus.org/ontology#M19_Style
 
 mus:M19_Style a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M19 Style"@en .
+	rdfs:label "M19 Style"@en , "M19 Style"@fr .
 # 
 # http://data.doremus.org/ontology#M1_Catalogue_Statement
 
@@ -1045,14 +1045,14 @@ La Sonate pour Clavier en Ut majeur de Wilhelm Friedemann Bach identifiée BR A1
 Cette classe permet de décrire, lorsqu’elles existent, les références de catalogue de l’œuvre musicale. Par catalogue, on comprend tous les catalogues thématiques à proprement parler (donc à l’exclusion des numéros d’opus) ainsi que les classifications spécifiques telles que WoO ou Anh.
 Selon le niveau de granularité initial, elle est décrite par une simple chaîne de caractères, ou par les objets symboliques M10 Catalogue Name et M11 Catalogue Number qui la composent. La classe M10 Catalogue Name peut-être documentée via la propriété p70i is documented in."""@fr ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M1 Catalogue Statement"@en .
+	rdfs:label "M1 Catalogue Statement"@en , "M1 Mention de catalogue"@fr .
 # 
 # http://data.doremus.org/ontology#M20_Music_Group_Formation
 
 mus:M20_Music_Group_Formation a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M20 Music Group Formation"@en .
+	rdfs:label "M20 Music Group Formation"@en , "M20 Type de formation musicale ou vocale"@fr .
 # 
 # http://data.doremus.org/ontology#M21_Description_Tag
 
@@ -1066,7 +1066,7 @@ mus:M21_Description_Tag a owl:Class ;
 mus:M22_Mode a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M22 Mode"@en .
+	rdfs:label "M22 Mode"@en , "M22 Mode"@fr .
 # 
 # http://data.doremus.org/ontology#M23_Casting_Detail
 
@@ -1076,105 +1076,105 @@ mus:M23_Casting_Detail a owl:Class ;
 La Sonate pour piano opus 27, no 2 de Beethoven (F22) U13 has intended casting M6 Intended Casting U23 has casting detail M23 Casting Detail U1 has intended medium of performance M35 Cast Medium of Performance U39 has medium of performance M14 Medium of Performance { piano } and P90 has value { 1 }."""@fr , """Scope note:
 Cette classe décrit un détail de la distribution prévue par le compositeur, par exemple une sonate pour violon et piano est décrite par deux « composantes » M23 qui sont le violon et le piano. Elle est donc obligatoirement associée à la classe M6 Intended Casting dont elle détaille les composantes. Ces composantes comprennent notamment le ou les medium of performance prévus par le compositeur, l’éventuel rôle soliste du medium of performance, le personnage interprété (par exemple dans un opéra), la tessiture précise."""@fr ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M23 Casting Detail"@en .
+	rdfs:label "M23 Casting Detail"@en , "M23 Détail de la distribution"@fr .
 # 
 # http://data.doremus.org/ontology#M24_Track
 
 mus:M24_Track a owl:Class ;
 	rdfs:subClassOf efrbroo:F22_Self-Contained_Expression ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M24 Track"@en .
+	rdfs:label "M24 Piste"@fr , "M24 Track"@en .
 # 
 # http://data.doremus.org/ontology#M25_Foreseen_Activity
 
 mus:M25_Foreseen_Activity a owl:Class ;
 	rdfs:subClassOf ecrm:E29_Design_or_Procedure ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M25 Foreseen Activity"@en .
+	rdfs:label "M25 Activité prévisionnelle"@fr , "M25 Foreseen Activity"@en .
 # 
 # http://data.doremus.org/ontology#M26_Foreseen_Performance
 
 mus:M26_Foreseen_Performance a owl:Class ;
 	rdfs:subClassOf mus:M25_Foreseen_Activity ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M26 Foreseen Performance"@en .
+	rdfs:label "M26 Foreseen Performance"@en , "M26 Performance prévisionnelle"@fr .
 # 
 # http://data.doremus.org/ontology#M27_Foreseen_Individual_Performance
 
 mus:M27_Foreseen_Individual_Performance a owl:Class ;
 	rdfs:subClassOf mus:M26_Foreseen_Performance ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M27 Foreseen Individual Performance"@en .
+	rdfs:label "M27 Foreseen Individual Performance"@en , "M27 Performance individuelle prévisionnelle"@fr .
 # 
 # http://data.doremus.org/ontology#M28_Individual_Performance
 
 mus:M28_Individual_Performance a owl:Class ;
 	rdfs:subClassOf efrbroo:F31_Performance ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M28 Individual Performance"@en .
+	rdfs:label "M28 Individual Performance"@en , "M28 Performance individuelle"@fr .
 # 
 # http://data.doremus.org/ontology#M29_Editing
 
 mus:M29_Editing a owl:Class ;
 	rdfs:subClassOf efrbroo:F28_Expression_Creation ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M29 Editing"@en .
+	rdfs:label "M29 Editing"@en , "M29 Post-production"@fr .
 # 
 # http://data.doremus.org/ontology#M2_Opus_Statement
 
 mus:M2_Opus_Statement a owl:Class ;
 	rdfs:subClassOf ecrm:E41_Appellation ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M2 Opus Statement"@en .
+	rdfs:label "M2 Mention d'opus"@fr , "M2 Opus Statement"@en .
 # 
 # http://data.doremus.org/ontology#M30_Tessitura
 
 mus:M30_Tessitura a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M30 Tessitura"@en .
+	rdfs:label "M30 Tessitura"@en , "M30 Tessiture"@fr .
 # 
 # http://data.doremus.org/ontology#M31_Actor_Function
 
 mus:M31_Actor_Function a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M31 Actor's Function"@en .
+	rdfs:label "M31 Actor's Function"@en , "M31 Fonction de l'agent"@fr .
 # 
 # http://data.doremus.org/ontology#M32_Actor_Responsibility
 
 mus:M32_Actor_Responsibility a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M32 Actor's Responsibility"@en .
+	rdfs:label "M32 Actor's Responsibility"@en , "M32 Responsbilité de l'agent"@fr .
 # 
-# http://data.doremus.org/ontology#M33_Intended_Characters
+# http://data.doremus.org/ontology#M33_Set_of_Characters
 
-mus:M33_Intended_Characters a owl:Class ;
+mus:M33_Set_of_Characters a owl:Class ;
 	rdfs:subClassOf ecrm:E29_Design_or_Procedure ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M33 Intended Characters"@en .
+	rdfs:label "M33 Ensemble de personnages"@fr , "M33 Set of Characters"@en .
 # 
 # http://data.doremus.org/ontology#M34_Award_Assignment
 
 mus:M34_Award_Assignment a owl:Class ;
 	rdfs:subClassOf ecrm:E13_Attribute_Assignment ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M34 Award Assignment"@en .
+	rdfs:label "M34 Attribution de récompense"@fr , "M34 Award Assignment"@en .
 # 
 # http://data.doremus.org/ontology#M35_Representative_Publication_Assignment
 
 mus:M35_Representative_Publication_Assignment a owl:Class ;
 	rdfs:subClassOf ecrm:E13_Attribute_Assignment ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M35 Representative Publication Assignment"@en .
+	rdfs:label "M35 Attribution d'Expression publicationnelle représentative"@fr , "M35 Representative Publication Assignment"@en .
 # 
 # http://data.doremus.org/ontology#M36_Award
 
 mus:M36_Award a owl:Class ;
 	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M36 Award"@en .
+	rdfs:label "M36 Award"@en , "M36 Récompense"@fr .
 # 
 # http://data.doremus.org/ontology#M37_Scale
 
@@ -1195,14 +1195,14 @@ mus:M38_Rhythmic_Pattern a owl:Class ;
 mus:M39_Derivation_Type_Assignment a owl:Class ;
 	rdfs:subClassOf ecrm:E17_Type_Assignment ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M39 Derivation Type Assignment"@en .
+	rdfs:label "M39 Attribution de type de dérivation"@fr , "M39 Derivation Type Assignment"@en .
 # 
 # http://data.doremus.org/ontology#M3_Order_Number
 
 mus:M3_Order_Number a owl:Class ;
 	rdfs:subClassOf ecrm:E41_Appellation ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M3 Order Number"@en .
+	rdfs:label "M3 Numéro d'ordre"@fr , "M3 Order Number"@en .
 # 
 # http://data.doremus.org/ontology#M40_Context
 
@@ -1215,28 +1215,29 @@ mus:M40_Context a owl:Class ;
 
 mus:M42_Performed_Expression_Creation a owl:Class ;
 	rdfs:subClassOf efrbroo:F28_Expression_Creation , efrbroo:F31_Performance ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "M42 Création d'Expression interprétée"@fr , "M42 Performed Expression Creation"@en .
 # 
 # http://data.doremus.org/ontology#M43_Performed_Expression
 
 mus:M43_Performed_Expression a owl:Class ;
 	rdfs:subClassOf efrbroo:F22_Self-Contained_Expression ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M43 Performed Expression"@en .
+	rdfs:label "M43 Expression interprétée"@fr , "M43 Performed Expression"@en .
 # 
 # http://data.doremus.org/ontology#M44_Performed_Work
 
 mus:M44_Performed_Work a owl:Class ;
 	rdfs:subClassOf efrbroo:F14_Individual_Work ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M44 Performed Work"@en .
+	rdfs:label "M44 Oeuvre interprétée"@fr , "M44 Performed Work"@en .
 # 
 # http://data.doremus.org/ontology#M45_Notated_Expression
 
 mus:M45_Notated_Expression a owl:Class ;
 	rdfs:subClassOf efrbroo:F22_Self-Contained_Expression ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M45 Notated Expression"@en .
+	rdfs:label "M45 Expression notée"@fr , "M45 Notated Expression"@en .
 # 
 # http://data.doremus.org/ontology#M4_Key
 
@@ -1247,14 +1248,14 @@ Le Concerto pour piano et orchestre en si bémol majeur No 2, Op. 19 de Beethove
 Cette classe décrit la tonalité de l’œuvre.
 Les tonalités sont souvent listées sous forme de référentiels multilingues, c’est pourquoi la classe M4 Key est liée à la classe M7 Linguistic Appellation."""@fr ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M4 Key"@en .
+	rdfs:label "M4 Key"@en , "M4 Tonalité"@fr .
 # 
 # http://data.doremus.org/ontology#M5_Genre
 
 mus:M5_Genre a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M5 Genre"@en .
+	rdfs:label "M5 Genre"@en , "M5 Genre"@fr .
 # 
 # http://data.doremus.org/ontology#M6_Casting
 
@@ -1264,7 +1265,7 @@ mus:M6_Casting a owl:Class ;
 Cette classe permet de décrire les « medium of performance » d’une œuvre, c’est-à-dire les instruments, machines, exécutants autres que musiciens (danseurs, acteurs, récitants,…) pour lesquels l’œuvre a été composée. Elle décrit donc l’intention du compositeur. M6 Casting est une « classe chapeau » qui représente la globalité de la distribution instrumentale et/ou vocale. Le détail de cette distribution est décrit via la classe M23 Casting Detail.
 Dans le cas de versions alternatives, on donnera deux M6 Casting différents pour la même expression."""@fr ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M6 Casting"@en .
+	rdfs:label "M6 Casting"@en , "M6 Distribution vocale ou instrumentale"@fr .
 # 
 # http://data.doremus.org/ontology#M7_Linguistic_Appellation
 
@@ -1273,14 +1274,14 @@ mus:M7_Linguistic_Appellation a owl:Class ;
 	rdfs:comment """Scope note:
 Cette classe permet de décrire une appellation et ses composantes linguistiques. Elle comprend donc les appellations originales et les traductions de ces appellations."""@fr ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M7 Linguistic Appellation"@en .
+	rdfs:label "M7 Appellation linguistique"@fr , "M7 Linguistic Appellation"@en .
 # 
 # http://data.doremus.org/ontology#M8_Tempo
 
 mus:M8_Tempo a owl:Class ;
 	rdfs:subClassOf ecrm:E29_Design_or_Procedure ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M8 Tempo"@en .
+	rdfs:label "M8 Tempo"@en , "M8 Tempo"@fr .
 # 
 # http://data.doremus.org/ontology#M9_Derivation_Type
 
@@ -1290,7 +1291,7 @@ mus:M9_Derivation_Type a owl:Class ;
 
 Examples:"""@en ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "Derivation Type"@en .
+	rdfs:label "Derivation Type"@en , "M9 Type de dérivation"@fr .
 # 
 # http://erlangen-crm.org/efrbroo/F38_Character
 
