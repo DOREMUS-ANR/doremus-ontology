@@ -344,18 +344,18 @@ mus:U29i_was_edited_by a owl:ObjectProperty ;
 
 mus:U2_foresees_use_of_medium_of_performance_of_type a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67_refers_to ;
-	owl:inverseOf mus:U2i_is_foreseen_type_of_medium_of_performance ;
+	owl:inverseOf mus:U2i_is_foreseen_type_of_medium_of_performance_in ;
 	rdfs:domain ecrm:E29_Design_or_Procedure ;
 	rdfs:range mus:M14_Medium_Of_Performance ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U2 foresees use of medium of performance of type"@en .
 # 
-# http://data.doremus.org/ontology#U2i_is_foreseen_type_of_medium_of_performance
+# http://data.doremus.org/ontology#U2i_is_foreseen_type_of_medium_of_performance_in
 
-mus:U2i_is_foreseen_type_of_medium_of_performance a owl:ObjectProperty ;
+mus:U2i_is_foreseen_type_of_medium_of_performance_in a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U2i is foreseen type of medium of performance"@en .
+	rdfs:label "U2i is foreseen type of medium of performance in"@en .
 # 
 # http://data.doremus.org/ontology#U30_created_track
 
@@ -530,18 +530,18 @@ mus:U39i_was_tuned_by a owl:ObjectProperty ;
 
 mus:U3_foresees_specific_medium_of_performance a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67_refers_to ;
-	owl:inverseOf mus:U3i_is_foreseen_specific_medium_of_performance ;
+	owl:inverseOf mus:U3i_is_foreseen_specific_medium_of_performance_in ;
 	rdfs:domain ecrm:E29_Design_or_Procedure ;
 	rdfs:range ecrm:E22_Man-Made_Object ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U3 forees specific medium of performance"@en .
 # 
-# http://data.doremus.org/ontology#U3i_is_foreseen_specific_medium_of_performance
+# http://data.doremus.org/ontology#U3i_is_foreseen_specific_medium_of_performance_in
 
-mus:U3i_is_foreseen_specific_medium_of_performance a owl:ObjectProperty ;
+mus:U3i_is_foreseen_specific_medium_of_performance_in a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U3i is foreseen specific medium of performance"@en .
+	rdfs:label "U3i is foreseen specific medium of performance in"@en .
 # 
 # http://data.doremus.org/ontology#U40_has_catalogue_name
 
@@ -624,7 +624,7 @@ mus:U44_has_dedication_statement a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67_refers_to ;
 	owl:inverseOf mus:U44i_is_dedication_statement_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-	rdfs:range mus:M15_Dedication ;
+	rdfs:range mus:M15_Dedication_Statement ;
 	rdfs:comment "U44 has dedication statement"@en ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
@@ -632,7 +632,7 @@ mus:U44_has_dedication_statement a owl:ObjectProperty ;
 
 mus:U44i_is_dedication_statement_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:domain mus:M15_Dedication ;
+	rdfs:domain mus:M15_Dedication_Statement ;
 	rdfs:range efrbroo:F22_Self-Contained_Expression ;
 	rdfs:comment "U44i is dedication statement of"@en ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
@@ -642,7 +642,7 @@ mus:U44i_is_dedication_statement_of a owl:ObjectProperty ;
 mus:U45_is_dedicated_to a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67_refers_to ;
 	owl:inverseOf mus:U45i_has_dedication ;
-	rdfs:domain mus:M15_Dedication ;
+	rdfs:domain mus:M15_Dedication_Statement ;
 	rdfs:range ecrm:E1_CRM_Entity ;
 	rdfs:comment "U45 is dedicated to"@en ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
@@ -652,7 +652,7 @@ mus:U45_is_dedicated_to a owl:ObjectProperty ;
 mus:U45i_has_dedication a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
 	rdfs:domain ecrm:E1_CRM_Entity ;
-	rdfs:range mus:M15_Dedication ;
+	rdfs:range mus:M15_Dedication_Statement ;
 	rdfs:comment "U45i has dedication"@en ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
@@ -674,6 +674,16 @@ mus:U46i_was_context_for a owl:ObjectProperty ;
 	rdfs:range ecrm:E7_Activity ;
 	rdfs:comment "U46i was context for"@en ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+# 
+# http://data.doremus.org/ontology#U49_created_for
+
+mus:U49_created_for a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P15_was_influenced_by ;
+	rdfs:domain efrbroo:F28_Expression_Creation ;
+	rdfs:range ecrm:E39_Actor ;
+	rdfs:comment "personne ou groupe pour lequel l'Expression a été créée."@fr ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U49 created for"@en .
 # 
 # http://data.doremus.org/ontology#U4_had_princeps_publication
 
@@ -936,12 +946,12 @@ mus:M14_Medium_Of_Performance a owl:Class ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M14 Medium Of Performance"@en .
 # 
-# http://data.doremus.org/ontology#M15_Dedication
+# http://data.doremus.org/ontology#M15_Dedication_Statement
 
-mus:M15_Dedication a owl:Class ;
+mus:M15_Dedication_Statement a owl:Class ;
 	rdfs:subClassOf ecrm:E33_Linguistic_Object ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M15 Dedication"@en .
+	rdfs:label "M15 Dedication Statement"@en .
 # 
 # http://data.doremus.org/ontology#M16_Maintenance
 
@@ -1138,7 +1148,7 @@ mus:M38_Rhythmic_Pattern a owl:Class ;
 # http://data.doremus.org/ontology#M39_Derivation_Type_Assignment
 
 mus:M39_Derivation_Type_Assignment a owl:Class ;
-	rdfs:subClassOf ecrm:E13_Attribute_Assignment ;
+	rdfs:subClassOf ecrm:E17_Type_Assignment ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M39 Derivation Type Assignment"@en .
 # 
