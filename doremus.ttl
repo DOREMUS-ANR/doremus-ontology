@@ -659,17 +659,17 @@ mus:U45i_has_dedication a owl:ObjectProperty ;
 # http://data.doremus.org/ontology#U46_occurred_in_context
 
 mus:U46_occurred_in_context a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P15_was_influenced_by ;
-	owl:inverseOf mus:U46i_was_context_for ;
+	rdfs:subPropertyOf ecrm:P2_has_type ;
+	owl:inverseOf mus:U46i_was_context_of ;
 	rdfs:domain ecrm:E7_Activity ;
 	rdfs:range mus:M40_Context ;
 	rdfs:comment "U46 occurred in context"@en ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
-# http://data.doremus.org/ontology#U46i_was_context_for
+# http://data.doremus.org/ontology#U46i_was_context_of
 
-mus:U46i_was_context_for a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P15i_influenced ;
+mus:U46i_was_context_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
 	rdfs:domain mus:M40_Context ;
 	rdfs:range ecrm:E7_Activity ;
 	rdfs:comment "U46i was context for"@en ;
@@ -796,19 +796,20 @@ mus:U55i_performed_expression_is_incorporated_in a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P165i_is_incorporated_in ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
-# http://data.doremus.org/ontology#U56_occurred_in_historical_or_geographical_context
+# http://data.doremus.org/ontology#U56_occurred_in_historical_context
 
-mus:U56_occurred_in_historical_or_geographical_context a owl:ObjectProperty ;
+mus:U56_occurred_in_historical_context a owl:ObjectProperty ;
 	rdfs:subPropertyOf mus:U46_occurred_in_context ;
-	owl:inverseOf mus:U56i_was_historical_or_geographical_context_of ;
+	owl:inverseOf mus:U56i_was_historical_context_of ;
 	rdfs:domain ecrm:E7_Activity ;
 	rdfs:range mus:M40_Context ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U56 occurred in historical context"@en .
 # 
-# http://data.doremus.org/ontology#U56i_was_historical_or_geographical_context_of
+# http://data.doremus.org/ontology#U56i_was_historical_context_of
 
-mus:U56i_was_historical_or_geographical_context_of a owl:ObjectProperty ;
-	rdfs:subPropertyOf mus:U46i_was_context_for ;
+mus:U56i_was_historical_context_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf mus:U46i_was_context_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
 # http://data.doremus.org/ontology#U57_occurred_in_religious_context
@@ -818,12 +819,13 @@ mus:U57_occurred_in_religious_context a owl:ObjectProperty ;
 	owl:inverseOf mus:U57i_was_religious_context_of ;
 	rdfs:domain ecrm:E7_Activity ;
 	rdfs:range mus:M40_Context ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U57 occurred in religious context"@en .
 # 
 # http://data.doremus.org/ontology#U57i_was_religious_context_of
 
 mus:U57i_was_religious_context_of a owl:ObjectProperty ;
-	rdfs:subPropertyOf mus:U46i_was_context_for ;
+	rdfs:subPropertyOf mus:U46i_was_context_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
 # http://data.doremus.org/ontology#U58_has_full_published_recording
@@ -872,6 +874,36 @@ mus:U5i_was_premiere_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U5i was premiere of"@en .
+# 
+# http://data.doremus.org/ontology#U60_occurred_in_cultural_context
+
+mus:U60_occurred_in_cultural_context a owl:ObjectProperty ;
+	rdfs:subPropertyOf mus:U46_occurred_in_context ;
+	owl:inverseOf mus:U60i_was_cultural_context_of ;
+	rdfs:domain ecrm:E7_Activity ;
+	rdfs:range mus:M40_Context ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U60 occurred in cultural context"@en .
+# 
+# http://data.doremus.org/ontology#U60i_was_cultural_context_of
+
+mus:U60i_was_cultural_context_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf mus:U46i_was_context_of .
+# 
+# http://data.doremus.org/ontology#U61_occurred_in_geographical_context
+
+mus:U61_occurred_in_geographical_context a owl:ObjectProperty ;
+	rdfs:subPropertyOf mus:U46_occurred_in_context ;
+	owl:inverseOf mus:U61i_was_geographical_context_of ;
+	rdfs:domain ecrm:E7_Activity ;
+	rdfs:range mus:M40_Context ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U61 occurred in geographical context"@en .
+# 
+# http://data.doremus.org/ontology#U61i_was_geographical_context_of
+
+mus:U61i_was_geographical_context_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf mus:U46i_was_context_of .
 # 
 # http://data.doremus.org/ontology#U6_foresees_actor
 
@@ -923,6 +955,10 @@ mus:U8i_is_foreseen_time-span_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U8i is foreseen time-span of"@en .
+# 
+# http://erlangen-crm.org/current/P15i_influenced
+
+ecrm:P15i_influenced rdfs:subPropertyOf ecrm:P2i_is_type_of .
 # 
 # 
 # 
@@ -1207,7 +1243,7 @@ mus:M3_Order_Number a owl:Class ;
 # http://data.doremus.org/ontology#M40_Context
 
 mus:M40_Context a owl:Class ;
-	rdfs:subClassOf ecrm:E33_Linguistic_Object ;
+	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M40 Context"@en , "M40 Contexte"@fr .
 # 
