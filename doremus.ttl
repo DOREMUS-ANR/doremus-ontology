@@ -734,21 +734,21 @@ mus:U51i_has_partial_or_full_recording a owl:ObjectProperty ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U51i has partial or full recording"@en .
 # 
-# http://data.doremus.org/ontology#U52_has_track_title
+# http://data.doremus.org/ontology#U52_has_context
 
-mus:U52_has_track_title a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P102_has_title ;
-	owl:inverseOf mus:U52i_is_track_title_of ;
-	rdfs:domain mus:M24_Track ;
-	rdfs:range ecrm:E35_Title ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U52 has track title"@en .
+mus:U52_has_context a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2_has_type ;
+	owl:inverseOf mus:U52i_is_context_of ;
+	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+	rdfs:range mus:M40_Context ;
+	rdfs:label <http://data.doremus.org/ontology#> , "U52 has context"@en .
 # 
-# http://data.doremus.org/ontology#U52i_is_track_title_of
+# http://data.doremus.org/ontology#U52i_is_context_of
 
-mus:U52i_is_track_title_of a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P102i_is_title_of ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+mus:U52i_is_context_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U52i is context of"@en .
 # 
 # http://data.doremus.org/ontology#U53_has_track_duration
 
@@ -904,6 +904,72 @@ mus:U61_occurred_in_geographical_context a owl:ObjectProperty ;
 
 mus:U61i_was_geographical_context_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf mus:U46i_was_context_of .
+# 
+# http://data.doremus.org/ontology#U63_has_religious_context
+
+mus:U63_has_religious_context a owl:ObjectProperty ;
+	rdfs:subPropertyOf mus:U52_has_context ;
+	owl:inverseOf mus:U63i_is_religious_context_of ;
+	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+	rdfs:range mus:M40_Context ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U63 has religious context"@en .
+# 
+# http://data.doremus.org/ontology#U63i_is_religious_context_of
+
+mus:U63i_is_religious_context_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf mus:U52i_is_context_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U63i is religious context of"@en .
+# 
+# http://data.doremus.org/ontology#U64_has_cultural_context
+
+mus:U64_has_cultural_context a owl:ObjectProperty ;
+	rdfs:subPropertyOf mus:U52_has_context ;
+	owl:inverseOf mus:U64i_is_cultural_context_of ;
+	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+	rdfs:range mus:M40_Context ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U64 has cultural context"@en .
+# 
+# http://data.doremus.org/ontology#U64i_is_cultural_context_of
+
+mus:U64i_is_cultural_context_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf mus:U52i_is_context_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> , "U64i is cultural context of"@en .
+# 
+# http://data.doremus.org/ontology#U65_has_geographical_context
+
+mus:U65_has_geographical_context a owl:ObjectProperty ;
+	rdfs:subPropertyOf mus:U52_has_context ;
+	owl:inverseOf mus:U65i_is_geographical_context_of ;
+	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+	rdfs:range mus:M40_Context ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> , "U65 has geographical context"@en .
+# 
+# http://data.doremus.org/ontology#U65i_is_geographical_context_of
+
+mus:U65i_is_geographical_context_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf mus:U52i_is_context_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U65i is geographical context of"@en .
+# 
+# http://data.doremus.org/ontology#U66_has_historical_context
+
+mus:U66_has_historical_context a owl:ObjectProperty ;
+	rdfs:subPropertyOf mus:U52_has_context ;
+	owl:inverseOf mus:U66i_is_historical_context_of ;
+	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+	rdfs:range mus:M40_Context ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U66 has historical context"@en .
+# 
+# http://data.doremus.org/ontology#U66i_is_historical_context_of
+
+mus:U66i_is_historical_context_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf mus:U52i_is_context_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U66i is historical context of"@en .
 # 
 # http://data.doremus.org/ontology#U6_foresees_actor
 
