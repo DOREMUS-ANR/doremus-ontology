@@ -513,7 +513,7 @@ mus:U38i_track_is_incorporated_in a owl:ObjectProperty ;
 # http://data.doremus.org/ontology#U39_has_tuned
 
 mus:U39_has_tuned a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P31_has_modified ;
+	rdfs:subPropertyOf mus:U26_has_maintained ;
 	owl:inverseOf mus:U39i_was_tuned_by ;
 	rdfs:domain mus:M16_Maintenance ;
 	rdfs:range ecrm:E22_Man-Made_Object ;
@@ -523,7 +523,8 @@ mus:U39_has_tuned a owl:ObjectProperty ;
 # http://data.doremus.org/ontology#U39i_was_tuned_by
 
 mus:U39i_was_tuned_by a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P31i_was_modified_by ;
+	rdfs:subPropertyOf mus:U26i_was_maintained_by ;
+	rdfs:comment "U39i was tuned by"@en ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
 # http://data.doremus.org/ontology#U3_foresees_specific_medium_of_performance
