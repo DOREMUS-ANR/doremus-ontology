@@ -491,25 +491,6 @@ mus:U37i_is_foreseen_character_in a owl:ObjectProperty ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U37i is foreseen character in"@en .
 # 
-# http://data.doremus.org/ontology#U38_incorporates_track
-
-mus:U38_incorporates_track a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P165_incorporates ;
-	owl:inverseOf mus:U38i_track_is_incorporated_in ;
-	rdfs:domain efrbroo:F24_Publication_Expression ;
-	rdfs:range mus:M24_Track ;
-	rdfs:comment "U38 incorporates track"@en ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
-# 
-# http://data.doremus.org/ontology#U38i_track_is_incorporated_in
-
-mus:U38i_track_is_incorporated_in a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P165i_is_incorporated_in ;
-	rdfs:domain mus:M24_Track ;
-	rdfs:range efrbroo:F24_Publication_Expression ;
-	rdfs:comment "U38i track is incorporated in"@en ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
-# 
 # http://data.doremus.org/ontology#U39_has_tuned
 
 mus:U39_has_tuned a owl:ObjectProperty ;
@@ -751,19 +732,19 @@ mus:U52i_is_context_of a owl:ObjectProperty ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U52i is context of"@en .
 # 
-# http://data.doremus.org/ontology#U53_has_track_duration
+# http://data.doremus.org/ontology#U53_has_duration
 
-mus:U53_has_track_duration a owl:ObjectProperty ;
+mus:U53_has_duration a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P43_has_dimension ;
-	owl:inverseOf mus:U53i_is_track_duration_of ;
-	rdfs:domain mus:M24_Track ;
+	owl:inverseOf mus:U53i_is_duration_of ;
+	rdfs:domain efrbroo:F2_Expression ;
 	rdfs:range ecrm:E54_Dimension ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U53 has track duration"@en .
+	rdfs:label "U53 has duration"@en .
 # 
-# http://data.doremus.org/ontology#U53i_is_track_duration_of
+# http://data.doremus.org/ontology#U53i_is_duration_of
 
-mus:U53i_is_track_duration_of a owl:ObjectProperty ;
+mus:U53i_is_duration_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P43i_is_dimension_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
