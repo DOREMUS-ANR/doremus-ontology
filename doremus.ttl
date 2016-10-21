@@ -272,6 +272,21 @@ mus:U24_has_award a owl:ObjectProperty ;
 mus:U24i_is_award_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2i_is_type_of .
 # 
+# http://data.doremus.org/ontology#U25_has_scale
+
+mus:U25_has_scale a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2_has_type ;
+	owl:inverseOf mus:U25i_is_scale_of ;
+	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+	rdfs:range mus:M37_Scale ;
+	rdfs:comment "U25 has scale"@en ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+# 
+# http://data.doremus.org/ontology#U25i_is_scale_of
+
+mus:U25i_is_scale_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2i_is_type_of .
+# 
 # http://data.doremus.org/ontology#U26_has_maintained
 
 mus:U26_has_maintained a owl:ObjectProperty ;
