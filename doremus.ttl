@@ -372,23 +372,6 @@ mus:U2i_is_foreseen_type_of_medium_of_performance_in a owl:ObjectProperty ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U2i is foreseen type of medium of performance in"@en .
 # 
-# http://data.doremus.org/ontology#U30_created_track
-
-mus:U30_created_track a owl:ObjectProperty ;
-	rdfs:subPropertyOf efrbroo:R17_created ;
-	owl:inverseOf mus:U30i_track_was_created_by ;
-	rdfs:domain mus:M29_Editing ;
-	rdfs:range mus:M24_Track ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U30 created track"@en .
-# 
-# http://data.doremus.org/ontology#U30i_track_was_created_by
-
-mus:U30i_track_was_created_by a owl:ObjectProperty ;
-	rdfs:subPropertyOf efrbroo:R17i_was_created_by ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U30i track was created by"@en .
-# 
 # http://data.doremus.org/ontology#U31_had_function_of_type
 
 mus:U31_had_function_of_type a owl:ObjectProperty ;
@@ -505,6 +488,22 @@ mus:U37i_is_foreseen_character_in a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U37i is foreseen character in"@en .
+# 
+# http://data.doremus.org/ontology#U38_has_descriptive_expression
+
+mus:U38_has_descriptive_expression a owl:ObjectProperty ;
+	rdfs:subPropertyOf efrbroo:R3_is_realised_in ;
+	owl:inverseOf mus:U38i_is_descriptive_expression_of ;
+	rdfs:domain efrbroo:F15_Complex_Work ;
+	rdfs:range efrbroo:F22_Self-Contained_Expression ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U38 a pour expression descriptive"@fr , "U38 has descriptive expression"@en .
+# 
+# http://data.doremus.org/ontology#U38i_is_descriptive_expression_of
+
+mus:U38i_is_descriptive_expression_of a owl:ObjectProperty ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U38i is descriptive expression of"@en .
 # 
 # http://data.doremus.org/ontology#U39_has_tuned
 
@@ -967,6 +966,40 @@ mus:U66i_is_historical_context_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf mus:U52i_is_context_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U66i is historical context of"@en .
+# 
+# http://data.doremus.org/ontology#U67_has_subtitle
+
+mus:U67_has_subtitle a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P102_has_title ;
+	owl:inverseOf mus:U67i_is_subtitle_of ;
+	rdfs:domain ecrm:E71_Man-Made_Thing ;
+	rdfs:range ecrm:E35_Title ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U67 a pour sous-titre"@fr , "U67 has subtitle"@en .
+# 
+# http://data.doremus.org/ontology#U67i_is_subtitle_of
+
+mus:U67i_is_subtitle_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P102i_is_title_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U67i est sous-titre de"@fr , "U67i is subtitle of"@en .
+# 
+# http://data.doremus.org/ontology#U68_has_variant_title
+
+mus:U68_has_variant_title a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P102_has_title ;
+	owl:inverseOf mus:U68i_is_variant_title_of ;
+	rdfs:domain ecrm:E71_Man-Made_Thing ;
+	rdfs:range ecrm:E35_Title ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U68 a pour variante de titre"@fr , "U68 has variant title"@en .
+# 
+# http://data.doremus.org/ontology#U68i_is_variant_title_of
+
+mus:U68i_is_variant_title_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P102i_is_title_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U68i est vriante de titre de"@fr , "U68i is variant title of"@en .
 # 
 # http://data.doremus.org/ontology#U6_foresees_actor
 
