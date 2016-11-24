@@ -1378,6 +1378,13 @@ mus:M44_Performed_Work a owl:Class ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M44 Oeuvre interprétée"@fr , "M44 Performed Work"@en .
 # 
+# http://data.doremus.org/ontology#M45_Descriptive_Expression_Assignment
+
+mus:M45_Descriptive_Expression_Assignment a owl:Class ;
+	rdfs:subClassOf ecrm:E13_Attribute_Assignment ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "M45 Attribution d'Expression Descriptive"@fr , "M45 Descriptive Expression Assignment"@en .
+# 
 # http://data.doremus.org/ontology#M45_Notated_Expression
 
 mus:M45_Notated_Expression a owl:Class ;
