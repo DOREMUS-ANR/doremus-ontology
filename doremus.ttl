@@ -1373,6 +1373,14 @@ mus:M45_Notated_Expression a owl:Class ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M45 Expression notée"@fr , "M45 Notated Expression"@en .
 # 
+# http://data.doremus.org/ontology#M46_Set_of_Tracks
+
+mus:M46_Set_of_Tracks a owl:Class ;
+	rdfs:subClassOf efrbroo:F22_Self-Contained_Expression ;
+	rdfs:comment "Scope Note : ensemble des pistes constituant un enregistrement publié."@fr ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "Ensemble de Pistes"@fr , "M46 Set of Tracks"@en .
+# 
 # http://data.doremus.org/ontology#M4_Key
 
 mus:M4_Key a owl:Class ;
