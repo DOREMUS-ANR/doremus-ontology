@@ -652,20 +652,20 @@ mus:U46i_was_context_of a owl:ObjectProperty ;
 	rdfs:comment "U46i was context for"@en ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
-# http://data.doremus.org/ontology#U47_is_derivation_type_of
+# http://data.doremus.org/ontology#U47_has_derivation_type
 
-mus:U47_is_derivation_type_of a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
-	owl:inverseOf mus:U47i_has_derivation_type ;
-	rdfs:domain mus:M9_Derivation_Type ;
-	rdfs:range ecrm:E89_Propositional_Object ;
+mus:U47_has_derivation_type a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2_has_type ;
+	owl:inverseOf mus:U47i_is_derivation_type_of ;
+	rdfs:domain ecrm:E89_Propositional_Object ;
+	rdfs:range mus:M9_Derivation_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U47 is derivation type of"@en .
+	rdfs:label "U47 has derivation type"@en .
 # 
-# http://data.doremus.org/ontology#U47i_has_derivation_type
+# http://data.doremus.org/ontology#U47i_is_derivation_type_of
 
-mus:U47i_has_derivation_type a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P2_has_type .
+mus:U47i_is_derivation_type_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2i_is_type_of .
 # 
 # http://data.doremus.org/ontology#U49_created_for
 
