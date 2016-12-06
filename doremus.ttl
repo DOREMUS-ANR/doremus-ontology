@@ -1053,18 +1053,18 @@ mus:U15_has_history a owl:DatatypeProperty ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
-# http://data.doremus.org/ontology#U30_has_foreseen_quantity_of_mop
+# http://data.doremus.org/ontology#U30_foresees_quantity_of_mop
 
-mus:U30_has_foreseen_quantity_of_mop a owl:DatatypeProperty ;
+mus:U30_foresees_quantity_of_mop a owl:DatatypeProperty ;
 	rdfs:domain mus:M23_Casting_Detail ;
-	rdfs:range xsd:integer ;
+	rdfs:range xsd:positiveInteger ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
-# http://data.doremus.org/ontology#U48_has_foreseen_quantity_of_actors
+# http://data.doremus.org/ontology#U48_foresees_quantity_of_actors
 
-mus:U48_has_foreseen_quantity_of_actors a owl:DatatypeProperty ;
+mus:U48_foresees_quantity_of_actors a owl:DatatypeProperty ;
 	rdfs:domain mus:M23_Casting_Detail ;
-	rdfs:range xsd:integer ;
+	rdfs:range xsd:positiveInteger ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
 # http://data.doremus.org/ontology#U9_has_quantity
