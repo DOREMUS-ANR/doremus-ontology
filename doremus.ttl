@@ -1366,13 +1366,6 @@ mus:M45_Descriptive_Expression_Assignment a owl:Class ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M45 Attribution d'Expression Descriptive"@fr , "M45 Descriptive Expression Assignment"@en .
 # 
-# http://data.doremus.org/ontology#M45_Notated_Expression
-
-mus:M45_Notated_Expression a owl:Class ;
-	rdfs:subClassOf efrbroo:F22_Self-Contained_Expression ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M45 Expression notée"@fr , "M45 Notated Expression"@en .
-# 
 # http://data.doremus.org/ontology#M46_Set_of_Tracks
 
 mus:M46_Set_of_Tracks a owl:Class ;
