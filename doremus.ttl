@@ -1101,6 +1101,7 @@ ecrm:P15i_influenced rdfs:subPropertyOf ecrm:P2i_is_type_of .
 mus:U15_has_history a owl:DatatypeProperty ;
 	rdfs:subPropertyOf ecrm:P3_has_note ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+	rdfs:range xsd:string ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
 # http://data.doremus.org/ontology#U30_foresees_quantity_of_mop
@@ -1349,7 +1350,7 @@ mus:M35_Representative_Publication_Assignment a owl:Class ;
 # http://data.doremus.org/ontology#M36_Award
 
 mus:M36_Award a owl:Class ;
-	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
+	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M36 Award"@en , "M36 Récompense"@fr .
 # 
