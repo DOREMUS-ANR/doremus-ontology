@@ -65,7 +65,7 @@ mus:U12_has_genre a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2_has_type ;
 	owl:inverseOf mus:U12i_is_genre_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-	rdfs:range mus:M5_Genre ;
+	rdfs:range mus:M5_Genre_or_Form ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U12 has genre"@en .
 # 
@@ -633,6 +633,23 @@ mus:U44i_is_dedication_statement_of a owl:ObjectProperty ;
 	rdfs:comment "U44i is dedication statement of"@en ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
+# http://data.doremus.org/ontology#U45_has_metronome_indication
+
+mus:U45_has_metronome_indication a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P67_refers_to ;
+	owl:inverseOf mus:U45i_is_metronome_indication_of ;
+	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+	rdfs:range mus:M41_Metronome_Indication ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U45 a pour indication métronomique"@fr , "U45 has metronome indication"@en .
+# 
+# http://data.doremus.org/ontology#U45i_is_metronome_indication_of
+
+mus:U45i_is_metronome_indication_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U45i is metronome indication of"@en .
+# 
 # http://data.doremus.org/ontology#U46_occurred_in_context
 
 mus:U46_occurred_in_context a owl:ObjectProperty ;
@@ -882,6 +899,23 @@ mus:U61_occurred_in_geographical_context a owl:ObjectProperty ;
 mus:U61i_was_geographical_context_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf mus:U46i_was_context_of .
 # 
+# http://data.doremus.org/ontology#U62_has_form
+
+mus:U62_has_form a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2_has_type ;
+	owl:inverseOf mus:U62i_is_form_of ;
+	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+	rdfs:range mus:M5_Genre_or_Form ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U62 has form"@en .
+# 
+# http://data.doremus.org/ontology#U62i_is_form_of
+
+mus:U62i_is_form_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U62i is form of"@en .
+# 
 # http://data.doremus.org/ontology#U63_has_religious_context
 
 mus:U63_has_religious_context a owl:ObjectProperty ;
@@ -981,6 +1015,22 @@ mus:U68i_is_variant_title_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P102i_is_title_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U68i est vriante de titre de"@fr , "U68i is variant title of"@en .
+# 
+# http://data.doremus.org/ontology#U69_has_WoO_number
+
+mus:U69_has_WoO_number a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P106_is_composed_of ;
+	owl:inverseOf mus:U69i_is_WoO_number_of ;
+	rdfs:domain mus:M2_Opus_Statement ;
+	rdfs:range mus:M47_WoO_Number ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U69 a pour numéro de WoO"@fr , "U69 has WoO number"@en .
+# 
+# http://data.doremus.org/ontology#U69i_is_WoO_number_of
+
+mus:U69i_is_WoO_number_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P106i_forms_part_of ;
+	rdfs:label <http://data.doremus.org/ontology#> , "U69i is WoO number of"@en .
 # 
 # http://data.doremus.org/ontology#U6_foresees_actor
 
@@ -1338,6 +1388,13 @@ mus:M40_Context a owl:Class ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M40 Context"@en , "M40 Contexte"@fr .
 # 
+# http://data.doremus.org/ontology#M41_Metronome_Indication
+
+mus:M41_Metronome_Indication a owl:Class ;
+	rdfs:subClassOf ecrm:E29_Design_or_Procedure ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "M41 Indication Métronomique"@fr , "M41 Metronome Indication"@en .
+# 
 # http://data.doremus.org/ontology#M42_Performed_Expression_Creation
 
 mus:M42_Performed_Expression_Creation a owl:Class ;
@@ -1372,7 +1429,14 @@ mus:M46_Set_of_Tracks a owl:Class ;
 	rdfs:subClassOf efrbroo:F22_Self-Contained_Expression ;
 	rdfs:comment "Scope Note : ensemble des pistes constituant un enregistrement publié."@fr ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "Ensemble de Pistes"@fr , "M46 Set of Tracks"@en .
+	rdfs:label "M46 Ensemble de Pistes"@fr , "M46 Set of Tracks"@en .
+# 
+# http://data.doremus.org/ontology#M47_WoO_Number
+
+mus:M47_WoO_Number a owl:Class ;
+	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "M47 Numéro de WoO"@fr , "M47 WoO Number"@en .
 # 
 # http://data.doremus.org/ontology#M4_Key
 
@@ -1385,12 +1449,12 @@ Les tonalités sont souvent listées sous forme de référentiels multilingues, 
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M4 Key"@en , "M4 Tonalité"@fr .
 # 
-# http://data.doremus.org/ontology#M5_Genre
+# http://data.doremus.org/ontology#M5_Genre_or_Form
 
-mus:M5_Genre a owl:Class ;
+mus:M5_Genre_or_Form a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M5 Genre"@en , "M5 Genre"@fr .
+	rdfs:label "M5 Genre or Form"@en , "M5 Genre ou Forme"@fr .
 # 
 # http://data.doremus.org/ontology#M6_Casting
 
