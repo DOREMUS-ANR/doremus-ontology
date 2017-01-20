@@ -74,7 +74,7 @@ mus:U12_has_genre a owl:ObjectProperty ;
 mus:U12i_is_genre_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U12 is genre of"@en .
+	rdfs:label "U12i is genre of"@en .
 # 
 # http://data.doremus.org/ontology#U13_has_casting
 
@@ -120,12 +120,12 @@ mus:U16_has_catalogue_statement a owl:ObjectProperty ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U16 has catalogue statement"@en .
 # 
-# http://data.doremus.org/ontology#U16_is_catalogue_statement_of
+# http://data.doremus.org/ontology#U16i_is_catalogue_statement_of
 
-mus:U16_is_catalogue_statement_of a owl:ObjectProperty ;
+mus:U16i_is_catalogue_statement_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P1i_identifies ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U16 is catalogue statement of"@en .
+	rdfs:label "U16i is catalogue statement of"@en .
 # 
 # http://data.doremus.org/ontology#U17_has_opus_statement
 
@@ -584,7 +584,7 @@ mus:U41_has_catalogue_number a owl:ObjectProperty ;
 
 mus:U41i_is_catalogue_number_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P106i_forms_part_of ;
-	rdfs:label "U41 is catalogue number of"@en ;
+	rdfs:label "U41i is catalogue number of"@en ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
 # 
 # http://data.doremus.org/ontology#U42_has_opus_number
