@@ -1080,6 +1080,40 @@ mus:U6i_is_foreseen_actor_of a owl:ObjectProperty ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U6i is foreseen actor of"@en .
 # 
+# http://data.doremus.org/ontology#U70_has_title
+
+mus:U70_has_title a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P102_has_title ;
+	owl:inverseOf mus:U70i_is_title_of ;
+	rdfs:domain ecrm:E89_Propositional_Object ;
+	rdfs:range ecrm:E35_Title ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U70 a pour titre"@fr , "U70 has title"@en .
+# 
+# http://data.doremus.org/ontology#U70i_is_title_of
+
+mus:U70i_is_title_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P102i_is_title_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U70i is title of"@en .
+# 
+# http://data.doremus.org/ontology#U71_has_uniform_music_title
+
+mus:U71_has_uniform_music_title a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P102_has_title ;
+	owl:inverseOf mus:U71i_is_uniform_music_title_of ;
+	rdfs:domain ecrm:E89_Propositional_Object ;
+	rdfs:range ecrm:E35_Title ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U71 a pour titre uniforme musical"@fr , "U71 has uniform music title"@en .
+# 
+# http://data.doremus.org/ontology#U71i_is_uniform_music_title_of
+
+mus:U71i_is_uniform_music_title_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P102i_is_title_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U71i is uniform music title of"@en .
+# 
 # http://data.doremus.org/ontology#U7_foresees_place_at
 
 mus:U7_foresees_place_at a owl:ObjectProperty ;
@@ -1128,28 +1162,40 @@ mus:U8i_is_foreseen_time_span_of a owl:ObjectProperty ;
 mus:U15_has_history a owl:DatatypeProperty ;
 	rdfs:subPropertyOf ecrm:P3_has_note ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U15 has history"@en .
 # 
 # http://data.doremus.org/ontology#U30_foresees_quantity_of_mop
 
 mus:U30_foresees_quantity_of_mop a owl:DatatypeProperty ;
 	rdfs:domain mus:M23_Casting_Detail ;
 	rdfs:range xsd:positiveInteger ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U30 foresees quantity of mop"@en .
 # 
 # http://data.doremus.org/ontology#U48_foresees_quantity_of_actors
 
 mus:U48_foresees_quantity_of_actors a owl:DatatypeProperty ;
 	rdfs:domain mus:M23_Casting_Detail ;
 	rdfs:range xsd:positiveInteger ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U48 foresees quantity of actors"@en .
+# 
+# http://data.doremus.org/ontology#U72_has_title_note
+
+mus:U72_has_title_note a owl:DatatypeProperty ;
+	rdfs:subPropertyOf ecrm:P3_has_note ;
+	rdfs:domain ecrm:E89_Propositional_Object ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U72 has title note"@en .
 # 
 # http://data.doremus.org/ontology#U9_has_quantity
 
 mus:U9_has_quantity a owl:DatatypeProperty ;
 	rdfs:domain ecrm:E77_Persistent_Item ;
 	rdfs:range xsd:integer ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U9 has quantity"@en .
 # 
 # 
 # 
