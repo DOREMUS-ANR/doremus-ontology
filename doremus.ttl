@@ -25,6 +25,21 @@
 # #################################################################
 # 
 # 
+# http://data.doremus.org/ontology#CLR25_should_perform
+
+mus:CLR25_should_perform a owl:ObjectProperty ;
+	owl:inverseOf mus:CLR25i_should_be_performed_by ;
+	rdfs:domain mus:M26_Foreseen_Performance ;
+	rdfs:range efrbroo:F25_Performance_Plan ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "CLR25 should perform"@en .
+# 
+# http://data.doremus.org/ontology#CLR25i_should_be_performed_by
+
+mus:CLR25i_should_be_performed_by a owl:ObjectProperty ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "CLR25i should be performed by"@en .
+# 
 # http://data.doremus.org/ontology#U10_has_order_number
 
 mus:U10_has_order_number a owl:ObjectProperty ;
@@ -114,11 +129,16 @@ mus:U14i_is_tempo_of a owl:ObjectProperty ;
 
 mus:U16_has_catalogue_statement a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P1_is_identified_by ;
-	owl:inverseOf mus:U16_is_catalogue_statement_of ;
-	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+	owl:inverseOf mus:U16_is_catalogue_statement_of .
+
+mus:U16_is_catalogue_statement_of a owl:ObjectProperty .
+
+mus:U16_has_catalogue_statement rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M1_Catalogue_Statement ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U16 has catalogue statement"@en .
+# 
+# http://data.doremus.org/ontology#U16_is_catalogue_statement_of
 # 
 # http://data.doremus.org/ontology#U16i_is_catalogue_statement_of
 
@@ -533,8 +553,8 @@ mus:U39_has_tuned a owl:ObjectProperty ;
 
 mus:U39i_was_tuned_by a owl:ObjectProperty ;
 	rdfs:subPropertyOf mus:U26i_was_maintained_by ;
-	rdfs:label "U39i was tuned by"@en ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U39i was tuned by"@en .
 # 
 # http://data.doremus.org/ontology#U3_foresees_specific_medium_of_performance
 
@@ -560,15 +580,15 @@ mus:U40_has_catalogue_name a owl:ObjectProperty ;
 	owl:inverseOf mus:U40i_is_catalogue_name_of ;
 	rdfs:domain mus:M1_Catalogue_Statement ;
 	rdfs:range mus:M10_Catalogue_Name ;
-	rdfs:label "U40 has catalogue name"@en ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U40 has catalogue name"@en .
 # 
 # http://data.doremus.org/ontology#U40i_is_catalogue_name_of
 
 mus:U40i_is_catalogue_name_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P106i_forms_part_of ;
-	rdfs:label "U40i is catalogue name of"@en ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U40i is catalogue name of"@en .
 # 
 # http://data.doremus.org/ontology#U41_has_catalogue_number
 
@@ -577,15 +597,15 @@ mus:U41_has_catalogue_number a owl:ObjectProperty ;
 	owl:inverseOf mus:U41i_is_catalogue_number_of ;
 	rdfs:domain mus:M1_Catalogue_Statement ;
 	rdfs:range mus:M11_Catalogue_Number ;
-	rdfs:label "U41 has catalogue number"@en ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U41 has catalogue number"@en .
 # 
 # http://data.doremus.org/ontology#U41i_is_catalogue_number_of
 
 mus:U41i_is_catalogue_number_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P106i_forms_part_of ;
-	rdfs:label "U41i is catalogue number of"@en ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U41i is catalogue number of"@en .
 # 
 # http://data.doremus.org/ontology#U42_has_opus_number
 
@@ -594,15 +614,15 @@ mus:U42_has_opus_number a owl:ObjectProperty ;
 	owl:inverseOf mus:U42i_is_opus_number_of ;
 	rdfs:domain mus:M2_Opus_Statement ;
 	rdfs:range mus:M12_Opus_Number ;
-	rdfs:label "U42 has opus number"@en ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U42 has opus number"@en .
 # 
 # http://data.doremus.org/ontology#U42i_is_opus_number_of
 
 mus:U42i_is_opus_number_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P106i_forms_part_of ;
-	rdfs:label "U42i is opus number of"@en ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U42i is opus number of"@en .
 # 
 # http://data.doremus.org/ontology#U43_has_opus_subnumber
 
@@ -610,16 +630,16 @@ mus:U43_has_opus_subnumber a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P106_is_composed_of ;
 	owl:inverseOf mus:U43i_is_opus_subnumber_of ;
 	rdfs:domain mus:M2_Opus_Statement ;
-	rdfs:label "U43 has opus subnumber"@en ;
 	rdfs:range mus:M13_Opus_Subnumber ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U43 has opus subnumber"@en .
 # 
 # http://data.doremus.org/ontology#U43i_is_opus_subnumber_of
 
 mus:U43i_is_opus_subnumber_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P106i_forms_part_of ;
-	rdfs:label "U43i is opus subnumber of"@en ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U43i is opus subnumber of"@en .
 # 
 # http://data.doremus.org/ontology#U44_has_dedication_statement
 
@@ -628,15 +648,15 @@ mus:U44_has_dedication_statement a owl:ObjectProperty ;
 	owl:inverseOf mus:U44i_is_dedication_statement_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M15_Dedication_Statement ;
-	rdfs:label "U44 has dedication statement"@en ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U44 has dedication statement"@en .
 # 
 # http://data.doremus.org/ontology#U44i_is_dedication_statement_of
 
 mus:U44i_is_dedication_statement_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-	rdfs:label "U44i is dedication statement of"@en ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U44i is dedication statement of"@en .
 # 
 # http://data.doremus.org/ontology#U45_has_metronome_indication
 
@@ -662,15 +682,15 @@ mus:U46_occurred_in_context a owl:ObjectProperty ;
 	owl:inverseOf mus:U46i_was_context_of ;
 	rdfs:domain ecrm:E7_Activity ;
 	rdfs:range mus:M40_Context ;
-	rdfs:label "U46 occurred in context"@en ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U46 occurred in context"@en .
 # 
 # http://data.doremus.org/ontology#U46i_was_context_of
 
 mus:U46i_was_context_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
-	rdfs:label "U46i was context of"@en ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U46i was context of"@en .
 # 
 # http://data.doremus.org/ontology#U47_has_derivation_type
 
@@ -1576,4 +1596,4 @@ efrbroo:F38_Character a owl:Class ;
 efrbroo:F50_Controlled_Access_Point a owl:Class ;
 	rdfs:subClassOf ecrm:E42_Identifier .
 # 
-# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
+# Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
