@@ -80,7 +80,7 @@ mus:U12_has_genre a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2_has_type ;
 	owl:inverseOf mus:U12i_is_genre_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-	rdfs:range mus:M5_Genre_or_Form ;
+	rdfs:range mus:M5_Genre ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U12 has genre"@en .
 # 
@@ -129,16 +129,15 @@ mus:U14i_is_tempo_of a owl:ObjectProperty ;
 
 mus:U16_has_catalogue_statement a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P1_is_identified_by ;
-	owl:inverseOf mus:U16_is_catalogue_statement_of .
-
-mus:U16_is_catalogue_statement_of a owl:ObjectProperty .
-
-mus:U16_has_catalogue_statement rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+	owl:inverseOf mus:U16i_is_catalogue_statement_of ;
+	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
 	rdfs:range mus:M1_Catalogue_Statement ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U16 has catalogue statement"@en .
 # 
 # http://data.doremus.org/ontology#U16_is_catalogue_statement_of
+
+mus:U16_is_catalogue_statement_of a owl:ObjectProperty .
 # 
 # http://data.doremus.org/ontology#U16i_is_catalogue_statement_of
 
@@ -232,32 +231,12 @@ mus:U20i_is_music_group_formation_of a owl:ObjectProperty ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U20i is music group formation of"@en .
 # 
-# http://data.doremus.org/ontology#U21_has_tag
-
-mus:U21_has_tag a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P2_has_type ;
-	owl:inverseOf mus:U21i_is_tag_of ;
-	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-	rdfs:range mus:M21_Description_Tag ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U21 has tag"@en .
-# 
 # http://data.doremus.org/ontology#U21i_is_tag_of
 
 mus:U21i_is_tag_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U21i is tag of"@en .
-# 
-# http://data.doremus.org/ontology#U22_has_mode
-
-mus:U22_has_mode a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P2_has_type ;
-	owl:inverseOf mus:U22i_is_mode_of ;
-	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-	rdfs:range mus:M22_Mode ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U22 has mode"@en .
 # 
 # http://data.doremus.org/ontology#U22i_is_mode_of
 
@@ -306,7 +285,7 @@ mus:U25_has_scale a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2_has_type ;
 	owl:inverseOf mus:U25i_is_scale_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-	rdfs:range mus:M37_Scale ;
+	rdfs:range mus:M37_Music_Scale ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U25 has scale"@en .
 # 
@@ -954,7 +933,7 @@ mus:U62_has_form a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P2_has_type ;
 	owl:inverseOf mus:U62i_is_form_of ;
 	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-	rdfs:range mus:M5_Genre_or_Form ;
+	rdfs:range mus:M22_Form ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U62 has form"@en .
 # 
@@ -1134,6 +1113,57 @@ mus:U71i_is_uniform_music_title_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P102i_is_title_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U71i is uniform music title of"@en .
+# 
+# http://data.doremus.org/ontology#U73_is_derivative_of
+
+mus:U73_is_derivative_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P130_shows_features_of ;
+	owl:inverseOf mus:U73i_has_derivative ;
+	rdfs:domain efrbroo:F2_Expression ;
+	rdfs:range efrbroo:F2_Expression ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U73 is derivative of"@en .
+# 
+# http://data.doremus.org/ontology#U73i_has_derivative
+
+mus:U73i_has_derivative a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P130i_features_are_also_found_on ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U73i has derivative"@en .
+# 
+# http://data.doremus.org/ontology#U74_cited
+
+mus:U74_cited a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P16_used_specific_object ;
+	owl:inverseOf mus:U74i_was_cited_by ;
+	rdfs:domain efrbroo:F28_Expression_Creation ;
+	rdfs:range efrbroo:F22_Self-Contained_Expression ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U74 cited"@en .
+# 
+# http://data.doremus.org/ontology#U74i_was_cited_by
+
+mus:U74i_was_cited_by a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P16i_was_used_for ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U74i was cited by"@en .
+# 
+# http://data.doremus.org/ontology#U75_was_based_on
+
+mus:U75_was_based_on a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P16_used_specific_object ;
+	owl:inverseOf mus:U75i_was_basis_for ;
+	rdfs:domain efrbroo:F28_Expression_Creation ;
+	rdfs:range efrbroo:F22_Self-Contained_Expression ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U75 was based on"@en .
+# 
+# http://data.doremus.org/ontology#U75i_was_basis_for
+
+mus:U75i_was_basis_for a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P16i_was_used_for ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U75i was basis for"@en .
 # 
 # http://data.doremus.org/ontology#U7_foresees_place_at
 
@@ -1325,19 +1355,12 @@ mus:M20_Music_Group_Formation a owl:Class ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M20 Music Group Formation"@en , "M20 Type de formation musicale ou vocale"@fr .
 # 
-# http://data.doremus.org/ontology#M21_Description_Tag
+# http://data.doremus.org/ontology#M22_Form
 
-mus:M21_Description_Tag a owl:Class ;
+mus:M22_Form a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M21 Description Tag"@en .
-# 
-# http://data.doremus.org/ontology#M22_Mode
-
-mus:M22_Mode a owl:Class ;
-	rdfs:subClassOf ecrm:E55_Type ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M22 Mode"@en , "M22 Mode"@fr .
+	rdfs:label "M22 Form"@en , "M22 Forme"@fr .
 # 
 # http://data.doremus.org/ontology#M23_Casting_Detail
 
@@ -1447,12 +1470,12 @@ mus:M36_Award a owl:Class ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M36 Award"@en , "M36 Récompense"@fr .
 # 
-# http://data.doremus.org/ontology#M37_Scale
+# http://data.doremus.org/ontology#M37_Music_Scale
 
-mus:M37_Scale a owl:Class ;
+mus:M37_Music_Scale a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M37 Gamme"@fr , "M37 Scale"@en .
+	rdfs:label "M37 Gamme"@fr , "M37 Music Scale"@en .
 # 
 # http://data.doremus.org/ontology#M38_Rhythmic_Pattern
 
@@ -1543,12 +1566,12 @@ Les tonalités sont souvent listées sous forme de référentiels multilingues, 
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M4 Key"@en , "M4 Tonalité"@fr .
 # 
-# http://data.doremus.org/ontology#M5_Genre_or_Form
+# http://data.doremus.org/ontology#M5_Genre
 
-mus:M5_Genre_or_Form a owl:Class ;
+mus:M5_Genre a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M5 Genre or Form"@en , "M5 Genre ou Forme"@fr .
+	rdfs:label "M5 Genre"@en , "M5 Genre"@fr .
 # 
 # http://data.doremus.org/ontology#M6_Casting
 
