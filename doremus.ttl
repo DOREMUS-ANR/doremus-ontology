@@ -1144,22 +1144,39 @@ mus:U74i_was_cited_by a owl:ObjectProperty ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U74i was cited by"@en .
 # 
-# http://data.doremus.org/ontology#U75_was_based_on
+# http://data.doremus.org/ontology#U75_has_harmonic_structure
 
-mus:U75_was_based_on a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P16_used_specific_object ;
-	owl:inverseOf mus:U75i_was_basis_for ;
-	rdfs:domain efrbroo:F28_Expression_Creation ;
-	rdfs:range efrbroo:F22_Self-Contained_Expression ;
+mus:U75_has_harmonic_structure a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2_has_type ;
+	owl:inverseOf mus:U75i_is_harmonic_structure_of ;
+	rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+	rdfs:range mus:M21_Harmonic_Structure ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U75 was based on"@en .
+	rdfs:label "U75 has harmonic structure"@en .
 # 
-# http://data.doremus.org/ontology#U75i_was_basis_for
+# http://data.doremus.org/ontology#U75i_is_harmonic_structure_of
 
-mus:U75i_was_basis_for a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P16i_was_used_for ;
+mus:U75i_is_harmonic_structure_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U75i was basis for"@en .
+	rdfs:label "U75i is harmonic structure of"@en .
+# 
+# http://data.doremus.org/ontology#U76_has_WoO_subnumber
+
+mus:U76_has_WoO_subnumber a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P106_is_composed_of ;
+	owl:inverseOf mus:U76i_is_WoO_subnumber_of ;
+	rdfs:domain mus:M2_Opus_Statement ;
+	rdfs:range mus:M48_WoO_Subnumber ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U76 has WoO subnumber"@en .
+# 
+# http://data.doremus.org/ontology#U76i_is_WoO_subnumber_of
+
+mus:U76i_is_WoO_subnumber_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P106i_forms_part_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U76i is opus subnumber of"@en .
 # 
 # http://data.doremus.org/ontology#U7_foresees_place_at
 
@@ -1350,6 +1367,13 @@ mus:M20_Music_Group_Formation a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M20 Music Group Formation"@en , "M20 Type de formation musicale ou vocale"@fr .
+# 
+# http://data.doremus.org/ontology#M21_Harmonic_Structure
+
+mus:M21_Harmonic_Structure a owl:Class ;
+	rdfs:subClassOf ecrm:E55_Type ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "M21 Harmonic Structure"@en , "M21 Structure Harmonique"@fr .
 # 
 # http://data.doremus.org/ontology#M22_Form
 
@@ -1551,12 +1575,20 @@ mus:M47_WoO_Number a owl:Class ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "M47 Numéro de WoO"@fr , "M47 WoO Number"@en .
 # 
+# http://data.doremus.org/ontology#M48_WoO_Subnumber
+
+mus:M48_WoO_Subnumber a owl:Class ;
+	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "M48 WoO Subnumber"@en .
+# 
 # http://data.doremus.org/ontology#M4_Key
 
 mus:M4_Key a owl:Class ;
 	rdfs:subClassOf ecrm:E55_Type ;
-	rdfs:comment """Examples:
-Le Concerto pour piano et orchestre en si bémol majeur No 2, Op. 19 de Beethoven (F22) a pour tonalité (M4 Key) « Si bémol majeur »."""@fr , """Scope note:
+	rdfs:comment """Examples:	→ Le Concerto pour Piano et orchestre en Si bémol majeur de Beethoven a pour tonalité si bémol majeur :
+	
+F22 Self-Contained Expression u11 has key M4 Key { Si bémol Majeur }"""@fr , """Scope note:
 Cette classe décrit la tonalité de l’œuvre.
 Les tonalités sont souvent listées sous forme de référentiels multilingues, c’est pourquoi la classe M4 Key est liée à la classe M7 Linguistic Appellation."""@fr ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
