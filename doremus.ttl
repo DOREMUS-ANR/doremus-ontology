@@ -25,21 +25,6 @@
 # #################################################################
 # 
 # 
-# http://data.doremus.org/ontology#CLR25_should_perform
-
-mus:CLR25_should_perform a owl:ObjectProperty ;
-	owl:inverseOf mus:CLR25i_should_be_performed_by ;
-	rdfs:domain mus:M26_Foreseen_Performance ;
-	rdfs:range efrbroo:F25_Performance_Plan ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "CLR25 should perform"@en .
-# 
-# http://data.doremus.org/ontology#CLR25i_should_be_performed_by
-
-mus:CLR25i_should_be_performed_by a owl:ObjectProperty ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "CLR25i should be performed by"@en .
-# 
 # http://data.doremus.org/ontology#U10_has_order_number
 
 mus:U10_has_order_number a owl:ObjectProperty ;
@@ -1177,6 +1162,23 @@ mus:U76i_is_WoO_subnumber_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P106i_forms_part_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U76i is opus subnumber of"@en .
+# 
+# http://data.doremus.org/ontology#U77_foresees_performing_plan
+
+mus:U77_foresees_performing_plan a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P67_refers_to ;
+	owl:inverseOf mus:U77i_is_foreseen_plan_in ;
+	rdfs:domain mus:M25_Foreseen_Activity ;
+	rdfs:range efrbroo:F25_Performance_Plan ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U77 foresees performing plan"@en .
+# 
+# http://data.doremus.org/ontology#U77i_is_foreseen_plan_in
+
+mus:U77i_is_foreseen_plan_in a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U77i is foreseen plan in"@en .
 # 
 # http://data.doremus.org/ontology#U7_foresees_place_at
 
