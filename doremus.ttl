@@ -219,13 +219,6 @@ mus:U21i_is_tag_of a owl:ObjectProperty ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U21i is tag of"@en .
 # 
-# http://data.doremus.org/ontology#U22i_is_mode_of
-
-mus:U22i_is_mode_of a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P2i_is_type_of ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U22i is mode of"@en .
-# 
 # http://data.doremus.org/ontology#U23_has_casting_detail
 
 mus:U23_has_casting_detail a owl:ObjectProperty ;
