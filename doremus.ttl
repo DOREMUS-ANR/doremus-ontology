@@ -15,9 +15,10 @@
                                      owl:imports efrbroo: ;
                                      vann:preferredNamespaceUri "http://data.doremus.org/ontology#" ;
                                      dc:description "DOREMUS is an extension of the FRBRoo model for describing the music." ;
-                                     vann:preferredNamespacePrefix "mus" ;
                                      owl:versionInfo """v0.1
-V0.2 test""" .
+V0.2 test
+V0.3 test""" ;
+                                     vann:preferredNamespacePrefix "mus" .
 
 #################################################################
 #    Object Properties
