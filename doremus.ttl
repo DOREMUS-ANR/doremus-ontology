@@ -1271,31 +1271,31 @@ mus:U76i_is_WoO_subnumber_of a owl:DatatypeProperty ;
 # 
 # http://data.doremus.org/ontology#M10_Catalogue_Name
 
-mus:M10_Catalogue_Name a owl:Class ;
-	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M10 Catalogue Name"@en , "M10 Nom de catalogue"@fr .
+# mus:M10_Catalogue_Name a owl:Class ;
+#	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
+#	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+#	rdfs:label "M10 Catalogue Name"@en , "M10 Nom de catalogue"@fr .
 # 
 # http://data.doremus.org/ontology#M11_Catalogue_Number
 
-mus:M11_Catalogue_Number a owl:Class ;
-	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M11 Catalogue Number"@en , "M11 Numéro de catalogue"@fr .
+# mus:M11_Catalogue_Number a owl:Class ;
+#	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
+#	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+#	rdfs:label "M11 Catalogue Number"@en , "M11 Numéro de catalogue"@fr .
 # 
 # http://data.doremus.org/ontology#M12_Opus_Number
 
-mus:M12_Opus_Number a owl:Class ;
-	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M12 Numéro d'opus"@fr , "M12 Opus Number"@en .
+# mus:M12_Opus_Number a owl:Class ;
+#	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
+#	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+#	rdfs:label "M12 Numéro d'opus"@fr , "M12 Opus Number"@en .
 # 
 # http://data.doremus.org/ontology#M13_Opus_Subnumber
 
-mus:M13_Opus_Subnumber a owl:Class ;
-	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M13 Opus Subnumber"@en , "M13 Sous-numéro d'opus"@fr .
+# mus:M13_Opus_Subnumber a owl:Class ;
+#	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
+#	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+#	rdfs:label "M13 Opus Subnumber"@en , "M13 Sous-numéro d'opus"@fr .
 # 
 # http://data.doremus.org/ontology#M14_Medium_Of_Performance
 
@@ -1569,17 +1569,17 @@ mus:M46_Set_of_Tracks a owl:Class ;
 # 
 # http://data.doremus.org/ontology#M47_WoO_Number
 
-mus:M47_WoO_Number a owl:Class ;
-	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M47 Numéro de WoO"@fr , "M47 WoO Number"@en .
+# mus:M47_WoO_Number a owl:Class ;
+#	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
+#	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+#	rdfs:label "M47 Numéro de WoO"@fr , "M47 WoO Number"@en .
 # 
 # http://data.doremus.org/ontology#M48_WoO_Subnumber
 
-mus:M48_WoO_Subnumber a owl:Class ;
-	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "M48 WoO Subnumber"@en .
+# mus:M48_WoO_Subnumber a owl:Class ;
+#	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
+#	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+#	rdfs:label "M48 WoO Subnumber"@en .
 # 
 # http://data.doremus.org/ontology#M4_Key
 
