@@ -511,6 +511,25 @@ mus:U39i_was_tuned_by a owl:ObjectProperty ;
 # 
 # http://data.doremus.org/ontology#U3_foresees_specific_medium_of_performance
 
+# 
+# http://data.doremus.org/ontology#U40_has_catalogue_name
+
+mus:U40_has_catalogue_name a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P106_is_composed_of ;
+	owl:inverseOf mus:U40i_is_catalogue_name_of ;
+	rdfs:domain mus:M1_Catalogue_Statement ;
+	rdfs:range mus:M10_Catalogue_Name ;	
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U40 has catalogue name"@en .
+
+# 
+# http://data.doremus.org/ontology#U40i_is_catalogue_name_of
+
+mus:U40i_is_catalogue_name_of a owl:ObjectProperty ;
+	rdfs:subPropertyOf ecrm:P106i_forms_part_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U40i is catalogue name of"@en .
+
 mus:U3_foresees_specific_medium_of_performance a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67_refers_to ;
 	owl:inverseOf mus:U3i_is_foreseen_specific_medium_of_performance_in ;
@@ -1074,22 +1093,6 @@ mus:U30_foresees_quantity_of_mop a owl:DatatypeProperty ;
 	rdfs:label "U30 foresees quantity of mop"@en .
 
 # 
-# http://data.doremus.org/ontology#U40_has_catalogue_name
-
-mus:U40_has_catalogue_name a owl:DatatypeProperty ;
-	owl:inverseOf mus:U40i_is_catalogue_name_of ;
-	rdfs:domain mus:M1_Catalogue_Statement ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U40 has catalogue name"@en .
-
-# 
-# http://data.doremus.org/ontology#U40i_is_catalogue_name_of
-
-mus:U40i_is_catalogue_name_of a owl:DatatypeProperty ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U40i is catalogue name of"@en .
-
-# 
 # http://data.doremus.org/ontology#U41_has_catalogue_number
 
 mus:U41_has_catalogue_number a owl:DatatypeProperty ;
@@ -1263,10 +1266,11 @@ mus:U76i_is_WoO_subnumber_of a owl:DatatypeProperty ;
 # 
 # http://data.doremus.org/ontology#M10_Catalogue_Name
 
-# mus:M10_Catalogue_Name a owl:Class ;
-#	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
-#	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-#	rdfs:label "M10 Catalogue Name"@en , "M10 Nom de catalogue"@fr .
+mus:M10_Catalogue_Name a owl:Class ;
+	rdfs:subClassOf ecrm:E90_Symbolic_Object ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "M10 Catalogue Name"@en , "M10 Nom de catalogue"@fr .
+
 # 
 # http://data.doremus.org/ontology#M11_Catalogue_Number
 
