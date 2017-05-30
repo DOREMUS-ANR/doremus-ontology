@@ -917,40 +917,6 @@ mus:U66i_is_historical_context_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf mus:U52i_is_context_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U66i is historical context of"@en .
-# 
-# http://data.doremus.org/ontology#U67_has_subtitle
-
-mus:U67_has_subtitle a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P102_has_title ;
-	owl:inverseOf mus:U67i_is_subtitle_of ;
-	rdfs:domain ecrm:E71_Man-Made_Thing ;
-	rdfs:range ecrm:E35_Title ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U67 a pour sous-titre"@fr , "U67 has subtitle"@en .
-# 
-# http://data.doremus.org/ontology#U67i_is_subtitle_of
-
-mus:U67i_is_subtitle_of a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P102i_is_title_of ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U67i est sous-titre de"@fr , "U67i is subtitle of"@en .
-# 
-# http://data.doremus.org/ontology#U68_has_variant_title
-
-mus:U68_has_variant_title a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P102_has_title ;
-	owl:inverseOf mus:U68i_is_variant_title_of ;
-	rdfs:domain ecrm:E71_Man-Made_Thing ;
-	rdfs:range ecrm:E35_Title ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U68 a pour variante de titre"@fr , "U68 has variant title"@en .
-# 
-# http://data.doremus.org/ontology#U68i_is_variant_title_of
-
-mus:U68i_is_variant_title_of a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P102i_is_title_of ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U68i est variante de titre de"@fr , "U68i is variant title of"@en .
 
 # 
 # http://data.doremus.org/ontology#U6_foresees_actor
@@ -969,40 +935,6 @@ mus:U6i_is_foreseen_actor_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U6i is foreseen actor of"@en .
-# 
-# http://data.doremus.org/ontology#U70_has_title
-
-mus:U70_has_title a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P102_has_title ;
-	owl:inverseOf mus:U70i_is_title_of ;
-	rdfs:domain ecrm:E89_Propositional_Object ;
-	rdfs:range ecrm:E35_Title ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U70 a pour titre"@fr , "U70 has title"@en .
-# 
-# http://data.doremus.org/ontology#U70i_is_title_of
-
-mus:U70i_is_title_of a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P102i_is_title_of ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U70i is title of"@en .
-# 
-# http://data.doremus.org/ontology#U71_has_uniform_music_title
-
-mus:U71_has_uniform_music_title a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P102_has_title ;
-	owl:inverseOf mus:U71i_is_uniform_music_title_of ;
-	rdfs:domain ecrm:E89_Propositional_Object ;
-	rdfs:range ecrm:E35_Title ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U71 a pour titre uniforme musical"@fr , "U71 has uniform music title"@en .
-# 
-# http://data.doremus.org/ontology#U71i_is_uniform_music_title_of
-
-mus:U71i_is_uniform_music_title_of a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P102i_is_title_of ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U71i is uniform music title of"@en .
 # 
 # http://data.doremus.org/ontology#U73_is_derivative_of
 
@@ -1218,6 +1150,36 @@ mus:U48_foresees_quantity_of_actors a owl:DatatypeProperty ;
 	rdfs:label "U48 foresees quantity of actors"@en .
 
 # 
+# http://data.doremus.org/ontology#U67_has_subtitle
+
+mus:U67_has_subtitle a owl:DatatypeProperty ;
+	owl:inverseOf mus:U67i_is_subtitle_of ;
+	rdfs:domain ecrm:E71_Man-Made_Thing ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U67 a pour sous-titre"@fr , "U67 has subtitle"@en .
+# 
+# http://data.doremus.org/ontology#U67i_is_subtitle_of
+
+mus:U67i_is_subtitle_of a owl:DatatypeProperty ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U67i est sous-titre de"@fr , "U67i is subtitle of"@en .
+# 
+# http://data.doremus.org/ontology#U68_has_variant_title
+
+mus:U68_has_variant_title a owl:DatatypeProperty ;
+	owl:inverseOf mus:U68i_is_variant_title_of ;
+	rdfs:domain ecrm:E71_Man-Made_Thing ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U68 a pour variante de titre"@fr , "U68 has variant title"@en .
+# 
+# http://data.doremus.org/ontology#U68i_is_variant_title_of
+
+mus:U68i_is_variant_title_of a owl:DatatypeProperty ;
+	rdfs:subPropertyOf ecrm:P102i_is_title_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U68i est variante de titre de"@fr , "U68i is variant title of"@en .
+
+# 
 # http://data.doremus.org/ontology#U69_has_WoO_number
 
 mus:U69_has_WoO_number a owl:DatatypeProperty ;
@@ -1232,6 +1194,36 @@ mus:U69_has_WoO_number a owl:DatatypeProperty ;
 mus:U69i_is_WoO_number_of a owl:DatatypeProperty ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U69i is WoO number of"@en .
+
+# 
+# http://data.doremus.org/ontology#U70_has_title
+
+mus:U70_has_title a owl:DatatypeProperty ;
+	owl:inverseOf mus:U70i_is_title_of ;
+	rdfs:domain ecrm:E89_Propositional_Object ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U70 a pour titre"@fr , "U70 has title"@en .
+# 
+# http://data.doremus.org/ontology#U70i_is_title_of
+
+mus:U70i_is_title_of a owl:DatatypeProperty ;
+	rdfs:subPropertyOf ecrm:P102i_is_title_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U70i is title of"@en .
+# 
+# http://data.doremus.org/ontology#U71_has_uniform_music_title
+
+mus:U71_has_uniform_music_title a owl:DatatypeProperty ;
+	owl:inverseOf mus:U71i_is_uniform_music_title_of ;
+	rdfs:domain ecrm:E89_Propositional_Object ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U71 a pour titre uniforme musical"@fr , "U71 has uniform music title"@en .
+# 
+# http://data.doremus.org/ontology#U71i_is_uniform_music_title_of
+
+mus:U71i_is_uniform_music_title_of a owl:DatatypeProperty ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U71i is uniform music title of"@en .
 	
 # 
 # http://data.doremus.org/ontology#U72_has_title_note
