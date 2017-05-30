@@ -951,23 +951,7 @@ mus:U68i_is_variant_title_of a owl:ObjectProperty ;
 	rdfs:subPropertyOf ecrm:P102i_is_title_of ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U68i est variante de titre de"@fr , "U68i is variant title of"@en .
-# 
-# http://data.doremus.org/ontology#U69_has_WoO_number
 
-mus:U69_has_WoO_number a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P106_is_composed_of ;
-	owl:inverseOf mus:U69i_is_WoO_number_of ;
-	rdfs:domain mus:M2_Opus_Statement ;
-	rdfs:range mus:M47_WoO_Number ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U69 a pour numéro de WoO"@fr , "U69 has WoO number"@en .
-# 
-# http://data.doremus.org/ontology#U69i_is_WoO_number_of
-
-mus:U69i_is_WoO_number_of a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P106i_forms_part_of ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U69i is WoO number of"@en .
 # 
 # http://data.doremus.org/ontology#U6_foresees_actor
 
@@ -1071,23 +1055,6 @@ mus:U75i_is_harmonic_structure_of a owl:ObjectProperty ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U75i is harmonic structure of"@en .
 # 
-# http://data.doremus.org/ontology#U76_has_WoO_subnumber
-
-mus:U76_has_WoO_subnumber a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P106_is_composed_of ;
-	owl:inverseOf mus:U76i_is_WoO_subnumber_of ;
-	rdfs:domain mus:M2_Opus_Statement ;
-	rdfs:range mus:M48_WoO_Subnumber ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U76 has WoO subnumber"@en .
-# 
-# http://data.doremus.org/ontology#U76i_is_WoO_subnumber_of
-
-mus:U76i_is_WoO_subnumber_of a owl:ObjectProperty ;
-	rdfs:subPropertyOf ecrm:P106i_forms_part_of ;
-	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U76i is opus subnumber of"@en .
-# 
 # http://data.doremus.org/ontology#U77_foresees_performing_plan
 
 mus:U77_foresees_performing_plan a owl:ObjectProperty ;
@@ -1147,6 +1114,16 @@ mus:U8i_is_foreseen_time_span_of a owl:ObjectProperty ;
 # #
 # #################################################################
 # 
+
+# 
+# http://data.doremus.org/ontology#U9_has_quantity
+
+mus:U9_has_quantity a owl:DatatypeProperty ;
+	rdfs:domain ecrm:E77_Persistent_Item ;
+	rdfs:range xsd:integer ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U9 has quantity"@en .
+
 # 
 # http://data.doremus.org/ontology#U15_has_history
 
@@ -1186,6 +1163,7 @@ mus:U40i_is_catalogue_name_of a owl:DatatypeProperty ;
 mus:U41_has_catalogue_number a owl:DatatypeProperty ;
 	owl:inverseOf mus:U41i_is_catalogue_number_of ;
 	rdfs:domain mus:M1_Catalogue_Statement ;
+	rdfs:range xsd:positiveInteger ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U41 has catalogue number"@en .
 
@@ -1202,6 +1180,7 @@ mus:U41i_is_catalogue_number_of a owl:DatatypeProperty ;
 mus:U42_has_opus_number a owl:DatatypeProperty ;
 	owl:inverseOf mus:U42i_is_opus_number_of ;
 	rdfs:domain mus:M2_Opus_Statement ;
+	rdfs:range xsd:positiveInteger ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U42 has opus number"@en .
 
@@ -1218,6 +1197,7 @@ mus:U42i_is_opus_number_of a owl:DatatypeProperty ;
 mus:U43_has_opus_subnumber a owl:DatatypeProperty ;
 	owl:inverseOf mus:U43i_is_opus_subnumber_of ;
 	rdfs:domain mus:M2_Opus_Statement ;
+	rdfs:range xsd:positiveInteger ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U43 has opus subnumber"@en .
 
@@ -1236,6 +1216,23 @@ mus:U48_foresees_quantity_of_actors a owl:DatatypeProperty ;
 	rdfs:range xsd:positiveInteger ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U48 foresees quantity of actors"@en .
+
+# 
+# http://data.doremus.org/ontology#U69_has_WoO_number
+
+mus:U69_has_WoO_number a owl:DatatypeProperty ;
+	owl:inverseOf mus:U69i_is_WoO_number_of ;
+	rdfs:domain mus:M2_Opus_Statement ;
+	rdfs:range xsd:positiveInteger ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U69 a pour numéro de WoO"@fr , "U69 has WoO number"@en .
+# 
+# http://data.doremus.org/ontology#U69i_is_WoO_number_of
+
+mus:U69i_is_WoO_number_of a owl:DatatypeProperty ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U69i is WoO number of"@en .
+	
 # 
 # http://data.doremus.org/ontology#U72_has_title_note
 
@@ -1244,14 +1241,24 @@ mus:U72_has_title_note a owl:DatatypeProperty ;
 	rdfs:domain ecrm:E89_Propositional_Object ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
 	rdfs:label "U72 has title note"@en .
-# 
-# http://data.doremus.org/ontology#U9_has_quantity
 
-mus:U9_has_quantity a owl:DatatypeProperty ;
-	rdfs:domain ecrm:E77_Persistent_Item ;
-	rdfs:range xsd:integer ;
+# 
+# http://data.doremus.org/ontology#U76_has_WoO_subnumber
+
+mus:U76_has_WoO_subnumber a owl:DatatypeProperty ;
+	owl:inverseOf mus:U76i_is_WoO_subnumber_of ;
+	rdfs:domain mus:M2_Opus_Statement ;
+	rdfs:range xsd:positiveInteger ;
 	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-	rdfs:label "U9 has quantity"@en .
+	rdfs:label "U76 has WoO subnumber"@en .
+# 
+# http://data.doremus.org/ontology#U76i_is_WoO_subnumber_of
+
+mus:U76i_is_WoO_subnumber_of a owl:DatatypeProperty ;
+	rdfs:subPropertyOf ecrm:P106i_forms_part_of ;
+	rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+	rdfs:label "U76i is opus subnumber of"@en .
+
 # 
 # 
 # 
