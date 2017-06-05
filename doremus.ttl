@@ -16,7 +16,7 @@
                                      vann:preferredNamespaceUri "http://data.doremus.org/ontology#" ;
                                      dc:description "DOREMUS is an extension of the FRBRoo model for describing the music." ;
                                      vann:preferredNamespacePrefix "mus" ;
-                                     owl:versionInfo "v0.1 26/5/2017" .
+                                     owl:versionInfo "v0.2 5/6/2017 - starting enrichemnent for Manifestations - change in of type of several properties controlled by controlled vocabularies"@en .
 
 #################################################################
 #    Object Properties
