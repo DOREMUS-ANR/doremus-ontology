@@ -1699,23 +1699,9 @@ Examples:"""@en ;
                                   "M9 Type de dérivation"@fr .
 
 
-###  http://erlangen-crm.org/current/E55_Type
-ecrm:E55_Type owl:equivalentClass [ rdf:type owl:Restriction ;
-                                    owl:onProperty skos:inScheme ;
-                                    owl:hasValue mus:key
-                                  ] .
-
-
 ###  http://erlangen-crm.org/efrbroo/F38_Character
 efrbroo:F38_Character rdf:type owl:Class ;
                       rdfs:subClassOf ecrm:E28_Conceptual_Object .
-
-
-###  http://erlangen-crm.org/efrbroo/F3_Manifestation_Product_Type
-efrbroo:F3_Manifestation_Product_Type owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                            owl:onProperty skos:inScheme ;
-                                                            owl:hasValue mus:key
-                                                          ] .
 
 
 ###  http://erlangen-crm.org/efrbroo/F50_Controlled_Access_Point
