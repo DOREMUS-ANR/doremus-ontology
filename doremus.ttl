@@ -1696,16 +1696,6 @@ Examples:"""@en ;
                                   "M9 Type de dérivation"@fr .
 
 
-###  http://erlangen-crm.org/efrbroo/F38_Character
-efrbroo:F38_Character rdf:type owl:Class ;
-                      rdfs:subClassOf ecrm:E28_Conceptual_Object .
-
-
-###  http://erlangen-crm.org/efrbroo/F50_Controlled_Access_Point
-efrbroo:F50_Controlled_Access_Point rdf:type owl:Class ;
-                                    rdfs:subClassOf ecrm:E42_Identifier .
-
-
 #################################################################
 #    Individuals
 #################################################################
