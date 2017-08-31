@@ -929,44 +929,6 @@ mus:U66i_is_historical_context_of rdf:type owl:ObjectProperty ;
                                   rdfs:label "U66i is historical context of"@en .
 
 
-###  http://data.doremus.org/ontology#U67_has_subtitle
-mus:U67_has_subtitle rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf ecrm:P102_has_title ;
-                     owl:inverseOf mus:U67i_is_subtitle_of ;
-                     rdfs:domain ecrm:E71_Man-Made_Thing ;
-                     rdfs:range ecrm:E35_Title ;
-                     rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                     rdfs:label "U67 a pour sous-titre"@fr ,
-                                "U67 has subtitle"@en .
-
-
-###  http://data.doremus.org/ontology#U67i_is_subtitle_of
-mus:U67i_is_subtitle_of rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf ecrm:P102i_is_title_of ;
-                        rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                        rdfs:label "U67i est sous-titre de"@fr ,
-                                   "U67i is subtitle of"@en .
-
-
-###  http://data.doremus.org/ontology#U68_has_variant_title
-mus:U68_has_variant_title rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf ecrm:P102_has_title ;
-                          owl:inverseOf mus:U68i_is_variant_title_of ;
-                          rdfs:domain ecrm:E71_Man-Made_Thing ;
-                          rdfs:range ecrm:E35_Title ;
-                          rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                          rdfs:label "U68 a pour variante de titre"@fr ,
-                                     "U68 has variant title"@en .
-
-
-###  http://data.doremus.org/ontology#U68i_is_variant_title_of
-mus:U68i_is_variant_title_of rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf ecrm:P102i_is_title_of ;
-                             rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                             rdfs:label "U68i est variante de titre de"@fr ,
-                                        "U68i is variant title of"@en .
-
-
 ###  http://data.doremus.org/ontology#U69_has_WoO_number
 mus:U69_has_WoO_number rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf ecrm:P106_is_composed_of ;
@@ -1215,6 +1177,25 @@ mus:U48_foresees_quantity_of_actors rdf:type owl:DatatypeProperty ;
                                     rdfs:range xsd:positiveInteger ;
                                     rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                                     rdfs:label "U48 foresees quantity of actors"@en .
+
+###  http://data.doremus.org/ontology#U67_has_subtitle
+mus:U67_has_subtitle rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf dc:title ;
+                     rdfs:domain ecrm:E71_Man-Made_Thing ;
+                     rdfs:range xsd:string ;
+                     rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+                     rdfs:label "U67 a pour sous-titre"@fr ,
+                                "U67 has subtitle"@en .
+
+
+###  http://data.doremus.org/ontology#U68_has_variant_title
+mus:U68_has_variant_title rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf dc:title ;
+                          rdfs:domain ecrm:E71_Man-Made_Thing ;
+                          rdfs:range xsd:string ;
+                          rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+                          rdfs:label "U68 a pour variante de titre"@fr ,
+                                     "U68 has variant title"@en .
 
 
 ###  http://data.doremus.org/ontology#U72_has_title_note
