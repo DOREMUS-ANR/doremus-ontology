@@ -18,7 +18,7 @@
                                      vann:preferredNamespaceUri "http://data.doremus.org/ontology#" ;
                                      dc:description "DOREMUS is an extension of the FRBRoo model for describing the music." ;
                                      vann:preferredNamespacePrefix "mus" ;
-                                     owl:versionInfo """v0.2 5/6/2017 - starting enrichemnent for Manifestations - change in of type of several properties controlled by controlled vocabularies 
+                                     owl:versionInfo """v0.2 05/06/2017 - starting enrichemnent for Manifestations - change in of type of several properties controlled by controlled vocabularies 
 
 v0.2.1 Beta - test de gestion des vocabulaires contrôlés et propriétés avec valeur contrôlées - 
 - import de l'ontologie SKOS
@@ -33,23 +33,6 @@ Si l'utilisateur de l'ontologie n'utilise pas de vocabulaire contrôlé, cette �
 #################################################################
 #    Object Properties
 #################################################################
-
-###  http://data.doremus.org/ontology#U10_has_order_number
-mus:U10_has_order_number rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf ecrm:P1_is_identified_by ;
-                         owl:inverseOf mus:U10i_is_order_number_of ;
-                         rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-                         rdfs:range mus:M3_Order_Number ;
-                         rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                         rdfs:label "U10 has order number"@en .
-
-
-###  http://data.doremus.org/ontology#U10i_is_order_number_of
-mus:U10i_is_order_number_of rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf ecrm:P1i_identifies ;
-                            rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                            rdfs:label "U10i is order number of"@en .
-
 
 ###  http://data.doremus.org/ontology#U11_has_key
 mus:U11_has_key rdf:type owl:ObjectProperty ;
@@ -1228,6 +1211,20 @@ mus:U8i_is_foreseen_time_span_of rdf:type owl:ObjectProperty ;
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://data.doremus.org/ontology#U10_has_order_number
+mus:U10_has_order_number rdf:type owl:DatatypeProperty ;
+                         owl:inverseOf mus:U10i_is_order_number_of ;
+                         rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+                         rdfs:range xsd:positiveInteger ;
+                         rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+                         rdfs:label "U10 has order number"@en .
+
+
+###  http://data.doremus.org/ontology#U10i_is_order_number_of
+mus:U10i_is_order_number_of rdf:type owl:DatatypeProperty ;
+                            rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+                            rdfs:label "U10i is order number of"@en .
 
 ###  http://data.doremus.org/ontology#U15_has_history
 mus:U15_has_history rdf:type owl:DatatypeProperty ;
