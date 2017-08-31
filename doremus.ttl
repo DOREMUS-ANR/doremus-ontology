@@ -964,42 +964,6 @@ mus:U6i_is_foreseen_actor_of rdf:type owl:ObjectProperty ;
                              rdfs:label "U6i is foreseen actor of"@en .
 
 
-###  http://data.doremus.org/ontology#U70_has_title
-mus:U70_has_title rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf ecrm:P102_has_title ;
-                  owl:inverseOf mus:U70i_is_title_of ;
-                  rdfs:domain ecrm:E89_Propositional_Object ;
-                  rdfs:range ecrm:E35_Title ;
-                  rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                  rdfs:label "U70 a pour titre"@fr ,
-                             "U70 has title"@en .
-
-
-###  http://data.doremus.org/ontology#U70i_is_title_of
-mus:U70i_is_title_of rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf ecrm:P102i_is_title_of ;
-                     rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                     rdfs:label "U70i is title of"@en .
-
-
-###  http://data.doremus.org/ontology#U71_has_uniform_music_title
-mus:U71_has_uniform_music_title rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf ecrm:P102_has_title ;
-                                owl:inverseOf mus:U71i_is_uniform_music_title_of ;
-                                rdfs:domain ecrm:E89_Propositional_Object ;
-                                rdfs:range ecrm:E35_Title ;
-                                rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                                rdfs:label "U71 a pour titre uniforme musical"@fr ,
-                                           "U71 has uniform music title"@en .
-
-
-###  http://data.doremus.org/ontology#U71i_is_uniform_music_title_of
-mus:U71i_is_uniform_music_title_of rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf ecrm:P102i_is_title_of ;
-                                   rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                                   rdfs:label "U71i is uniform music title of"@en .
-
-
 ###  http://data.doremus.org/ontology#U73_is_derivative_of
 mus:U73_is_derivative_of rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf ecrm:P130_shows_features_of ;
@@ -1196,6 +1160,26 @@ mus:U68_has_variant_title rdf:type owl:DatatypeProperty ;
                           rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                           rdfs:label "U68 a pour variante de titre"@fr ,
                                      "U68 has variant title"@en .
+
+
+###  http://data.doremus.org/ontology#U70_has_title
+mus:U70_has_title rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf dc:title ;
+                  rdfs:domain ecrm:E89_Propositional_Object ;
+                  rdfs:range xsd:string ;
+                  rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+                  rdfs:label "U70 a pour titre"@fr ,
+                             "U70 has title"@en .
+
+
+###  http://data.doremus.org/ontology#U71_has_uniform_music_title
+mus:U71_has_uniform_music_title rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf dc:title ;
+                                rdfs:domain ecrm:E89_Propositional_Object ;
+                                rdfs:range xsd:string ;
+                                rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+                                rdfs:label "U71 a pour titre uniforme musical"@fr ,
+                                           "U71 has uniform music title"@en .
 
 
 ###  http://data.doremus.org/ontology#U72_has_title_note
