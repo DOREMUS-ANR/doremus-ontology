@@ -1163,18 +1163,12 @@ mus:U8i_is_foreseen_time_span_of rdf:type owl:ObjectProperty ;
 
 ###  http://data.doremus.org/ontology#U10_has_order_number
 mus:U10_has_order_number rdf:type owl:DatatypeProperty ;
-                         owl:inverseOf mus:U10i_is_order_number_of ;
                          rdfs:domain efrbroo:F22_Self-Contained_Expression ;
                          rdfs:range xsd:positiveInteger ;
                          rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                          rdfs:label "U10 has order number"@en .
 
-
-###  http://data.doremus.org/ontology#U10i_is_order_number_of
-mus:U10i_is_order_number_of rdf:type owl:DatatypeProperty ;
-                            rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                            rdfs:label "U10i is order number of"@en .
-
+						 
 ###  http://data.doremus.org/ontology#U15_has_history
 mus:U15_has_history rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf ecrm:P3_has_note ;
@@ -1193,49 +1187,28 @@ mus:U30_foresees_quantity_of_mop rdf:type owl:DatatypeProperty ;
 
 ###  http://data.doremus.org/ontology#U41_has_catalogue_number
 mus:U41_has_catalogue_number rdf:type owl:DatatypeProperty ;
-                             owl:inverseOf mus:U41i_is_catalogue_number_of ;
                              rdfs:domain mus:M1_Catalogue_Statement ;
                              rdfs:range xsd:string ;
                              rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                              rdfs:label "U41 has catalogue number"@en .
 
 
-###  http://data.doremus.org/ontology#U41i_is_catalogue_number_of
-mus:U41i_is_catalogue_number_of rdf:type owl:DatatypeProperty ;
-                                rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                                rdfs:label "U41i is catalogue number of"@en .
-
-
 ###  http://data.doremus.org/ontology#U42_has_opus_number
 mus:U42_has_opus_number rdf:type owl:DatatypeProperty ;
-                        owl:inverseOf mus:U42i_is_opus_number_of ;
                         rdfs:domain mus:M2_Opus_Statement ;
                         rdfs:range xsd:string ;
                         rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                         rdfs:label "U42 has opus number"@en .
 
 
-###  http://data.doremus.org/ontology#U42i_is_opus_number_of
-mus:U42i_is_opus_number_of rdf:type owl:DatatypeProperty ;
-                           rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                           rdfs:label "U42i is opus number of"@en .
-
-
 ###  http://data.doremus.org/ontology#U43_has_opus_subnumber
 mus:U43_has_opus_subnumber rdf:type owl:DatatypeProperty ;
-                           owl:inverseOf mus:U43i_is_opus_subnumber_of ;
                            rdfs:domain mus:M2_Opus_Statement ;
                            rdfs:range xsd:string ;
                            rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                            rdfs:label "U43 has opus subnumber"@en .
 
 
-###  http://data.doremus.org/ontology#U43i_is_opus_subnumber_of
-mus:U43i_is_opus_subnumber_of rdf:type owl:DatatypeProperty ;
-                              rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                              rdfs:label "U43i is opus subnumber of"@en .
-
-							  
 ###  http://data.doremus.org/ontology#U48_foresees_quantity_of_actors
 mus:U48_foresees_quantity_of_actors rdf:type owl:DatatypeProperty ;
                                     rdfs:domain mus:M23_Casting_Detail ;
