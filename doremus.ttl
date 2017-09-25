@@ -204,13 +204,6 @@ mus:U20i_is_music_group_formation_of rdf:type owl:ObjectProperty ;
                                      rdfs:label "U20i is music group formation of"@en .
 
 
-###  http://data.doremus.org/ontology#U21i_is_tag_of
-mus:U21i_is_tag_of rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf ecrm:P2i_is_type_of ;
-                   rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                   rdfs:label "U21i is tag of"@en .
-
-
 ###  http://data.doremus.org/ontology#U23_has_casting_detail
 mus:U23_has_casting_detail rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf ecrm:P69_has_association_with ;
