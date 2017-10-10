@@ -1609,6 +1609,7 @@ mus:U83_has_relative_key rdf:type owl:SymmetricObjectProperty ;
     rdfs:label "U83 has relative key"@en , "U83 a pour tonalité relative"@fr ;
     rdfs:comment "Scope Note: This class allows to connect two M4 Keys that are in a relative relationship, i.e. one is the relative major or minor of the other one."@en ,
     "Scope Note: Cette classe permet de connecter deux M4 Tonalité qui sont en relation par rapport à l'armure, c'est-à-dire l'une est la relatif majeur ou mineur de l'autre."@fr ,
+    "see also http://en.wikipedia.org/wiki/Relative_key" ,
     "Examples: the key of 'C major' has 'A minor' as relative key"@en ,
     "Exemples: la clé de 'Do majeur' a 'La mineur' pour tonalité relative"@fr .
 
@@ -1620,6 +1621,7 @@ mus:U84_has_parallel_key rdf:type owl:SymmetricObjectProperty ;
     rdfs:label "U84 has parallel key"@en , "U84 a pour tonalité parallèle"@fr ;
     rdfs:comment "Scope Note: This class allows to connect two M4 Keys that are in a parallel relationship, i.e. one is the parallel major or minor of the other one."@en ,
     "Scope Note: Cette classe permet de connecter deux M4 Tonalité qui sont en une relation parallèle, c'est-à-dire l'une est la parallèle majeur ou mineur de l'autre."@fr ,
+    "see also http://en.wikipedia.org/wiki/Parallel_key" ,
     "Examples: the key of 'C major' has 'C minor' as parallel key"@en ,
     "Exemples: la clé de 'Do majeur' a 'Do mineur' pour tonalité parallèle"@fr .
 
@@ -1630,7 +1632,8 @@ mus:U85_has_closely_related_key rdf:type owl:SymmetricObjectProperty ;
     rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
     rdfs:label "U85 has closely related key"@en , "U85 a pour tonalité étroitement lié"@fr ;
     rdfs:comment "Scope Note: This class allows to connect two M4 Keys that are mutually closely related from an harmonic point of view, e.g. they are commonly used destinations or transpositions in a modulation."@en ,
-    "Scope Note: Cette classe permet de connecter deux M4 Tonalité qui sont étroitement liées d'un point de vue harmonique, par ex. ces sont des destinations ou des transpositions fréquemment utilisées dans une modulation"@fr ,
+    "Scope Note: Cette classe permet de connecter deux M4 Tonalité qui sont étroitement liées d'un point de vue harmonique, par ex. ceux sont des destinations ou des transpositions fréquemment utilisées dans une modulation"@fr ,
+    "see also http://en.wikipedia.org/wiki/Closely_related_key" ,
     "Examples: the key of 'C major' has 'G major' and 'D minor' as closely related keys"@en ,
     "Exemples: la clé de 'Do majeur' a 'Sol majeur' et 'Re majeur' pour tonalités étroitement liées"@fr .
 
