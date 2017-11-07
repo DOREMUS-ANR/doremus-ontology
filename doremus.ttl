@@ -1,5 +1,5 @@
-@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix mus: <http://data.doremus.org/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -13,14 +13,19 @@
 @base <http://data.doremus.org/ontology#> .
 
 <http://data.doremus.org/ontology#> rdf:type owl:Ontology ;
-                                     owl:imports efrbroo: ,
+                                    owl:imports efrbroo: ,
                                                  <http://www.w3.org/2004/02/skos/core> ;
-                                     vann:preferredNamespaceUri "http://data.doremus.org/ontology#" ;
-                                     dc:description "DOREMUS is an extension of the FRBRoo model for describing the music." ;
-                                     vann:preferredNamespacePrefix "mus" ;
-                                     owl:versionInfo """v0.2 05/06/2017 - starting enrichemnent for Manifestations - change in of type of several properties controlled by controlled vocabularies 
+                                    vann:preferredNamespaceUri "http://data.doremus.org/ontology#" ;
+                                    dc:description "DOREMUS is an extension of the FRBRoo model for describing the music." ;
+                                    vann:preferredNamespacePrefix "mus" ;
+                                    dct:issued "2016-05-02"^^xsd:date ;
+                                    dct:created "2017-01-24"^^xsd:date ;
+                                    dct:modified "2017-11-07"^^xsd:date ;
+                                    dct:creator <http://data.doremus.org/organization/DOREMUS> ;
+                                    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                    owl:versionInfo """v0.2 05/06/2017 - starting enrichemnent for Manifestations - change in of type of several properties controlled by controlled vocabularies
 
-v0.2.1 Beta - test de gestion des vocabulaires contrôlés et propriétés avec valeur contrôlées - 
+v0.2.1 Beta - test de gestion des vocabulaires contrôlés et propriétés avec valeur contrôlées -
 - import de l'ontologie SKOS
 - test sur la classe M4
 - M4 range de la propriété U11_has_Key
@@ -1052,7 +1057,7 @@ mus:U10_has_order_number rdf:type owl:DatatypeProperty ;
                          rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                          rdfs:label "U10 has order number"@en .
 
-						 
+
 ###  http://data.doremus.org/ontology#U15_has_history
 mus:U15_has_history rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf ecrm:P3_has_note ;
