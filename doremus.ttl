@@ -23,8 +23,8 @@
                                     dct:modified "2017-11-07"^^xsd:date ;
                                     dct:creator <http://data.doremus.org/organization/DOREMUS> ;
                                     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                    owl:versionInfo """v0.2 05/06/2017 - starting enrichemnent for Manifestations - change in of type of several properties controlled by controlled vocabularies
-
+                                    owl:versionInfo """
+v0.2 05/06/2017 - starting enrichemnent for Manifestations - change in of type of several properties controlled by controlled vocabularies
 v0.2.1 Beta - test de gestion des vocabulaires contrôlés et propriétés avec valeur contrôlées -
 - import de l'ontologie SKOS
 - test sur la classe M4
@@ -1605,6 +1605,43 @@ Examples:"""@en ;
                        rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                        rdfs:label "M9 Derivation Type"@en ,
                                   "M9 Type de dérivation"@fr .
+
+###  http://data.doremus.org/ontology#U83_has_relative_key
+mus:U83_has_relative_key rdf:type owl:SymmetricObjectProperty ;
+    rdfs:domain mus:M4_Key ;
+    rdfs:range mus:M4_Key ;
+    rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+    rdfs:label "U83 has relative key"@en , "U83 a pour tonalité relative"@fr ;
+    rdfs:comment "Scope Note: This class allows to connect two M4 Keys that are in a relative relationship, i.e. one is the relative major or minor of the other one."@en ,
+    "Scope Note: Cette classe permet de connecter deux M4 Tonalité qui sont en relation par rapport à l'armure, c'est-à-dire l'une est la relatif majeur ou mineur de l'autre."@fr ,
+    "see also http://en.wikipedia.org/wiki/Relative_key" ,
+    "Examples: the key of 'C major' has 'A minor' as relative key"@en ,
+    "Exemples: la clé de 'Do majeur' a 'La mineur' pour tonalité relative"@fr .
+
+###  http://data.doremus.org/ontology#U84_has_parallel_key
+mus:U84_has_parallel_key rdf:type owl:SymmetricObjectProperty ;
+    rdfs:domain mus:M4_Key ;
+    rdfs:range mus:M4_Key ;
+    rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+    rdfs:label "U84 has parallel key"@en , "U84 a pour tonalité parallèle"@fr ;
+    rdfs:comment "Scope Note: This class allows to connect two M4 Keys that are in a parallel relationship, i.e. one is the parallel major or minor of the other one."@en ,
+    "Scope Note: Cette classe permet de connecter deux M4 Tonalité qui sont en une relation parallèle, c'est-à-dire l'une est la parallèle majeur ou mineur de l'autre."@fr ,
+    "see also http://en.wikipedia.org/wiki/Parallel_key" ,
+    "Examples: the key of 'C major' has 'C minor' as parallel key"@en ,
+    "Exemples: la clé de 'Do majeur' a 'Do mineur' pour tonalité parallèle"@fr .
+
+###  http://data.doremus.org/ontology#U85_has_closely_related_key
+mus:U85_has_closely_related_key rdf:type owl:SymmetricObjectProperty ;
+    rdfs:domain mus:M4_Key ;
+    rdfs:range mus:M4_Key ;
+    rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+    rdfs:label "U85 has closely related key"@en , "U85 a pour tonalité étroitement lié"@fr ;
+    rdfs:comment "Scope Note: This class allows to connect two M4 Keys that are mutually closely related from an harmonic point of view, e.g. they are commonly used destinations or transpositions in a modulation."@en ,
+    "Scope Note: Cette classe permet de connecter deux M4 Tonalité qui sont étroitement liées d'un point de vue harmonique, par ex. ceux sont des destinations ou des transpositions fréquemment utilisées dans une modulation"@fr ,
+    "see also http://en.wikipedia.org/wiki/Closely_related_key" ,
+    "Examples: the key of 'C major' has 'G major' and 'D minor' as closely related keys"@en ,
+    "Exemples: la clé de 'Do majeur' a 'Sol majeur' et 'Re majeur' pour tonalités étroitement liées"@fr .
+
 
 
 #################################################################
