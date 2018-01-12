@@ -17,7 +17,7 @@
                                      owl:imports efrbroo: ,
                                                  <http://www.w3.org/2004/02/skos/core> ;
                                      vann:preferredNamespaceUri "http://data.doremus.org/ontology#" ;
-                                     dct:modified "2017-11-20" ;
+                                     dct:modified "2018-01-12" ;
                                      dct:issued "2016-05-02"^^xsd:date ;
                                      dc:description "DOREMUS is an extension of the FRBRoo model for describing the music." ;
                                      owl:versionInfo """
@@ -1668,16 +1668,16 @@ mus:U83_has_relative_key rdfs:label "U83 has relative key"@en ;
                          rdfs:label "U83 a pour tonalité relative"@fr ;
                          rdfs:comment "Scope Note: Cette classe permet de connecter deux M4 Tonalité qui sont en relation par rapport à l'armure, c'est-à-dire l'une est la relatif majeur ou mineur de l'autre."@fr ,
                                       "see also http://en.wikipedia.org/wiki/Relative_key" ,
-                                      "Scope Note: This class allows to connect two M4 Keys that are in a relative relationship, i.e. one is the relative major or minor of the other one."@en ,
-                                      "Exemples: la clé de 'Do majeur' a 'La mineur' pour tonalité relative"@fr .
+                                      "Exemples: la clé de 'Do majeur' a 'La mineur' pour tonalité relative"@fr ,
+                                      "Scope Note: This class allows to connect two M4 Keys that are in a relative relationship, i.e. one is the relative major or minor of the other one."@en .
 
 
 mus:U84_has_parallel_key rdfs:comment "Examples: the key of 'C major' has 'C minor' as parallel key"@en ,
                                       "Scope Note: Cette classe permet de connecter deux M4 Tonalité qui sont en une relation parallèle, c'est-à-dire l'une est la parallèle majeur ou mineur de l'autre."@fr ,
                                       "Exemples: la clé de 'Do majeur' a 'Do mineur' pour tonalité parallèle"@fr ,
-                                      "see also http://en.wikipedia.org/wiki/Parallel_key" ,
-                                      "Scope Note: This class allows to connect two M4 Keys that are in a parallel relationship, i.e. one is the parallel major or minor of the other one."@en ;
+                                      "see also http://en.wikipedia.org/wiki/Parallel_key" ;
                          rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+                         rdfs:comment "Scope Note: This class allows to connect two M4 Keys that are in a parallel relationship, i.e. one is the parallel major or minor of the other one."@en ;
                          rdfs:label "U84 a pour tonalité parallèle"@fr ,
                                     "U84 has parallel key"@en .
 
