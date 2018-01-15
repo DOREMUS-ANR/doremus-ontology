@@ -17,9 +17,9 @@
                                      owl:imports efrbroo: ,
                                                  <http://www.w3.org/2004/02/skos/core> ;
                                      vann:preferredNamespaceUri "http://data.doremus.org/ontology#" ;
-                                     dct:modified "2018-01-12" ;
                                      dct:issued "2016-05-02"^^xsd:date ;
                                      dc:description "DOREMUS is an extension of the FRBRoo model for describing the music." ;
+                                     dct:modified "2018-01-15" ;
                                      owl:versionInfo """
 v0.2 05/06/2017 - starting enrichemnent for Manifestations - change in of type of several properties controlled by controlled vocabularies
 v0.2.1 Beta - test de gestion des vocabulaires contrôlés et propriétés avec valeur contrôlées -
