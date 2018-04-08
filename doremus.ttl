@@ -607,7 +607,7 @@ mus:U18i_is_rhythmic_pattern_of rdf:type owl:ObjectProperty ;
 mus:U191_used_equalization_technique rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf ecrm:P32_used_general_technique ;
                                      rdfs:domain efrbroo:F28_Expression_Creation ;
-                                     rdfs:range ecrm:E55_Type ;
+                                     rdfs:range mus:M52_Equalization_Technique ;
                                      rdfs:label "U191 used equalization technique"@en .
 
 
@@ -2630,6 +2630,21 @@ Les tonalités sont souvent listées sous forme de référentiels multilingues, 
 mus:M50_Creation_or_Performance_Mode rdf:type owl:Class ;
                                      rdfs:subClassOf ecrm:E55_Type ;
                                      rdfs:label "M50 Performance mode"@en .
+
+
+###  http://data.doremus.org/ontology#M52_Equalization_Technique
+mus:M52_Equalization_Technique rdf:type owl:Class ;
+                               rdfs:subClassOf ecrm:E55_Type .
+
+
+###  http://data.doremus.org/ontology#M53_Noise_Reduction_Technique
+mus:M53_Noise_Reduction_Technique rdf:type owl:Class ;
+                                  rdfs:subClassOf ecrm:E55_Type .
+
+
+###  http://data.doremus.org/ontology#M54_Sound_specialization_Technique
+mus:M54_Sound_specialization_Technique rdf:type owl:Class ;
+                                       rdfs:subClassOf ecrm:E55_Type .
 
 
 ###  http://data.doremus.org/ontology#M55_Condition_of_Performance
