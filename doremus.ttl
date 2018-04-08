@@ -17,6 +17,10 @@
                                      owl:imports efrbroo: ,
                                                  <http://www.w3.org/2004/02/skos/core> ;
                                      vann:preferredNamespaceUri "http://data.doremus.org/ontology#" ;
+                                     dct:issued "2016-05-02"^^xsd:date ;
+                                     dc:description "DOREMUS is an extension of the FRBRoo model for describing the music." ;
+                                     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                     dct:modified "2018-01-17" ;
                                      owl:versionInfo """v0.2 05/06/2017 - starting enrichemnent for Manifestations - change in of type of several properties controlled by controlled vocabularies
 
 v0.2.1 Beta - test de gestion des vocabulaires contrôlés et propriétés avec valeur contrôlées -
@@ -30,11 +34,10 @@ v0.2.1 Beta - test de gestion des vocabulaires contrôlés et propriétés avec 
 Si l'utilisateur de l'ontologie n'utilise pas de vocabulaire contrôlé, cette équivalence peut être supprimée. On peut donner une valeur litérale à l'instance de M4_Key en utilisant la propriété rdfs:label et mettre des commentaires en utilisant rdfs:comment
 
 v0.2.2 11/1/2018 - enrichissements de classes et propriétés
+- voir tableau des nouvelles classes et propriétés pour le détail
+
+v0.2.3 8/4/2018
 - voir tableau des nouvelles classes et propriétés pour le détail"""@en ;
-                                     dct:issued "2016-05-02"^^xsd:date ;
-                                     dc:description "DOREMUS is an extension of the FRBRoo model for describing the music." ;
-                                     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                     dct:modified "2018-01-17" ;
                                      dct:created "2017-01-24"^^xsd:date ;
                                      dct:creator <http://data.doremus.org/organization/DOREMUS> ;
                                      vann:preferredNamespacePrefix "mus" .
@@ -1725,18 +1728,23 @@ mus:U85_has_closely_related_key rdf:type owl:ObjectProperty ;
                                 rdfs:range mus:M4_Key .
 
 
-###  http://data.doremus.org/ontology#U86_had_performance_mode
-mus:U86_had_performance_mode rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf ecrm:P2_has_type ;
-                             owl:inverseOf mus:U86i_was_creation_mode_of ;
-                             rdfs:domain ecrm:E7_Activity ;
-                             rdfs:range mus:M32_Actor_Responsibility ;
-                             rdfs:label "U86 Had performance mode"@en .
-
-
 ###  http://data.doremus.org/ontology#U86i_was_creation_mode_of
 mus:U86i_was_creation_mode_of rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf ecrm:P2i_is_type_of .
+
+
+###  http://data.doremus.org/ontology#U87_is_foreseen_medium_of_performance_section_in
+mus:U87_is_foreseen_medium_of_performance_section_in rdf:type owl:ObjectProperty ;
+                                                     rdfs:subPropertyOf mus:U2_foresees_use_of_medium_of_performance ;
+                                                     rdfs:domain mus:M6_Casting ;
+                                                     rdfs:range mus:M14_Medium_Of_Performance .
+
+
+###  http://data.doremus.org/ontology#U89_occured_in_performance_conditions
+mus:U89_occured_in_performance_conditions rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf ecrm:P2_has_type ;
+                                          rdfs:domain ecrm:E5_Event ;
+                                          rdfs:range mus:M55_Conditions_Of_Performance .
 
 
 ###  http://data.doremus.org/ontology#U8_foresees_time_span
@@ -1754,6 +1762,48 @@ mus:U8i_is_foreseen_time_span_of rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
                                  rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                                  rdfs:label "U8i is foreseen time-span of"@en .
+
+
+###  http://data.doremus.org/ontology#U90_foresees_creation_or_performance_mode
+mus:U90_foresees_creation_or_performance_mode rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf ecrm:P67_refers_to ;
+                                              rdfs:domain ecrm:E29_Design_or_Procedure ;
+                                              rdfs:range mus:M50_Creation_or_Performance_Mode .
+
+
+###  http://data.doremus.org/ontology#U91_put_into_effect
+mus:U91_put_into_effect rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf ecrm:P33_used_specific_technique ;
+                        rdfs:domain ecrm:E7_Activity ;
+                        rdfs:range mus:M59_Program .
+
+
+###  http://data.doremus.org/ontology#U92_foresees_to_put_into_effect
+mus:U92_foresees_to_put_into_effect rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf ecrm:P33_used_specific_technique ;
+                                    rdfs:domain mus:M25_Foreseen_Activity ;
+                                    rdfs:range mus:M59_Program .
+
+
+###  http://data.doremus.org/ontology#U93_has_work_type
+mus:U93_has_work_type rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf ecrm:P2_has_type ;
+                      rdfs:domain efrbroo:F1_Work ;
+                      rdfs:range mus:M61_Work_Type .
+
+
+###  http://data.doremus.org/ontology#U93_is_realised_in
+mus:U93_is_realised_in rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf efrbroo:R3_is_realised_in ;
+                       rdfs:domain mus:M58_Programming_Work ;
+                       rdfs:range mus:M59_Program .
+
+
+###  http://data.doremus.org/ontology#U95_has_hierarchical_level
+mus:U95_has_hierarchical_level rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf ecrm:P2_has_type ;
+                               rdfs:domain efrbroo:F1_Work ;
+                               rdfs:range mus:M62_Hierarchical_Level .
 
 
 #################################################################
@@ -2047,6 +2097,13 @@ mus:U80_has_highest_pitch rdf:type owl:DatatypeProperty ;
                           rdfs:range xsd:string .
 
 
+###  http://data.doremus.org/ontology#U88_foresees_quantity_of_medium_of_performance_section
+mus:U88_foresees_quantity_of_medium_of_performance_section rdf:type owl:DatatypeProperty ;
+                                                           rdfs:subPropertyOf mus:U30_foresees_quantity_of_mop ;
+                                                           rdfs:domain mus:M23_Casting_Detail ;
+                                                           rdfs:range xsd:integer .
+
+
 ###  http://data.doremus.org/ontology#U9_has_quantity
 mus:U9_has_quantity rdf:type owl:DatatypeProperty ;
                     rdfs:domain ecrm:E77_Persistent_Item ;
@@ -2195,12 +2252,52 @@ mus:M167_Publication_Expression_Fragment rdf:type owl:Class ;
                                          rdfs:label "M167 Publication expression fragment"@en .
 
 
+###  http://data.doremus.org/ontology#M168_Media_Type
+mus:M168_Media_Type rdf:type owl:Class ;
+                    rdfs:subClassOf ecrm:E55_Type .
+
+
+###  http://data.doremus.org/ontology#M169_Carrier_Type
+mus:M169_Carrier_Type rdf:type owl:Class ;
+                      rdfs:subClassOf ecrm:E55_Type .
+
+
 ###  http://data.doremus.org/ontology#M16_Maintenance
 mus:M16_Maintenance rdf:type owl:Class ;
                     rdfs:subClassOf ecrm:E11_Modification ;
                     rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                     rdfs:label "M16 Maintenance"@en ,
                                "M16 Maintenance"@fr .
+
+
+###  http://data.doremus.org/ontology#M170_Binding
+mus:M170_Binding rdf:type owl:Class ;
+                 rdfs:subClassOf ecrm:E55_Type .
+
+
+###  http://data.doremus.org/ontology#M171_Container
+mus:M171_Container rdf:type owl:Class ;
+                   rdfs:subClassOf ecrm:E55_Type .
+
+
+###  http://data.doremus.org/ontology#M172_Colour_Content
+mus:M172_Colour_Content rdf:type owl:Class ;
+                        rdfs:subClassOf ecrm:E55_Type .
+
+
+###  http://data.doremus.org/ontology#M173_Playing_Speed
+mus:M173_Playing_Speed rdf:type owl:Class ;
+                       rdfs:subClassOf ecrm:E55_Type .
+
+
+###  http://data.doremus.org/ontology#M174_Content_Type
+mus:M174_Content_Type rdf:type owl:Class ;
+                      rdfs:subClassOf ecrm:E55_Type .
+
+
+###  http://data.doremus.org/ontology#M175_Music_Format
+mus:M175_Music_Format rdf:type owl:Class ;
+                      rdfs:subClassOf ecrm:E55_Type .
 
 
 ###  http://data.doremus.org/ontology#M17_Controlled_Access_Point_Creator
@@ -2529,10 +2626,40 @@ Les tonalités sont souvent listées sous forme de référentiels multilingues, 
                       "M4 Tonalité"@fr .
 
 
-###  http://data.doremus.org/ontology#M50_Performance_Mode
-mus:M50_Performance_Mode rdf:type owl:Class ;
-                         rdfs:subClassOf ecrm:E55_Type ;
-                         rdfs:label "M50 Performance mode"@en .
+###  http://data.doremus.org/ontology#M50_Creation_or_Performance_Mode
+mus:M50_Creation_or_Performance_Mode rdf:type owl:Class ;
+                                     rdfs:subClassOf ecrm:E55_Type ;
+                                     rdfs:label "M50 Performance mode"@en .
+
+
+###  http://data.doremus.org/ontology#M55_Condition_of_Performance
+mus:M55_Condition_of_Performance rdf:type owl:Class ;
+                                 rdfs:subClassOf ecrm:E55_Type .
+
+
+###  http://data.doremus.org/ontology#M55_Conditions_Of_Performance
+mus:M55_Conditions_Of_Performance rdf:type owl:Class ;
+                                  rdfs:subClassOf ecrm:E55_Type .
+
+
+###  http://data.doremus.org/ontology#M57_Vocal_Technique
+mus:M57_Vocal_Technique rdf:type owl:Class ;
+                        rdfs:subClassOf ecrm:E55_Type .
+
+
+###  http://data.doremus.org/ontology#M58_Programming_Work
+mus:M58_Programming_Work rdf:type owl:Class ;
+                         rdfs:subClassOf efrbroo:F14_Individual_Work .
+
+
+###  http://data.doremus.org/ontology#M59_Program
+mus:M59_Program rdf:type owl:Class ;
+                rdfs:subClassOf ecrm:E29_Design_or_Procedure .
+
+
+###  http://data.doremus.org/ontology#M59_Programming_Work
+mus:M59_Programming_Work rdf:type owl:Class ;
+                         rdfs:subClassOf efrbroo:F14_Individual_Work .
 
 
 ###  http://data.doremus.org/ontology#M5_Genre
@@ -2541,6 +2668,21 @@ mus:M5_Genre rdf:type owl:Class ;
              rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
              rdfs:label "M5 Genre"@en ,
                         "M5 Genre"@fr .
+
+
+###  http://data.doremus.org/ontology#M60_Intended_Audience
+mus:M60_Intended_Audience rdf:type owl:Class ;
+                          rdfs:subClassOf ecrm:E55_Type .
+
+
+###  http://data.doremus.org/ontology#M61_Work_Type
+mus:M61_Work_Type rdf:type owl:Class ;
+                  rdfs:subClassOf ecrm:E55_Type .
+
+
+###  http://data.doremus.org/ontology#M62_Hierarchical_Level
+mus:M62_Hierarchical_Level rdf:type owl:Class ;
+                           rdfs:subClassOf ecrm:E55_Type .
 
 
 ###  http://data.doremus.org/ontology#M6_Casting
