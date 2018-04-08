@@ -58,7 +58,7 @@ mus:CLU197_should_have_binding rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf efrbroo:CLP2_should_have_type ;
                                owl:inverseOf mus:CLU197i_should_be_binding_of ;
                                rdfs:domain efrbroo:F3_Manifestation_Product_Type ;
-                               rdfs:range ecrm:E55_Type ;
+                               rdfs:range mus:M170_Binding ;
                                rdfs:label "CLU197_should_have_binding"@en .
 
 
@@ -72,7 +72,7 @@ mus:CLU197i_should_be_binding_of rdf:type owl:ObjectProperty ;
 mus:CLU198_should_have_container rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf efrbroo:CLP2_should_have_type ;
                                  rdfs:domain efrbroo:F4_Manifestation_Singleton ;
-                                 rdfs:range ecrm:E55_Type ;
+                                 rdfs:range mus:M171_Container ;
                                  rdfs:label "CLU198 should have container"@en .
 
 
@@ -81,7 +81,7 @@ mus:CLU206_should_have_media_type rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf efrbroo:CLP2_should_have_type ;
                                   owl:inverseOf mus:CLU206i_should_be_media_type_of ;
                                   rdfs:domain efrbroo:F3_Manifestation_Product_Type ;
-                                  rdfs:range ecrm:E55_Type ;
+                                  rdfs:range mus:M168_Media_Type ;
                                   rdfs:label "CLU206 should have media type"@en .
 
 
@@ -96,7 +96,7 @@ mus:CLU207_should_have_carrier_type rdf:type owl:ObjectProperty ;
                                     rdfs:subPropertyOf efrbroo:CLP2_should_have_type ;
                                     owl:inverseOf mus:CLU207i_should_be_carrier_type_of ;
                                     rdfs:domain efrbroo:F3_Manifestation_Product_Type ;
-                                    rdfs:range ecrm:E55_Type ;
+                                    rdfs:range mus:M169_Carrier_Type ;
                                     rdfs:label "CLU207 should have carrier type"@en .
 
 
@@ -126,7 +126,7 @@ mus:CLU217_should_have_playing_speed rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf efrbroo:CLP2_should_have_type ;
                                      owl:inverseOf mus:CLU217i_should_be_playing_speed_of ;
                                      rdfs:domain efrbroo:F3_Manifestation_Product_Type ;
-                                     rdfs:range ecrm:E55_Type ;
+                                     rdfs:range mus:M173_Playing_Speed ;
                                      rdfs:label "U217 should have playing speed"@en .
 
 
@@ -606,7 +606,7 @@ mus:U18i_is_rhythmic_pattern_of rdf:type owl:ObjectProperty ;
 ###  http://data.doremus.org/ontology#U191_used_equalization_technique
 mus:U191_used_equalization_technique rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf ecrm:P32_used_general_technique ;
-                                     rdfs:domain efrbroo:F28_Expression_Creation ;
+                                     rdfs:domain mus:M29_Editing ;
                                      rdfs:range mus:M52_Equalization_Technique ;
                                      rdfs:label "U191 used equalization technique"@en .
 
@@ -614,8 +614,8 @@ mus:U191_used_equalization_technique rdf:type owl:ObjectProperty ;
 ###  http://data.doremus.org/ontology#U192_used_noise_reduction_technique
 mus:U192_used_noise_reduction_technique rdf:type owl:ObjectProperty ;
                                         rdfs:subPropertyOf ecrm:P32_used_general_technique ;
-                                        rdfs:domain efrbroo:F28_Expression_Creation ;
-                                        rdfs:range ecrm:E55_Type .
+                                        rdfs:domain mus:M29_Editing ;
+                                        rdfs:range mus:M53_Noise_Reduction_Technique .
 
 
 ###  http://data.doremus.org/ontology#U195_has_order_or_location_indication
@@ -631,7 +631,7 @@ mus:U197_has_binding rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf ecrm:P2_has_type ;
                      owl:inverseOf mus:U197i_is_binding_of ;
                      rdfs:domain efrbroo:F4_Manifestation_Singleton ;
-                     rdfs:range ecrm:E55_Type ;
+                     rdfs:range mus:M170_Binding ;
                      rdfs:label "U197 has binding"@en .
 
 
@@ -645,7 +645,7 @@ mus:U197i_is_binding_of rdf:type owl:ObjectProperty ;
 mus:U198_has_container rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf ecrm:P2_has_type ;
                        rdfs:domain efrbroo:F4_Manifestation_Singleton ;
-                       rdfs:range ecrm:E55_Type ;
+                       rdfs:range mus:M171_Container ;
                        rdfs:label "U198 has container"@en .
 
 
@@ -688,7 +688,7 @@ mus:U206_has_media_type rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf ecrm:P2_has_type ;
                         owl:inverseOf mus:U206i_is_media_type_of ;
                         rdfs:domain efrbroo:F4_Manifestation_Singleton ;
-                        rdfs:range ecrm:E55_Type ;
+                        rdfs:range mus:M168_Media_Type ;
                         rdfs:label "U206 has media type"@en .
 
 
@@ -702,7 +702,7 @@ mus:U206i_is_media_type_of rdf:type owl:ObjectProperty ;
 mus:U207_has_carrier_type rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf ecrm:P2_has_type ;
                           rdfs:domain efrbroo:F4_Manifestation_Singleton ;
-                          rdfs:range ecrm:E55_Type ;
+                          rdfs:range mus:M169_Carrier_Type ;
                           rdfs:label "U207 has  carrier type"@en .
 
 
@@ -742,7 +742,7 @@ mus:U210i_is_pagination_of rdf:type owl:ObjectProperty ;
 mus:U214_has_colour_content rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf ecrm:P2_has_type ;
                             rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-                            rdfs:range ecrm:E55_Type ;
+                            rdfs:range mus:M172_Colour_Content ;
                             rdfs:label "U214 has colour content"@en .
 
 
@@ -750,7 +750,7 @@ mus:U214_has_colour_content rdf:type owl:ObjectProperty ;
 mus:U217_has_playing_speed rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf ecrm:P2_has_type ;
                            rdfs:domain efrbroo:F4_Manifestation_Singleton ;
-                           rdfs:range ecrm:E55_Type ;
+                           rdfs:range mus:M173_Playing_Speed ;
                            rdfs:comment "U217 has playing speed"@en .
 
 
@@ -758,7 +758,7 @@ mus:U217_has_playing_speed rdf:type owl:ObjectProperty ;
 mus:U218_used_object_of_type_for_mastering rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf ecrm:P125_used_object_of_type ;
                                            rdfs:domain mus:M29_Editing ;
-                                           rdfs:range ecrm:E55_Type ;
+                                           rdfs:range mus:M51_Type_Of_Recording_Equipment ;
                                            rdfs:label "U218 used object of type for mastering"@en .
 
 
@@ -766,7 +766,7 @@ mus:U218_used_object_of_type_for_mastering rdf:type owl:ObjectProperty ;
 mus:U219_used_object_of_type_for_mixing rdf:type owl:ObjectProperty ;
                                         rdfs:subPropertyOf ecrm:P125_used_object_of_type ;
                                         rdfs:domain mus:M29_Editing ;
-                                        rdfs:range ecrm:E55_Type ;
+                                        rdfs:range mus:M51_Type_Of_Recording_Equipment ;
                                         rdfs:label "U219 used object of type for mixing"@en .
 
 
@@ -824,19 +824,19 @@ mus:U224_has_title_proper_of_multipart_monograph rdf:type owl:ObjectProperty ;
                                                  rdfs:label "U224 has title proper of multipart monograph"@en .
 
 
-###  http://data.doremus.org/ontology#U225_used_number_of_sound_channels
-mus:U225_used_number_of_sound_channels rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf ecrm:P32_used_general_technique ;
-                                       rdfs:domain efrbroo:F28_Expression_Creation ;
-                                       rdfs:range ecrm:E55_Type ;
-                                       rdfs:label "U225 used number of sound channels"@en .
+###  http://data.doremus.org/ontology#U225_used_sound_spatialization_technique
+mus:U225_used_sound_spatialization_technique rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf ecrm:P32_used_general_technique ;
+                                             rdfs:domain efrbroo:F28_Expression_Creation ;
+                                             rdfs:range mus:M54_Sound_Spatialization_Technique ;
+                                             rdfs:label "U225 used number of sound channels"@en .
 
 
 ###  http://data.doremus.org/ontology#U227_has_content_type
 mus:U227_has_content_type rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf ecrm:P2_has_type ;
                           rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-                          rdfs:range ecrm:E55_Type ;
+                          rdfs:range mus:M174_Content_Type ;
                           rdfs:label "U227 has content type"@en .
 
 
@@ -844,7 +844,7 @@ mus:U227_has_content_type rdf:type owl:ObjectProperty ;
 mus:U229_has_music_format rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf ecrm:P2_has_type ;
                           rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-                          rdfs:range ecrm:E55_Type ;
+                          rdfs:range mus:M175_Music_Format ;
                           rdfs:label "U229 has music format"@en .
 
 
@@ -2632,6 +2632,11 @@ mus:M50_Creation_or_Performance_Mode rdf:type owl:Class ;
                                      rdfs:label "M50 Performance mode"@en .
 
 
+###  http://data.doremus.org/ontology#M51_Type_Of_Recording_Equipment
+mus:M51_Type_Of_Recording_Equipment rdf:type owl:Class ;
+                                    rdfs:subClassOf ecrm:E55_Type .
+
+
 ###  http://data.doremus.org/ontology#M52_Equalization_Technique
 mus:M52_Equalization_Technique rdf:type owl:Class ;
                                rdfs:subClassOf ecrm:E55_Type .
@@ -2640,6 +2645,10 @@ mus:M52_Equalization_Technique rdf:type owl:Class ;
 ###  http://data.doremus.org/ontology#M53_Noise_Reduction_Technique
 mus:M53_Noise_Reduction_Technique rdf:type owl:Class ;
                                   rdfs:subClassOf ecrm:E55_Type .
+
+
+###  http://data.doremus.org/ontology#M54_Sound_Spatialization_Technique
+mus:M54_Sound_Spatialization_Technique rdf:type owl:Class .
 
 
 ###  http://data.doremus.org/ontology#M54_Sound_specialization_Technique
