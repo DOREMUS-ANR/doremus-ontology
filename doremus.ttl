@@ -23,7 +23,6 @@
                                      dct:modified "2018-01-17" ;
                                      dct:created "2017-01-24"^^xsd:date ;
                                      dct:creator <http://data.doremus.org/organization/DOREMUS> ;
-                                     vann:preferredNamespacePrefix "mus" ;
                                      owl:versionInfo """v0.2 05/06/2017 - starting enrichemnent for Manifestations - change in of type of several properties controlled by controlled vocabularies
 
 v0.2.1 Beta - test de gestion des vocabulaires contrôlés et propriétés avec valeur contrôlées -
@@ -43,7 +42,11 @@ v0.2.3 8/4/2018
 - voir tableau des nouvelles classes et propriétés pour le détail
 
 v0.2.4 14/5/2018 
--diverses corrections"""@en .
+-diverses corrections
+
+v0.2.5 16/5/2018 
+-diverses corrections"""@en ;
+                                     vann:preferredNamespacePrefix "mus" .
 
 #################################################################
 #    Object Properties
@@ -589,7 +592,7 @@ mus:U188_has_series_statement rdf:type owl:ObjectProperty ;
 ###  http://data.doremus.org/ontology#U188i_is_series_statement_of
 mus:U188i_is_series_statement_of rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf ecrm:P148i_is_component_of ;
-                                 rdfs:label "mus:U188i is series statement of"@en .
+                                 rdfs:label "U188i is series statement of"@en .
 
 
 ###  http://data.doremus.org/ontology#U189_has_main_series_statement
@@ -1176,7 +1179,7 @@ mus:U39i_was_tuned_by rdf:type owl:ObjectProperty ;
 ###  http://data.doremus.org/ontology#U3_foresees_use_of_specific_object
 mus:U3_foresees_use_of_specific_object rdf:type owl:ObjectProperty ;
                                        rdfs:subPropertyOf ecrm:P67_refers_to ;
-                                       owl:inverseOf mus:U3i_is_foreseen_specific_medium_of_performance_in ;
+                                       owl:inverseOf mus:U3i_is_foreseen_specific_object_in ;
                                        rdfs:domain ecrm:E29_Design_or_Procedure ;
                                        rdfs:range ecrm:E71_Man-Made_Thing ;
                                        rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
@@ -1184,12 +1187,12 @@ mus:U3_foresees_use_of_specific_object rdf:type owl:ObjectProperty ;
                                                   "U3 utilisation prévue de l'objet spécifique"@fr .
 
 
-###  http://data.doremus.org/ontology#U3i_is_foreseen_specific_medium_of_performance_in
-mus:U3i_is_foreseen_specific_medium_of_performance_in rdf:type owl:ObjectProperty ;
-                                                      rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
-                                                      rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                                                      rdfs:label "U3i est le type d'objet spécifique prévu pour"@fr ,
-                                                                 "U3i is foreseen specific medium of performance in"@en .
+###  http://data.doremus.org/ontology#U3i_is_foreseen_specific_object_in
+mus:U3i_is_foreseen_specific_object_in rdf:type owl:ObjectProperty ;
+                                       rdfs:subPropertyOf ecrm:P67i_is_referred_to_by ;
+                                       rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+                                       rdfs:label "U3i est le type d'objet spécifique prévu pour"@fr ,
+                                                  "U3i is foreseen specific medium of performance in"@en .
 
 
 ###  http://data.doremus.org/ontology#U40_has_catalogue_name
@@ -1303,7 +1306,8 @@ mus:U4_had_princeps_publication rdf:type owl:ObjectProperty ;
                                 rdfs:domain ecrm:E89_Propositional_Object ;
                                 rdfs:range efrbroo:F30_Publication_Event ;
                                 rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                                rdfs:label "U4 had princeps publication"@en .
+                                rdfs:label "U4 a pour édition princeps"@fr ,
+                                           "U4 had princeps publication"@en .
 
 
 ###  http://data.doremus.org/ontology#U4i_was_princeps_publication_of
@@ -1816,20 +1820,20 @@ mus:U92_foresees_to_put_into_effect rdf:type owl:ObjectProperty ;
                                     rdfs:label "U92 foresees to put into effect"@en .
 
 
-###  http://data.doremus.org/ontology#U93_has_work_type
-mus:U93_has_work_type rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf ecrm:P2_has_type ;
-                      rdfs:domain efrbroo:F1_Work ;
-                      rdfs:range mus:M61_Work_Type ;
-                      rdfs:label "U93 has work type"@en .
-
-
 ###  http://data.doremus.org/ontology#U93_is_realised_in
 mus:U93_is_realised_in rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf efrbroo:R3_is_realised_in ;
                        rdfs:domain mus:M58_Programming_Work ;
                        rdfs:range mus:M59_Program ;
                        rdfs:label "U93 is realised in"@en .
+
+
+###  http://data.doremus.org/ontology#U94_has_work_type
+mus:U94_has_work_type rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf ecrm:P2_has_type ;
+                      rdfs:domain efrbroo:F1_Work ;
+                      rdfs:range mus:M61_Work_Type ;
+                      rdfs:label "U93 has work type"@en .
 
 
 ###  http://data.doremus.org/ontology#U95_has_hierarchical_level
@@ -1980,20 +1984,20 @@ mus:U216_has_tape_configuration rdf:type owl:DatatypeProperty ;
                                 rdfs:label "U216 has tape configuration"@en .
 
 
-###  http://data.doremus.org/ontology#U226_has_other_distinguishing_characteristic_of_expression
-mus:U226_has_other_distinguishing_characteristic_of_expression rdf:type owl:DatatypeProperty ;
-                                                               rdfs:subPropertyOf ecrm:P3_has_note ;
-                                                               rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-                                                               rdfs:range xsd:string ;
-                                                               rdfs:label "U226 has other distinguishing characteristic of expression"@en .
-
-
 ###  http://data.doremus.org/ontology#U226_has_responsibility_detail
 mus:U226_has_responsibility_detail rdf:type owl:DatatypeProperty ;
                                    rdfs:subPropertyOf ecrm:P3_has_note ;
                                    rdfs:domain efrbroo:F28_Expression_Creation ;
                                    rdfs:range xsd:string ;
                                    rdfs:label "U226 has responsibility detail"@en .
+
+
+###  http://data.doremus.org/ontology#U228_has_other_distinguishing_characteristic_of_expression
+mus:U228_has_other_distinguishing_characteristic_of_expression rdf:type owl:DatatypeProperty ;
+                                                               rdfs:subPropertyOf ecrm:P3_has_note ;
+                                                               rdfs:domain efrbroo:F22_Self-Contained_Expression ;
+                                                               rdfs:range xsd:string ;
+                                                               rdfs:label "U226 has other distinguishing characteristic of expression"@en .
 
 
 ###  http://data.doremus.org/ontology#U30_foresees_quantity_of_mop
@@ -2323,7 +2327,8 @@ mus:M170_Binding rdf:type owl:Class ;
 
 ###  http://data.doremus.org/ontology#M171_Container
 mus:M171_Container rdf:type owl:Class ;
-                   rdfs:subClassOf ecrm:E55_Type .
+                   rdfs:subClassOf ecrm:E55_Type ;
+                   rdfs:label "M171 Container"@en .
 
 
 ###  http://data.doremus.org/ontology#M172_Colour_Content
@@ -2670,8 +2675,7 @@ mus:M4_Key rdf:type owl:Class ;
                                  owl:onProperty skos:inScheme ;
                                  owl:hasValue <http://data.doremus.org/vocabulary/key/>
                                ] ;
-           rdfs:subClassOf ecrm:E55_Type ,
-                           skos:Concept ;
+           rdfs:subClassOf ecrm:E55_Type ;
            rdfs:comment """Examples:	→ Le Concerto pour Piano et orchestre en Si bémol majeur de Beethoven a pour tonalité si bémol majeur :
 F22 Self-Contained Expression u11 has key M4 Key { Si bémol Majeur }"""@fr ,
                         """Scope note:
@@ -2719,7 +2723,9 @@ mus:M54_Sound_Spatialization_Technique rdf:type owl:Class ;
 
 ###  http://data.doremus.org/ontology#M55_Condition_Of_Performance
 mus:M55_Condition_Of_Performance rdf:type owl:Class ;
-                                 rdfs:subClassOf ecrm:E55_Type .
+                                 rdfs:subClassOf ecrm:E55_Type ;
+                                 rdfs:label "M55 Condition de la performance"@fr ,
+                                            "M55 Condition of performance"@fr .
 
 
 ###  http://data.doremus.org/ontology#M57_Vocal_Technique
