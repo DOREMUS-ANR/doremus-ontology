@@ -1,4 +1,4 @@
-@prefix : <http://data.doremus.org/ontology##> .
+@prefix : <http://data.doremus.org/ontology#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix mus: <http://data.doremus.org/ontology#> .
