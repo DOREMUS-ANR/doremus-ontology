@@ -18,7 +18,6 @@
                                                  <http://www.w3.org/2004/02/skos/core> ;
                                      vann:preferredNamespaceUri "http://data.doremus.org/ontology#" ;
                                      dct:issued "2016-05-02"^^xsd:date ;
-                                     dc:description "DOREMUS is an extension of the FRBRoo model for describing the music." ;
                                      owl:versionInfo """v0.2 05/06/2017 - starting enrichemnent for Manifestations - change in of type of several properties controlled by controlled vocabularies
 
 v0.2.1 Beta - test de gestion des vocabulaires contrôlés et propriétés avec valeur contrôlées -
@@ -43,8 +42,12 @@ v0.2.4 14/5/2018
 v0.2.5 16/5/2018 
 -diverses corrections
 
-v0.2.6 5/7/2018 
+v0.2.6 4/7/2018 
+-diverses corrections selon tableauy nouvelles classes et propriétés
+
+v0.2.7 5/7/2018 
 -diverses corrections selon tableauy nouvelles classes et propriétés"""@en ;
+                                     dc:description "DOREMUS is an extension of the FRBRoo model for describing the music." ;
                                      dct:license <https://creativecommons.org/licenses/by/4.0/> ;
                                      dct:modified "2018-01-17" ;
                                      dct:created "2017-01-24"^^xsd:date ;
@@ -703,18 +706,18 @@ mus:U198_has_container rdf:type owl:ObjectProperty ;
 ###  http://data.doremus.org/ontology#U19_is_categorized_as
 mus:U19_is_categorized_as rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf ecrm:P2_has_type ;
-                          owl:inverseOf mus:U19i_is_style_of ;
-                          rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-                          rdfs:range mus:M19_Style ;
+                          owl:inverseOf mus:U19i_categorizes ;
+                          rdfs:domain ecrm:E1_CRM_Entity ;
+                          rdfs:range mus:M19_Categorization ;
                           rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                          rdfs:label "U19 has style"@en .
+                          rdfs:label "U19 is categorized as"@en .
 
 
-###  http://data.doremus.org/ontology#U19i_is_style_of
-mus:U19i_is_style_of rdf:type owl:ObjectProperty ;
+###  http://data.doremus.org/ontology#U19i_categorizes
+mus:U19i_categorizes rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf ecrm:P2i_is_type_of ;
                      rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                     rdfs:label "U19i is style of"@en .
+                     rdfs:label "U19i categorizes"@en .
 
 
 ###  http://data.doremus.org/ontology#U1_used_medium_of_performance
@@ -722,7 +725,7 @@ mus:U1_used_medium_of_performance rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf ecrm:P125_used_object_of_type ;
                                   owl:inverseOf mus:U1i_medium_of_performance_was_used_in ;
                                   rdfs:domain mus:M28_Individual_Performance ;
-                                  rdfs:range mus:M14_Medium_Of_Performance ;
+                                  rdfs:range mus:M14_Medium_of_Performance ;
                                   rdfs:comment "U1 instrument ou voix utilisé pour la performance"@fr ;
                                   rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                                   rdfs:label "U1 used medium of performance"@en .
@@ -931,8 +934,6 @@ mus:U225i_was_sound_spatialization_technique_of rdf:type owl:ObjectProperty ;
 mus:U227_has_content_type rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf ecrm:P2_has_type ;
                           owl:inverseOf mus:U227i_is_content_type_of ;
-                          rdfs:domain efrbroo:F22_Self-Contained_Expression ;
-                          rdfs:range mus:M174_Content_Type ;
                           rdfs:label "U227 has content type"@en .
 
 
@@ -1058,19 +1059,19 @@ mus:U27i_character_was_performed_by rdf:type owl:ObjectProperty ;
 ###  http://data.doremus.org/ontology#U28_has_ambitus
 mus:U28_has_ambitus rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf ecrm:P2_has_type ;
-                    owl:inverseOf mus:U28i_is_tessitura_of ;
-                    rdfs:domain mus:M23_Casting_Detail ;
-                    rdfs:range mus:M30_Range ;
+                    owl:inverseOf mus:U28i_is_ambitus_of ;
+                    rdfs:domain efrbroo:F38_Character ;
+                    rdfs:range mus:M30_Ambitus ;
                     rdfs:comment "scope note: this property allows for describing the tessitura of a character, as can be drawn from the score."@en ;
                     rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                    rdfs:label "U28 has range"@en .
+                    rdfs:label "U28 has ambitus"@en .
 
 
-###  http://data.doremus.org/ontology#U28i_is_tessitura_of
-mus:U28i_is_tessitura_of rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf ecrm:P2i_is_type_of ;
-                         rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                         rdfs:label "U28i is tessitura of"@en .
+###  http://data.doremus.org/ontology#U28i_is_ambitus_of
+mus:U28i_is_ambitus_of rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf ecrm:P2i_is_type_of ;
+                       rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+                       rdfs:label "U28i is ambitus of"@en .
 
 
 ###  http://data.doremus.org/ontology#U29_edited
@@ -1095,7 +1096,7 @@ mus:U2_foresees_use_of_medium_of_performance rdf:type owl:ObjectProperty ;
                                              rdfs:subPropertyOf ecrm:P67_refers_to ;
                                              owl:inverseOf mus:U2i_is_foreseen_type_of_medium_of_performance_in ;
                                              rdfs:domain ecrm:E29_Design_or_Procedure ;
-                                             rdfs:range mus:M14_Medium_Of_Performance ;
+                                             rdfs:range mus:M14_Medium_of_Performance ;
                                              rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                                              rdfs:label "U2 foresees use of medium of performance"@en ,
                                                         "U2 instrument ou voix prévu pour la performance"@fr .
@@ -1267,7 +1268,8 @@ mus:U39i_was_tuned_by rdf:type owl:ObjectProperty ;
 mus:U3_foresees_use_of_specific_object rdf:type owl:ObjectProperty ;
                                        rdfs:subPropertyOf ecrm:P67_refers_to ;
                                        owl:inverseOf mus:U3i_is_foreseen_specific_object_in ;
-                                       rdfs:domain ecrm:E29_Design_or_Procedure .
+                                       rdfs:domain ecrm:E29_Design_or_Procedure ;
+                                       rdfs:range ecrm:E22_Man-Made_Object .
 
 
 ###  http://data.doremus.org/ontology#U3i_is_foreseen_specific_object_in
@@ -1848,7 +1850,7 @@ mus:U86i_was_creation_mode_of rdf:type owl:ObjectProperty ;
 
 ###  http://data.doremus.org/ontology#U87_has_member_casting_detail
 mus:U87_has_member_casting_detail rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf mus:U23_has_casting_detail ;
+                                  rdfs:subPropertyOf ecrm:P69_has_association_with ;
                                   owl:inverseOf mus:U87i_is_member_casting_detail_of ;
                                   rdf:type owl:IrreflexiveProperty ;
                                   rdfs:domain mus:M23_Casting_Detail ;
@@ -1859,8 +1861,22 @@ mus:U87_has_member_casting_detail rdf:type owl:ObjectProperty ;
 
 ###  http://data.doremus.org/ontology#U87i_is_member_casting_detail_of
 mus:U87i_is_member_casting_detail_of rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf mus:U23i_is_casting_detail_of ;
+                                     rdfs:subPropertyOf ecrm:P69i_is_associated_with ;
                                      rdfs:label "U87i is member casting detail of"@en .
+
+
+###  http://data.doremus.org/ontology#U88_has_medium_of_performance_section
+mus:U88_has_medium_of_performance_section rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf mus:U87_has_member_casting_detail ;
+                                          rdfs:domain mus:M23_Casting_Detail ;
+                                          rdfs:range mus:M23_Casting_Detail ;
+                                          rdfs:comment "U88 has medium of performance section"@en .
+
+
+###  http://data.doremus.org/ontology#U88i_is_member_of_performance_section_of
+mus:U88i_is_member_of_performance_section_of rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf mus:U87i_is_member_casting_detail_of ;
+                                             rdfs:label "U88i is member of performance section of"@en .
 
 
 ###  http://data.doremus.org/ontology#U89_occured_in_performance_conditions
@@ -1868,7 +1884,7 @@ mus:U89_occured_in_performance_conditions rdf:type owl:ObjectProperty ;
                                           rdfs:subPropertyOf ecrm:P2_has_type ;
                                           owl:inverseOf mus:U89i_were_performance_conditions_of ;
                                           rdfs:domain ecrm:E5_Event ;
-                                          rdfs:range mus:M55_Condition_Of_Performance ;
+                                          rdfs:range mus:M55_Condition_of_Performance ;
                                           rdfs:label "U89 occured in performance conditions"@en .
 
 
@@ -1897,7 +1913,11 @@ mus:U8i_is_foreseen_time_span_of rdf:type owl:ObjectProperty ;
 mus:U90_foresees_creation_or_performance_mode rdf:type owl:ObjectProperty ;
                                               rdfs:subPropertyOf ecrm:P67_refers_to ;
                                               owl:inverseOf mus:U90i_were_performance_conditions_of ;
-                                              rdfs:domain ecrm:E29_Design_or_Procedure ;
+                                              rdfs:domain [ rdf:type owl:Class ;
+                                                            owl:unionOf ( mus:M23_Casting_Detail
+                                                                          efrbroo:F25_Performance_Plan
+                                                                        )
+                                                          ] ;
                                               rdfs:range mus:M50_Creation_or_Performance_Mode ;
                                               rdfs:label "U90 foresees creation or performance mode"@en .
 
@@ -1987,7 +2007,11 @@ mus:U95i_is_hierarchical_level_of rdf:type owl:ObjectProperty ;
 mus:U96_foresees_vocal_or_instrumental_technique rdf:type owl:ObjectProperty ;
                                                  rdfs:subPropertyOf ecrm:P67_refers_to ;
                                                  owl:inverseOf mus:U96i_is_foreseen_vocal_or_instrumental_technique_of ;
-                                                 rdfs:domain ecrm:E89_Propositional_Object ;
+                                                 rdfs:domain [ rdf:type owl:Class ;
+                                                               owl:unionOf ( mus:M23_Casting_Detail
+                                                                             efrbroo:F25_Performance_Plan
+                                                                           )
+                                                             ] ;
                                                  rdfs:range ecrm:E1_CRM_Entity ;
                                                  rdfs:label "U96 foresees vocal or instrumental technique"@en .
 
@@ -2163,7 +2187,7 @@ mus:U30_foresees_quantity_of_mop rdf:type owl:DatatypeProperty ;
                                  rdfs:domain mus:M23_Casting_Detail ;
                                  rdfs:range xsd:positiveInteger ;
                                  rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                                 rdfs:label "U30 foresees quantity of mop"@en .
+                                 rdfs:label "U30 foresees quantity of medium of performance"@en .
 
 
 ###  http://data.doremus.org/ontology#U3_foresees_use_of_specific_object
@@ -2286,7 +2310,7 @@ mus:U78_estimated_duration rdf:type owl:DatatypeProperty ;
 ###  http://data.doremus.org/ontology#U79_has_lowest_pitch
 mus:U79_has_lowest_pitch rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf ecrm:P3_has_note ;
-                         rdfs:domain mus:M30_Range ;
+                         rdfs:domain mus:M30_Ambitus ;
                          rdfs:range xsd:string ;
                          rdfs:label "U79 has lowest pitch"@en .
 
@@ -2294,17 +2318,9 @@ mus:U79_has_lowest_pitch rdf:type owl:DatatypeProperty ;
 ###  http://data.doremus.org/ontology#U80_has_highest_pitch
 mus:U80_has_highest_pitch rdf:type owl:DatatypeProperty ;
                           rdfs:subPropertyOf ecrm:P3_has_note ;
-                          rdfs:domain mus:M30_Range ;
+                          rdfs:domain mus:M30_Ambitus ;
                           rdfs:range xsd:string ;
                           rdfs:label "U80 has highest pitch"@en .
-
-
-###  http://data.doremus.org/ontology#U88_has_medium_of_performance_section
-mus:U88_has_medium_of_performance_section rdf:type owl:DatatypeProperty ;
-                                          rdfs:subPropertyOf mus:U30_foresees_quantity_of_mop ;
-                                          rdfs:domain mus:M23_Casting_Detail ;
-                                          rdfs:range xsd:integer ;
-                                          rdfs:label "U88 has medium of performance section"@en .
 
 
 ###  http://data.doremus.org/ontology#U9_has_quantity
@@ -2355,8 +2371,8 @@ mus:M13_Opus_Subnumber rdf:type owl:Class ;
                                   "M13 Sous-numéro d'opus"@fr .
 
 
-###  http://data.doremus.org/ontology#M14_Medium_Of_Performance
-mus:M14_Medium_Of_Performance rdf:type owl:Class ;
+###  http://data.doremus.org/ontology#M14_Medium_of_Performance
+mus:M14_Medium_of_Performance rdf:type owl:Class ;
                               rdfs:subClassOf ecrm:E55_Type ;
                               rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                               rdfs:label "M14 Distribution instrumentale ou vocale"@fr ,
@@ -2546,12 +2562,12 @@ Sous-classe de F50 Controlled Access Point, cette classe en reprend les caracté
                                                         "M18 Point d'accès contrôlé dénomination"@fr .
 
 
-###  http://data.doremus.org/ontology#M19_Style
-mus:M19_Style rdf:type owl:Class ;
-              rdfs:subClassOf ecrm:E55_Type ;
-              rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-              rdfs:label "M19 Style"@en ,
-                         "M19 Style"@fr .
+###  http://data.doremus.org/ontology#M19_Categorization
+mus:M19_Categorization rdf:type owl:Class ;
+                       rdfs:subClassOf ecrm:E55_Type ;
+                       rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+                       rdfs:label "M19 Style"@en ,
+                                  "M19 Style"@fr .
 
 
 ###  http://data.doremus.org/ontology#M1_Catalogue_Statement
@@ -2663,12 +2679,12 @@ mus:M2_Opus_Statement rdf:type owl:Class ;
                                  "M2 Opus Statement"@en .
 
 
-###  http://data.doremus.org/ontology#M30_Range
-mus:M30_Range rdf:type owl:Class ;
-              rdfs:subClassOf ecrm:E55_Type ;
-              rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-              rdfs:label "M30 Ambitus"@fr ,
-                         "M30 Range"@en .
+###  http://data.doremus.org/ontology#M30_Ambitus
+mus:M30_Ambitus rdf:type owl:Class ;
+                rdfs:subClassOf ecrm:E55_Type ;
+                rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+                rdfs:label "M30 Ambitus"@en ,
+                           "M30 Ambitus"@fr .
 
 
 ###  http://data.doremus.org/ontology#M31_Actor_Function
@@ -2792,14 +2808,6 @@ mus:M44_Performed_Work rdf:type owl:Class ;
                                   "M44 Performed Work"@en .
 
 
-###  http://data.doremus.org/ontology#M45_Descriptive_Expression_Assignment
-mus:M45_Descriptive_Expression_Assignment rdf:type owl:Class ;
-                                          rdfs:subClassOf ecrm:E13_Attribute_Assignment ;
-                                          rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                                          rdfs:label "M45 Attribution d'Expression Descriptive"@fr ,
-                                                     "M45 Descriptive Expression Assignment"@en .
-
-
 ###  http://data.doremus.org/ontology#M46_Set_of_Tracks
 mus:M46_Set_of_Tracks rdf:type owl:Class ;
                       rdfs:subClassOf efrbroo:F22_Self-Contained_Expression ;
@@ -2884,18 +2892,18 @@ mus:M54_Sound_Spatialization_Technique rdf:type owl:Class ;
                                                   "M54 Technique de spatialisation du son"@fr .
 
 
-###  http://data.doremus.org/ontology#M55_Condition_Of_Performance
-mus:M55_Condition_Of_Performance rdf:type owl:Class ;
+###  http://data.doremus.org/ontology#M55_Condition_of_Performance
+mus:M55_Condition_of_Performance rdf:type owl:Class ;
                                  rdfs:subClassOf ecrm:E55_Type ;
                                  rdfs:label "M55 Condition de la performance"@fr ,
-                                            "M55 Condition of performance"@fr .
+                                            "M55 Condition of performance"@en .
 
 
-###  http://data.doremus.org/ontology#M57_Vocal_Technique
-mus:M57_Vocal_Technique rdf:type owl:Class ;
-                        rdfs:subClassOf ecrm:E55_Type ;
-                        rdfs:label "M57 Technique vocale"@fr ,
-                                   "M57 Vocal technique"@en .
+###  http://data.doremus.org/ontology#M57_Vocal_or_Instrumental_Technique
+mus:M57_Vocal_or_Instrumental_Technique rdf:type owl:Class ;
+                                        rdfs:subClassOf ecrm:E55_Type ;
+                                        rdfs:label "M57 Technique vocale ou instrumentale"@fr ,
+                                                   "M57 Vocal or instrumental technique"@en .
 
 
 ###  http://data.doremus.org/ontology#M58_Programming_Work
