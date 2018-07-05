@@ -1267,11 +1267,7 @@ mus:U39i_was_tuned_by rdf:type owl:ObjectProperty ;
 mus:U3_foresees_use_of_specific_object rdf:type owl:ObjectProperty ;
                                        rdfs:subPropertyOf ecrm:P67_refers_to ;
                                        owl:inverseOf mus:U3i_is_foreseen_specific_object_in ;
-                                       rdfs:domain ecrm:E29_Design_or_Procedure ;
-                                       rdfs:range ecrm:E71_Man-Made_Thing ;
-                                       rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                                       rdfs:label "U3 forees use of specific object"@en ,
-                                                  "U3 utilisation prévue de l'objet spécifique"@fr .
+                                       rdfs:domain ecrm:E29_Design_or_Procedure .
 
 
 ###  http://data.doremus.org/ontology#U3i_is_foreseen_specific_object_in
@@ -2170,6 +2166,11 @@ mus:U30_foresees_quantity_of_mop rdf:type owl:DatatypeProperty ;
                                  rdfs:label "U30 foresees quantity of mop"@en .
 
 
+###  http://data.doremus.org/ontology#U3_foresees_use_of_specific_object
+mus:U3_foresees_use_of_specific_object rdf:type owl:DatatypeProperty ;
+                                       rdfs:range ecrm:E71_Man-Made_Thing .
+
+
 ###  http://data.doremus.org/ontology#U41_has_catalogue_number
 mus:U41_has_catalogue_number rdf:type owl:DatatypeProperty ;
                              rdfs:domain mus:M1_Catalogue_Statement ;
@@ -3016,6 +3017,11 @@ mus:U85_has_closely_related_key rdf:type owl:NamedIndividual ,
 #################################################################
 #    Annotations
 #################################################################
+
+mus:U3_foresees_use_of_specific_object rdfs:label "U3 forees use of specific object"@en ,
+                                                  "U3 utilisation prévue de l'objet spécifique"@fr ;
+                                       rdfs:isDefinedBy <http://data.doremus.org/ontology#> .
+
 
 mus:U83_has_relative_key rdfs:label "U83 has relative key"@en ;
                          rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
