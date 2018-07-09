@@ -2380,8 +2380,7 @@ mus:M14_Medium_Of_Performance rdf:type owl:Class ;
                               rdfs:subClassOf ecrm:E55_Type ;
                               rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                               rdfs:label "M14 Distribution instrumentale ou vocale"@fr ,
-                                         "M14 Medium of Performance"@en .
-
+                                         "M14 Medium of performance"@en .
 
 ###  http://data.doremus.org/ontology#M154_Label_Name
 mus:M154_Label_Name rdf:type owl:Class ;
