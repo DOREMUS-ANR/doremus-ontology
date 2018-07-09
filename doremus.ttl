@@ -729,7 +729,7 @@ mus:U1_used_medium_of_performance rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf ecrm:P125_used_object_of_type ;
                                   owl:inverseOf mus:U1i_medium_of_performance_was_used_in ;
                                   rdfs:domain mus:M28_Individual_Performance ;
-                                  rdfs:range mus:M14_Medium_of_Performance ;
+                                  rdfs:range mus:M14_Medium_Of_Performance ;
                                   rdfs:comment "U1 instrument ou voix utilisé pour la performance"@fr ;
                                   rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                                   rdfs:label "U1 used medium of performance"@en .
@@ -1100,7 +1100,7 @@ mus:U2_foresees_use_of_medium_of_performance rdf:type owl:ObjectProperty ;
                                              rdfs:subPropertyOf ecrm:P67_refers_to ;
                                              owl:inverseOf mus:U2i_is_foreseen_type_of_medium_of_performance_in ;
                                              rdfs:domain ecrm:E29_Design_or_Procedure ;
-                                             rdfs:range mus:M14_Medium_of_Performance ;
+                                             rdfs:range mus:M14_Medium_Of_Performance ;
                                              rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                                              rdfs:label "U2 foresees use of medium of performance"@en ,
                                                         "U2 instrument ou voix prévu pour la performance"@fr .
@@ -2375,12 +2375,12 @@ mus:M13_Opus_Subnumber rdf:type owl:Class ;
                                   "M13 Sous-numéro d'opus"@fr .
 
 
-###  http://data.doremus.org/ontology#M14_Medium_of_Performance
-mus:M14_Medium_of_Performance rdf:type owl:Class ;
+###  http://data.doremus.org/ontology#M14_Medium_Of_Performance
+mus:M14_Medium_Of_Performance rdf:type owl:Class ;
                               rdfs:subClassOf ecrm:E55_Type ;
                               rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
                               rdfs:label "M14 Distribution instrumentale ou vocale"@fr ,
-                                         "M14 Medium Of Performance"@en .
+                                         "M14 Medium of performance"@en .
 
 
 ###  http://data.doremus.org/ontology#M154_Label_Name
