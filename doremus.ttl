@@ -22,31 +22,35 @@
 
 v0.2.1 Beta - test de gestion des vocabulaires contrôlés et propriétés avec valeur contrôlées -
 - import de l'ontologie SKOS
-- test sur la classe M4
-- M4 range de la propriété U11_has_Key
+- M4 devient le range de la propriété U11_has_Key
 - M4 est déclarée sous classe de skos:Concept
 - key est déclaré comme instance de la classe skos:ConceptScheme
 - M4 est déclarée comme equivalent au skos:ConceptScheme key
 
 Si l'utilisateur de l'ontologie n'utilise pas de vocabulaire contrôlé, cette équivalence peut être supprimée. On peut donner une valeur litérale à l'instance de M4_Key en utilisant la propriété rdfs:label et mettre des commentaires en utilisant rdfs:comment
 
-v0.2.2 11/1/2018 - enrichissements de classes et propriétés
+v0.2.2 11/01/2018 - enrichissements de classes et propriétés
 - voir tableau des nouvelles classes et propriétés pour le détail
 
-v0.2.3 8/4/2018
+v0.2.3 08/04/2018
 - voir tableau des nouvelles classes et propriétés pour le détail
 
-v0.2.4 14/5/2018 
--diverses corrections
+v0.2.4 14/05/2018 
+- diverses corrections
 
-v0.2.5 16/5/2018 
--diverses corrections
+v0.2.5 16/05/2018 
+- diverses corrections
 
-v0.2.6 4/7/2018 
--diverses corrections selon tableauy nouvelles classes et propriétés
+v0.2.6 04/07/2018 
+- diverses corrections selon tableau des nouvelles classes et propriétés
 
-v0.2.7 5/7/2018 
--diverses corrections selon tableauy nouvelles classes et propriétés"""@en ;
+v0.2.7 05/07/2018 
+- diverses corrections selon tableau des nouvelles classes et propriétés
+
+v0.2.9 09/07/2018 
+- changement du label FR de la classe M37"""@en ;
+
+
                                      dc:description "DOREMUS is an extension of the FRBRoo model for describing the music." ;
                                      dct:license <https://creativecommons.org/licenses/by/4.0/> ;
                                      dct:modified "2018-01-17" ;
@@ -2739,7 +2743,7 @@ mus:M36_Award rdf:type owl:Class ;
 mus:M37_Music_Scale rdf:type owl:Class ;
                     rdfs:subClassOf ecrm:E55_Type ;
                     rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
-                    rdfs:label "M37 Gamme"@fr ,
+                    rdfs:label "M37 Echelle Musicale"@fr ,
                                "M37 Music Scale"@en .
 
 
