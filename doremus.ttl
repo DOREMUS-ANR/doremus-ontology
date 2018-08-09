@@ -35,19 +35,19 @@ v0.2.2 11/01/2018 - enrichissements de classes et propriétés
 v0.2.3 08/04/2018
 - voir tableau des nouvelles classes et propriétés pour le détail
 
-v0.2.4 14/05/2018 
+v0.2.4 14/05/2018
 - diverses corrections
 
-v0.2.5 16/05/2018 
+v0.2.5 16/05/2018
 - diverses corrections
 
-v0.2.6 04/07/2018 
+v0.2.6 04/07/2018
 - diverses corrections selon tableau des nouvelles classes et propriétés
 
-v0.2.7 05/07/2018 
+v0.2.7 05/07/2018
 - diverses corrections selon tableau des nouvelles classes et propriétés
 
-v0.2.9 09/07/2018 
+v0.2.9 09/07/2018
 - changement du label FR de la classe M37"""@en ;
 
 
@@ -1846,12 +1846,6 @@ mus:U85_has_closely_related_key rdf:type owl:ObjectProperty ;
                                 rdfs:range mus:M4_Key .
 
 
-###  http://data.doremus.org/ontology#U86i_was_creation_mode_of
-mus:U86i_was_creation_mode_of rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf ecrm:P2i_is_type_of ;
-                              rdfs:label "U86i was creation mode of"@en .
-
-
 ###  http://data.doremus.org/ontology#U87_has_member_casting_detail
 mus:U87_has_member_casting_detail rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf ecrm:P69_has_association_with ;
@@ -2154,8 +2148,8 @@ mus:U213_has_recording_method rdf:type owl:DatatypeProperty ;
                               rdfs:label "U213 has recording method"@en .
 
 
-###  http://data.doremus.org/ontology#U215__has_groove_caracteristics
-mus:U215__has_groove_caracteristics rdf:type owl:DatatypeProperty ;
+###  http://data.doremus.org/ontology#U215_has_groove_caracteristics
+mus:U215_has_groove_caracteristics rdf:type owl:DatatypeProperty ;
                                     rdfs:subPropertyOf ecrm:P3_has_note ;
                                     rdfs:domain ecrm:E71_Man-Made_Thing ;
                                     rdfs:range xsd:string ;
@@ -2810,6 +2804,12 @@ mus:M44_Performed_Work rdf:type owl:Class ;
                        rdfs:label "M44 Oeuvre interprétée"@fr ,
                                   "M44 Performed Work"@en .
 
+###  http://data.doremus.org/ontology#M45_Descriptive_Expression_Assignment
+mus:M45_Descriptive_Expression_Assignment rdf:type owl:Class ;
+                                          rdfs:subClassOf ecrm:E13_Attribute_Assignment ;
+                                          rdfs:isDefinedBy <http://data.doremus.org/ontology#> ;
+                                          rdfs:label "M45 Attribution d'Expression Descriptive"@fr ,
+                                                     "M45 Descriptive Expression Assignment"@en .
 
 ###  http://data.doremus.org/ontology#M46_Set_of_Tracks
 mus:M46_Set_of_Tracks rdf:type owl:Class ;
