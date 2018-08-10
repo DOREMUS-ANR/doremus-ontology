@@ -357,17 +357,17 @@ mus:U171i_is_parallel_title_statement_of rdf:type owl:ObjectProperty ;
                                          rdfs:label "U171i is parallel title statement of"@en .
 
 
-###  http://data.doremus.org/ontology#U172_has_statement_of_responsibility_relatingt_to_title
-mus:U172_has_statement_of_responsibility_relatingt_to_title rdf:type owl:ObjectProperty ;
+###  http://data.doremus.org/ontology#U172_has_statement_of_responsibility_relating_to_title
+mus:U172_has_statement_of_responsibility_relating_to_title rdf:type owl:ObjectProperty ;
                                                             rdfs:subPropertyOf ecrm:P148_has_component ;
-                                                            owl:inverseOf mus:U172i_is_statement_of_responsibility_relatingt_to_title_of ;
+                                                            owl:inverseOf mus:U172i_is_statement_of_responsibility_relating_to_title_of ;
                                                             rdfs:domain efrbroo:F22_Self-Contained_Expression ;
                                                             rdfs:range mus:M157_Statement_of_Responsibility ;
                                                             rdfs:label "U172 has statement of responsibility relating to title"@en .
 
 
-###  http://data.doremus.org/ontology#U172i_is_statement_of_responsibility_relatingt_to_title_of
-mus:U172i_is_statement_of_responsibility_relatingt_to_title_of rdf:type owl:ObjectProperty ;
+###  http://data.doremus.org/ontology#U172i_is_statement_of_responsibility_relating_to_title_of
+mus:U172i_is_statement_of_responsibility_relating_to_title_of rdf:type owl:ObjectProperty ;
                                                                rdfs:subPropertyOf ecrm:P148i_is_component_of ;
                                                                rdfs:label "U172i is statement of responsibility relating to title of"@en .
 
