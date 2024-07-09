@@ -10,6 +10,10 @@ The ontology makes use of the following namespaces:
 * ```ecrm``` pointing to ```<http://erlangen-crm.org/current/>``` (see [github](https://github.com/erlangen-crm/ecrm))
 * ```efrbroo``` pointing to ```<http://erlangen-crm.org/efrbroo/>``` (see [github](https://github.com/erlangen-crm/efrbroo))
 
+# Documentation
+
+The documentation can be found [here](https://bnf.hal.science/hal-04554020) (in French)
+
 # Future work
 
 - [ ] Add scope notes and examples
