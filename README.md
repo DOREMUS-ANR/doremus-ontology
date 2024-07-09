@@ -12,7 +12,7 @@ The ontology makes use of the following namespaces:
 
 # Documentation
 
-The documentation can be found [here](https://bnf.hal.science/hal-04554020) (in French)
+An extensive (French) documentation can be found [here](https://bnf.hal.science/hal-04554020) 
 
 # Future work
 
